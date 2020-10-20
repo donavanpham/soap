@@ -1,0 +1,88 @@
+body {
+    background-color: lightblue;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    
+}
+
+
+#soapNote{
+    width: 600px;
+  height: 700px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+  border-radius: 10px 10px 10px 10px;
+}
+#soapNote::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(255,0,0,0.6);
+}
+#pattern {
+    height: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+#content {
+    padding-top: 6px;
+    padding-left: 56px;
+    padding-right: 16px;
+    line-height: 25px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+  
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    width: 1300px;
+    margin: 0 auto;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.main {
+    width: 700px;
+    float: left;
+    line-height: 2.6em;
+}
+.main-inner{
+    padding: 0 60px 0 0;
+}
+
+.note {
+    width: 400px;
+    float: left;
+}
+label {
+    cursor: pointer;
+    padding: 3px;
+   
+}
+:checked + span {
+    font-weight: bold;
+    background: rgb(118, 255, 219);
+}
+.checkmark{
+    background: rgb(233, 233, 233);
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+}
