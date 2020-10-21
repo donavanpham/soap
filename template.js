@@ -28,6 +28,8 @@ function display(section, other){
 // sections
 const sections = {
     "HPI":"otherHPI",
+    "location":"otherLocation",
+    "radiation":"otherRadiation",
     "exam": "otherExam",
     "ROS": "otherROS",
     "plan":"otherPlan"
@@ -45,7 +47,6 @@ var displayAll = function (){
 
 
 attachCheckboxHandlers();
-hideChecks();
 
 //copy soap note
 function CopyToClipboard(id) {

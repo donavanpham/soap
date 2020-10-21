@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="mystyle.css">
     </head>
         <body>
@@ -13,8 +14,17 @@
             <div class="main"><div class="main-inner">
 
             HPI:<br>
+            <label class=container>
+                <input type="checkbox" class="HPI" value="this is a new issue">
+                <span class="checkmark">new issue</span>
+            </label>
+            <label class=container>
+                <input type="checkbox" class="HPI" value="this is a known issue">
+                <span class="checkmark">previously known issue</span>
+            </label>
+            <br>
             
-            onset:<input type="number" class="HPI" id="onsetNumber">
+            <b>onset:</b><input type="number" class="HPI" id="onsetNumber">
             <label class=container>
                 <input type="checkbox" class="HPI" value="hours since onset">
                 <span class="checkmark">hours</span>
@@ -38,7 +48,7 @@
             <br>
                 
             
-            intensity:
+            <b>intensity:</b>
             <label class=container>
                 <input type="checkbox" class="HPI" value="mild intensity">
                 <span class="checkmark">mild</span>
@@ -65,7 +75,11 @@
             
 
 
-            frequency: 
+            <b>frequency: </b>
+            <label class=container>
+                <input type="checkbox" class="HPI" value="single episode">
+                <span class="checkmark">single episode</span>
+            </label>
 
             <label class=container>
                 <input type="checkbox" class="HPI" value="constant">
@@ -94,7 +108,7 @@
             
             <br>
 
-            duration:
+            <b>duration:</b>
             <label class=container>
                 <input type="checkbox" class="HPI" value="lasts a few minutes">
                 <span class="checkmark">few minutes</span>
@@ -122,7 +136,7 @@
             <br>
 
             
-            status:
+            <b>status:</b>
             <label class=container>
                 <input type="checkbox" class="HPI" value="improving since onset">
                 <span class="checkmark">improving</span>
@@ -142,38 +156,122 @@
             <label class=container>
                 <input type="checkbox" class="HPI" value="significantly worsening since onset">
                 <span class="checkmark">significantly worsening</span>
-            </label>
-            
-            
-            
-            
+            </label>         
             <br>
+            <textarea id="otherHPI" onchange="displayAll()" rows="4" cols="50"></textarea><br>
 
+            <b>location:</b>
+            <label class=container>
+                <input type="checkbox" class="location" value="entire head">
+                <span class="checkmark">entire head</span>
+            </label>
+            <label class=container>
+                <input type="checkbox" class="location" value="frontal left">
+                <span class="checkmark">frontal left</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="frontal right">
+                <span class="checkmark">frontal right</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="ocular left">
+                <span class="checkmark">ocular left</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="ocular right">
+                <span class="checkmark">ocular right</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="parietal left">
+                <span class="checkmark">parietal left</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="parietal right">
+                <span class="checkmark">parietal right</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="temporal left">
+                <span class="checkmark">temporal left</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="temporal right">
+                <span class="checkmark">temporal right</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="occipital">
+                <span class="checkmark">occipital</span>
+            </label>
+
+            <label class=container>
+                <input type="checkbox" class="location" value="vertex">
+                <span class="checkmark">vertex</span>
+            </label>
+            <br>
+            other<input type="text" class="location" id="otherLocation">
+            <br>
+            
+            <b>Radiation:</b>
+            <label class=container>
+                <input type="checkbox" class="radiation" value="no radiation">
+                <span class="checkmark">none</span>
+            </label>
+            <label class=container>
+                <input type="checkbox" class="radiation" value="radiates anteriorly">
+                <span class="checkmark">anterior</span>
+            </label>
+            <label class=container>
+                <input type="checkbox" class="radiation" value="radiates posteriorly">
+                <span class="checkmark">posterior</span>
+            </label>
+            <label class=container>
+                <input type="checkbox" class="radiation" value="radiates down neck">
+                <span class="checkmark">neck</span>
+            </label>
+            <label class=container>
+                <input type="checkbox" class="radiation" value="radiates to shoulders">
+                <span class="checkmark">shoulders</span>
+            </label>
+            <br>
+            other<input type="text" class="location" id="otherRadiation">
+            
 
         
 
 
 
-            <textarea id="otherHPI" onchange="displayAll()" rows="4" cols="50"></textarea><br>
 
 
-           <br> Review of Systems: <br>            
-            <input type="checkbox" class="ROS" value="- fever">
-            <input type="checkbox" class="ROS" value="- no fever">fever<br>
-            <input type="checkbox" class="ROS" value="- weight loss">
-            <input type="checkbox" class="ROS" value="- no weight loss">weight loss<br>
-            <input type="checkbox" class="ROS" value="- night sweats">
-            <input type="checkbox" class="ROS" value="- no night sweats">night sweats<br><br>
+
+
+           <br> Review of Systems: <br>
+           + -<br>
+           <label class="positive"> <input type="checkbox" class="ROS" value="- fever"></label>      
+           <label class="negative"><input type="checkbox" class="ROS" value="- no fever">fever</label>
+            <br>
+            <label class="positive"><input type="checkbox" class="ROS" value="- weight loss"></label>
+            <label class="negative"><input type="checkbox" class="ROS" value="- no weight loss">weight loss</label>
+            <br>
+            <label class="positive"><input type="checkbox" class="ROS" value="- night sweats"></label>
+            <label class="negative"><input type="checkbox" class="ROS" value="- no night sweats">night sweats</label>
+            <br><br>
             <textarea id="otherROS" onchange="displayAll()" rows="4" cols="50"></textarea><br>
             
 
             
-            <input type="checkbox" class="exam" value="On Exam:" checked>On Exam:<br>
+            On Exam:<br>
             <input type="checkbox" class="exam" value="- negative McMurray">mcmurray<br>
             <textarea id="otherExam" onchange="displayAll()" rows="4" cols="50"></textarea>
             
 
-            <br><input type="checkbox" class="plan" value="Plan: " checked>Plan <br>
+            <br>Plan <br>
             <input type="checkbox" class="plan" value="- RICE"> RICE <br>
             <textarea id="otherPlan" onchange="displayAll()" rows="4" cols="50"></textarea>
 
@@ -190,13 +288,20 @@
                 <div id="pattern">
                     <div id="content">
                         headache:<br><br>
+                        S/ <br>
 
                         <div id="onsetResult" style="display:inline"></div>
                         <span id="HPI" style='white-space:pre-wrap'></span> 
+                        <span id="location" style='white-space:pre-wrap'></span> 
+                        <span id="radiation" style='white-space:pre-wrap'></span> 
                         <span id="ROS" style='white-space:pre-wrap'></span> 
-                        <br>   
+                        <br> 
+                        O/<br>
                         <span id="exam" style='white-space:pre-wrap'></span>
                         <br>
+                        A/
+                        <br>
+                        P/<br>
                         <span id="plan" style='white-space:pre-wrap'></span>
                     </div>
                 </div>

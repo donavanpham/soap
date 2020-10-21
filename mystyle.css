@@ -7,6 +7,7 @@ body {
 }
 
 
+/* Ruled paper */
 #soapNote{
     width: 600px;
   height: 700px;
@@ -74,7 +75,7 @@ h1 {
 }
 label {
     cursor: pointer;
-    padding: 3px;
+    padding: 0px;
    
 }
 :checked + span {
@@ -86,3 +87,63 @@ label {
     padding: 8px;
     border-radius: 5px 5px 5px 5px;
 }
+
+
+/* Styling Checkbox Starts */
+.positive {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    
+}
+.positive > input {
+    height: 25px;
+    width: 25px;
+    margin: 0px -10px 0px 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+
+.positive > input:checked {
+    border: 1px solid black;
+    background-color: rgb(255, 129, 129);
+}
+
+
+.negative {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin: 0px;
+    
+}
+.negative > input {
+    height: 25px;
+    width: 25px;
+    margin: 0px 5px 0px 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.5s;
+    background-color: white;
+    cursor: pointer;
+}
+
+.negative > input:checked {
+    border: 1px solid black;
+    background-color: rgb(55, 220, 157);
+}
+
+
