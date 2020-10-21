@@ -13,267 +13,355 @@
 
             <div class="main"><div class="main-inner">
 
-            HPI:<br>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="this is a new issue">
-                <span class="checkmark">new issue</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="this is a known issue">
-                <span class="checkmark">previously known issue</span>
-            </label>
-            <br>
-            
-            <b>onset:</b><input type="number" class="HPI" id="onsetNumber">
-            <label class=container>
-                <input type="checkbox" class="HPI" value="hours since onset">
-                <span class="checkmark">hours</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="days since onset">
-                <span class="checkmark">days</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="weeks since onset">
-                <span class="checkmark">weeks</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="months since onset">
-                <span class="checkmark">months</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="years since onset">
-                <span class="checkmark">years</span>
-            </label>
-            <br>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')">HPI</button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')">Exam</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Assessment/Plan</button>
+                </div>
+
+                <div id="London" class="tabcontent">
+
+                    HPI:<br>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="this is a new issue">
+                        <span class="checkmark">new issue</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="this is a known issue">
+                        <span class="checkmark">previously known issue</span>
+                    </label>
+                    <br>
+                    
+                    <b>onset:</b><input type="number" class="HPI" id="onsetNumber">
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="hours since onset">
+                        <span class="checkmark">hours</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="days since onset">
+                        <span class="checkmark">days</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="weeks since onset">
+                        <span class="checkmark">weeks</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="months since onset">
+                        <span class="checkmark">months</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="years since onset">
+                        <span class="checkmark">years</span>
+                    </label>
+                    <br>
                 
             
-            <b>intensity:</b>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="mild intensity">
-                <span class="checkmark">mild</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="mild-moderate intensity">
-                <span class="checkmark">mild-moderate</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="moderate intensity">
-                <span class="checkmark">moderate</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="moderate/severe intensity">
-                <span class="checkmark">moderate-severe</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="severe intensity">
-                <span class="checkmark">severe</span>
-            </label>
-            <br>
+                    <b>intensity:</b>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="mild intensity">
+                        <span class="checkmark">mild</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="mild-moderate intensity">
+                        <span class="checkmark">mild-moderate</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="moderate intensity">
+                        <span class="checkmark">moderate</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="moderate/severe intensity">
+                        <span class="checkmark">moderate-severe</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="severe intensity">
+                        <span class="checkmark">severe</span>
+                    </label>
+                    <br>
+                    
+                
+                    
+
+
+                    <b>frequency: </b>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="single episode">
+                        <span class="checkmark">single episode</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="constant">
+                        <span class="checkmark">constant</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="intermittent">
+                        <span class="checkmark">intermittent</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="daily">
+                        <span class="checkmark">daily</span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="few times a week">
+                        <span class="checkmark">few times a week</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="few times a month">
+                        <span class="checkmark">few times a month</span>
+                    </label>
+                    
+                    
+                
+                    
+                    <br>
+
+                    <b>duration:</b>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="lasts a few minutes">
+                        <span class="checkmark">few minutes</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="lasts less than an hour">
+                        <span class="checkmark">less than an hour</span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="lasts a few hours">
+                        <span class="checkmark">few hours</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="lasts for most of the day">
+                        <span class="checkmark">most of the day</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="lasts a few days">
+                        <span class="checkmark">few days</span>
+                    </label>
+                
+                    
+                    
+                    <br>
+
+                    
+                    <b>status:</b>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="improving since onset">
+                        <span class="checkmark">improving</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="no change since onset">
+                        <span class="checkmark">unchanged</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="resolved since onset">
+                        <span class="checkmark">resolved</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="gradually worsening since onset">
+                        <span class="checkmark">gradually worsening</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="significantly worsening since onset">
+                        <span class="checkmark">significantly worsening</span>
+                    </label>         
+                    <br>
+                    <textarea id="otherHPI" onchange="displayAll()" rows="4" cols="50"></textarea><br>
+
+                    <b>location:</b>
+                    <label class=container>
+                        <input type="checkbox" class="location" value="entire head">
+                        <span class="checkmark">entire head</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="location" value="frontal left">
+                        <span class="checkmark">frontal left</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="frontal right">
+                        <span class="checkmark">frontal right</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="ocular left">
+                        <span class="checkmark">ocular left</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="ocular right">
+                        <span class="checkmark">ocular right</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="parietal left">
+                        <span class="checkmark">parietal left</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="parietal right">
+                        <span class="checkmark">parietal right</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="temporal left">
+                        <span class="checkmark">temporal left</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="temporal right">
+                        <span class="checkmark">temporal right</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="occipital">
+                        <span class="checkmark">occipital</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="location" value="vertex">
+                        <span class="checkmark">vertex</span>
+                    </label>
+                    <br>
+                    other<input type="text" class="location" id="otherLocation">
+                    <br>
+                    
+                    <b>radiation:</b>
+                    <label class=container>
+                        <input type="checkbox" class="radiation" value="no radiation">
+                        <span class="checkmark">none</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="radiation" value="radiates anteriorly">
+                        <span class="checkmark">anterior</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="radiation" value="radiates posteriorly">
+                        <span class="checkmark">posterior</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="radiation" value="radiates down neck">
+                        <span class="checkmark">neck</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="radiation" value="radiates to shoulders">
+                        <span class="checkmark">shoulders</span>
+                    </label>
+                    <br>
+                    other<input type="text" class="location" id="otherRadiation">
+                    <br>
+
+                    <b>quality:</b>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="blinding">
+                        <span class="checkmark">blinding</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="debilitating">
+                        <span class="checkmark">debilitating</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="dull">
+                        <span class="checkmark">dull</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="pressure">
+                        <span class="checkmark">pressure</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="superficial">
+                        <span class="checkmark">superficial</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="sharp">
+                        <span class="checkmark">sharp</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="throbbing">
+                        <span class="checkmark">throbbing</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="squeezing">
+                        <span class="checkmark">squeezing</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="stabbing">
+                        <span class="checkmark">stabbing</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="quality" value="worst headache ever">
+                        <span class="checkmark">worst ever</span>
+                    </label>
+                    <br>
+                    other<input type="text" class="quality" id="otherQuality">
+                    <br>
+
+                    <b>timing:</b>
+                    <label class=container>
+                        <input type="checkbox" class="timing" value="">
+                        <span class="checkmark">daytime</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="timing" value="">
+                        <span class="checkmark">menstrual periods</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="timing" value="">
+                        <span class="checkmark">upon awakening</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="timing" value="">
+                        <span class="checkmark">evening</span>
+                    </label>
+                    <br>
+                    other<input type="text" class="timing" id="otherTiming">
+                    <br>
+
+
+                
+
+
             
+            
+            
+
         
-            
 
 
-            <b>frequency: </b>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="single episode">
-                <span class="checkmark">single episode</span>
-            </label>
 
-            <label class=container>
-                <input type="checkbox" class="HPI" value="constant">
-                <span class="checkmark">constant</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="intermittent">
-                <span class="checkmark">intermittent</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="daily">
-                <span class="checkmark">daily</span>
-            </label>
-            <br>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="few times a week">
-                <span class="checkmark">few times a week</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="few times a month">
-                <span class="checkmark">few times a month</span>
-            </label>
-            
-            
-        
-            
-            <br>
 
-            <b>duration:</b>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="lasts a few minutes">
-                <span class="checkmark">few minutes</span>
-            </label>
-            <label class=container>
-                 <input type="checkbox" class="HPI" value="lasts less than an hour">
-                <span class="checkmark">less than an hour</span>
-            </label>
-            <br>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="lasts a few hours">
-                <span class="checkmark">few hours</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="lasts for most of the day">
-                <span class="checkmark">most of the day</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="lasts a few days">
-                <span class="checkmark">few days</span>
-            </label>
-        
-            
-            
-            <br>
+
+
+
+                    <br> Review of Systems: <br>
+                    + -<br>
+                    <label class="positive"> <input type="checkbox" class="ROS" value="- fever"></label>      
+                    <label class="negative"><input type="checkbox" class="ROS" value="- no fever">fever</label>
+                        <br>
+                        <label class="positive"><input type="checkbox" class="ROS" value="- weight loss"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no weight loss">weight loss</label>
+                        <br>
+                        <label class="positive"><input type="checkbox" class="ROS" value="- night sweats"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no night sweats">night sweats</label>
+                        <br><br>
+                        <textarea id="otherROS" onchange="displayAll()" rows="4" cols="50"></textarea><br>
+                </div>
+
+                <div id="Paris" class="tabcontent">
 
             
-            <b>status:</b>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="improving since onset">
-                <span class="checkmark">improving</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="no change since onset">
-                <span class="checkmark">unchanged</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="resolved since onset">
-                <span class="checkmark">resolved</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="gradually worsening since onset">
-                <span class="checkmark">gradually worsening</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="HPI" value="significantly worsening since onset">
-                <span class="checkmark">significantly worsening</span>
-            </label>         
-            <br>
-            <textarea id="otherHPI" onchange="displayAll()" rows="4" cols="50"></textarea><br>
+                    On Exam:<br>
+                    <input type="checkbox" class="exam" value="- negative McMurray">mcmurray<br>
+                    <textarea id="otherExam" onchange="displayAll()" rows="4" cols="50"></textarea>
+                </div>
 
-            <b>location:</b>
-            <label class=container>
-                <input type="checkbox" class="location" value="entire head">
-                <span class="checkmark">entire head</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="location" value="frontal left">
-                <span class="checkmark">frontal left</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="frontal right">
-                <span class="checkmark">frontal right</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="ocular left">
-                <span class="checkmark">ocular left</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="ocular right">
-                <span class="checkmark">ocular right</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="parietal left">
-                <span class="checkmark">parietal left</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="parietal right">
-                <span class="checkmark">parietal right</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="temporal left">
-                <span class="checkmark">temporal left</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="temporal right">
-                <span class="checkmark">temporal right</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="occipital">
-                <span class="checkmark">occipital</span>
-            </label>
-
-            <label class=container>
-                <input type="checkbox" class="location" value="vertex">
-                <span class="checkmark">vertex</span>
-            </label>
-            <br>
-            other<input type="text" class="location" id="otherLocation">
-            <br>
-            
-            <b>Radiation:</b>
-            <label class=container>
-                <input type="checkbox" class="radiation" value="no radiation">
-                <span class="checkmark">none</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="radiation" value="radiates anteriorly">
-                <span class="checkmark">anterior</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="radiation" value="radiates posteriorly">
-                <span class="checkmark">posterior</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="radiation" value="radiates down neck">
-                <span class="checkmark">neck</span>
-            </label>
-            <label class=container>
-                <input type="checkbox" class="radiation" value="radiates to shoulders">
-                <span class="checkmark">shoulders</span>
-            </label>
-            <br>
-            other<input type="text" class="location" id="otherRadiation">
+                <div id="Tokyo" class="tabcontent">
             
 
-        
-
-
-
-
-
-
-
-           <br> Review of Systems: <br>
-           + -<br>
-           <label class="positive"> <input type="checkbox" class="ROS" value="- fever"></label>      
-           <label class="negative"><input type="checkbox" class="ROS" value="- no fever">fever</label>
-            <br>
-            <label class="positive"><input type="checkbox" class="ROS" value="- weight loss"></label>
-            <label class="negative"><input type="checkbox" class="ROS" value="- no weight loss">weight loss</label>
-            <br>
-            <label class="positive"><input type="checkbox" class="ROS" value="- night sweats"></label>
-            <label class="negative"><input type="checkbox" class="ROS" value="- no night sweats">night sweats</label>
-            <br><br>
-            <textarea id="otherROS" onchange="displayAll()" rows="4" cols="50"></textarea><br>
-            
-
-            
-            On Exam:<br>
-            <input type="checkbox" class="exam" value="- negative McMurray">mcmurray<br>
-            <textarea id="otherExam" onchange="displayAll()" rows="4" cols="50"></textarea>
-            
-
-            <br>Plan <br>
-            <input type="checkbox" class="plan" value="- RICE"> RICE <br>
-            <textarea id="otherPlan" onchange="displayAll()" rows="4" cols="50"></textarea>
+                    Plan <br>
+                    <input type="checkbox" class="plan" value="- RICE"> RICE <br>
+                    <textarea id="otherPlan" onchange="displayAll()" rows="4" cols="50"></textarea>
+                </div>
 
         </div>
         </div>
@@ -293,7 +381,9 @@
                         <div id="onsetResult" style="display:inline"></div>
                         <span id="HPI" style='white-space:pre-wrap'></span> 
                         <span id="location" style='white-space:pre-wrap'></span> 
-                        <span id="radiation" style='white-space:pre-wrap'></span> 
+                        <span id="radiation" style='white-space:pre-wrap'></span>
+                        <span id="quality" style='white-space:pre-wrap'></span>
+                        <span id="timing" style='white-space:pre-wrap'></span>    
                         <span id="ROS" style='white-space:pre-wrap'></span> 
                         <br> 
                         O/<br>
