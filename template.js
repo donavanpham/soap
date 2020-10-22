@@ -17,16 +17,17 @@ function display(section, other){
     var items = document.getElementsByClassName(section);
     var str = '';
     var other = document.getElementById(other).value;
+    if (other!== ""){
+        other += "<br>";
+    }
     for (i=0;i<items.length; i++){
         if (items[i].checked === true){
             str += items[i].value +"<br>";
         }
     }
-    if (other === null ){
-        document.getElementById(section).innerHTML = str +"<br>";
-    }else{
-        document.getElementById(section).innerHTML = str + other;
-    }
+    
+    document.getElementById(section).innerHTML = str +other;
+    
     
 };
 
@@ -86,5 +87,5 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-openCity(event, 'London');
+document.getElementById("defaultOpen").click();
 

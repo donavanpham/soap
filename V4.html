@@ -14,7 +14,7 @@
             <div class="main"><div class="main-inner">
 
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')">HPI</button>
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">HPI</button>
                     <button class="tablinks" onclick="openCity(event, 'Paris')">Exam</button>
                     <button class="tablinks" onclick="openCity(event, 'Tokyo')">Assessment/Plan</button>
                 </div>
@@ -125,7 +125,6 @@
                         <input type="checkbox" class="HPI" value="lasts less than an hour">
                         <span class="checkmark">less than an hour</span>
                     </label>
-                    <br>
                     <label class=container>
                         <input type="checkbox" class="HPI" value="lasts a few hours">
                         <span class="checkmark">few hours</span>
@@ -223,7 +222,7 @@
                         <span class="checkmark">vertex</span>
                     </label>
                     <br>
-                    other<input type="text" class="location" id="otherLocation">
+                    <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
                     <br>
                     
                     <b>radiation:</b>
@@ -248,7 +247,7 @@
                         <span class="checkmark">shoulders</span>
                     </label>
                     <br>
-                    other<input type="text" class="location" id="otherRadiation">
+                    <input type="text" class="location" id="otherRadiation" style="float: right;" placeholder="other">
                     <br>
 
                     <b>quality:</b>
@@ -293,7 +292,7 @@
                         <span class="checkmark">worst ever</span>
                     </label>
                     <br>
-                    other<input type="text" class="quality" id="otherQuality">
+                    <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="other">
                     <br>
 
                     <b>timing:</b>
@@ -314,7 +313,7 @@
                         <span class="checkmark">evening</span>
                     </label>
                     <br>
-                    other<input type="text" class="timing" id="otherTiming">
+                    <input type="text" class="timing" id="otherTiming" style="float: right;" placeholder="other">
                     <br>
 
 
