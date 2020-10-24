@@ -38,6 +38,9 @@ const sections = {
     "radiation":"otherRadiation",
     "quality":"otherQuality",
     "timing":"otherTiming",
+    "aggravation":"otherAggravation",
+    "relief":"otherRelief",
+
     "exam": "otherExam",
     "ROS": "otherROS",
     "plan":"otherPlan"
@@ -66,6 +69,12 @@ function CopyToClipboard(id) {
     window.getSelection().removeAllRanges();
 }
 
+
+
+
+
+
+
 function openCity(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -86,6 +95,7 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
 
 document.getElementById("defaultOpen").click();
 
