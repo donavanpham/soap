@@ -8,7 +8,6 @@
             <h1>
             headache
             </h1>
-    <div id="container">
         <div id="allCheckbox">
 
             <div class="main"><div class="main-inner">
@@ -20,16 +19,9 @@
                 </div>
 
                 <div id="London" class="tabcontent">
-
-                    <label class=container>
-                        <input type="checkbox" class="HPI" value="this is a new issue">
-                        <span class="checkmark">new issue</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="HPI" value="this is a known issue">
-                        <span class="checkmark">previously known issue</span>
-                    </label>
                     <br>
+
+                   
                     
                     
                     <b>onset:</b><input type="number" class="HPI" id="onsetNumber" >
@@ -52,6 +44,15 @@
                     <label class=container>
                         <input type="checkbox" class="HPI" value="years since onset">
                         <span class="checkmark">years</span>
+                    </label>
+                    <br> 
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="this is a new issue">
+                        <span class="checkmark">new issue</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="HPI" value="this is a known issue">
+                        <span class="checkmark">previously known issue</span>
                     </label>
                     <br>
                 
@@ -200,6 +201,7 @@
                         <input type="checkbox" class="location" value="ocular right">
                         <span class="checkmark">ocular right</span>
                     </label>
+                    <br>
 
                     <label class=container>
                         <input type="checkbox" class="location" value="parietal left">
@@ -420,7 +422,7 @@
                     <br>
                     
 
-                    <br> <b>associated symptoms/pertinent negatives: </b><br>
+                    <b>associated symptoms/pertinent negatives: </b><br>
                     <label class="positive"> <input type="checkbox" class="ROS" value="- aura present"></label>      
                     <label class="negative"><input type="checkbox" class="ROS" value="- no associated aura">aura</label>
                     <label class="positive"> <input type="checkbox" class="ROS" value="- (+)photophobia "></label>      
@@ -498,7 +500,11 @@
             
 
         <div class="note">
-            <button onclick="CopyToClipboard('soapNote')" id="copyNote">Copy note</button>
+            <div class="tooltip">
+                <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note</button>
+            </div>
             <div id="soapNote">
                 
                 <div id="pattern">
@@ -530,8 +536,7 @@
             <br>
             
         </div>  
-
-    </div>          
+     
 
         
         

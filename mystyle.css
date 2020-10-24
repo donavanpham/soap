@@ -52,12 +52,10 @@ body {
 
 h1 {
     float: left;
+    padding-right: 20px;
 }
 
-#container {
-    width: 1300px;
-    margin: 0 auto;
-}
+
 .container input {
     position: absolute;
     opacity: 0;
@@ -71,6 +69,8 @@ h1 {
     float: left;
     line-height: 2.6em;
     margin: 0 auto;
+    padding: 10px;
+    
 }
 .main-inner{
     padding: 0 40px 0 0;
@@ -106,7 +106,7 @@ input[type=text] {
 }
 
 textarea {
-    width: 90%;
+    width: 100%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -117,7 +117,7 @@ textarea {
 }
 
 #copyNote{
-    background-color: whitesmoke;
+    background-color: rgb(161, 230, 192);
     border: 2px;
     border-color: #4CAF50;
     color: black;
@@ -128,7 +128,7 @@ textarea {
     font-size: 16px;
     border-radius: 8px;
     transition-duration: 0.4s;
-    width: 50%;
+    width: 100%;
     cursor: pointer;
 }
 #copyNote:hover {
@@ -140,7 +140,45 @@ textarea {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
+.note .tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.note .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 30%;
+    left: 50%;
+    margin-left: 75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.note .tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    top: 33%;
+    right: 100%;
+    
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  transparent #555 transparent transparent;
+    
+}
+  
+.note .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /* Styling Checkbox Starts */
@@ -205,6 +243,7 @@ textarea {
 .tab {
     overflow: hidden;
     background-color: #f1f1f1;
+    border-radius: 8px;
 }
   
   /* Style the buttons that are used to open the tab content */
