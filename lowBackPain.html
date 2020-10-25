@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <title>low back pain</title>
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="mystyle.css">
 </head>
@@ -48,11 +50,11 @@
                         <span class="checkmark">years</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="sudden onset">
+                        <input type="checkbox" class="HPI" value="- sudden onset">
                         <span class="checkmark">sudden</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="gradual onset">
+                        <input type="checkbox" class="HPI" value="- gradual onset">
                         <span class="checkmark">gradual</span>
                     </label>
 
@@ -97,28 +99,28 @@
 
                     <b>frequency: </b>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="single episode">
+                        <input type="checkbox" class="HPI" value="- single episode">
                         <span class="checkmark">single episode</span>
                     </label>
 
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="constant">
+                        <input type="checkbox" class="HPI" value="- constant">
                         <span class="checkmark">constant</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="intermittent">
+                        <input type="checkbox" class="HPI" value="- intermittent">
                         <span class="checkmark">intermittent</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="daily">
+                        <input type="checkbox" class="HPI" value="- daily">
                         <span class="checkmark">daily</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="few times a week">
+                        <input type="checkbox" class="HPI" value="- few times a week">
                         <span class="checkmark">few times a week</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="few times a month">
+                        <input type="checkbox" class="HPI" value="- few times a month">
                         <span class="checkmark">few times a month</span>
                     </label>
 
@@ -129,23 +131,23 @@
 
                     <b>duration:</b>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="lasts a few minutes">
+                        <input type="checkbox" class="HPI" value="- lasts a few minutes">
                         <span class="checkmark">few minutes</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="lasts less than an hour">
+                        <input type="checkbox" class="HPI" value="- lasts less than an hour">
                         <span class="checkmark">less than an hour</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="lasts a few hours">
+                        <input type="checkbox" class="HPI" value="- lasts a few hours">
                         <span class="checkmark">few hours</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="lasts for most of the day">
+                        <input type="checkbox" class="HPI" value="- lasts for most of the day">
                         <span class="checkmark">most of the day</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="lasts a few days">
+                        <input type="checkbox" class="HPI" value="- lasts a few days">
                         <span class="checkmark">few days</span>
                     </label>
 
@@ -156,23 +158,23 @@
 
                     <b>status:</b>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="improving since onset">
+                        <input type="checkbox" class="HPI" value="- improving since onset">
                         <span class="checkmark">improving</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="no change since onset">
+                        <input type="checkbox" class="HPI" value="- no change since onset">
                         <span class="checkmark">unchanged</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="resolved since onset">
+                        <input type="checkbox" class="HPI" value="- resolved since onset">
                         <span class="checkmark">resolved</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="gradually worsening since onset">
+                        <input type="checkbox" class="HPI" value="- gradually worsening since onset">
                         <span class="checkmark">gradually worsening</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="HPI" value="significantly worsening since onset">
+                        <input type="checkbox" class="HPI" value="- significantly worsening since onset">
                         <span class="checkmark">significant worsening</span>
                     </label>
                     <br>
@@ -442,6 +444,7 @@
 
 
                     suggested minimum in <b>bold</b> boxes<br>
+                    click grey box for normal test; smaller checkboxes for abnormal test, L or R<br>
                     <b>inspection</b>
                     <label class=container>
                         <input type="checkbox" class="exam"
@@ -674,7 +677,7 @@
                         <input type="checkbox" class="assessment" value="- no red flags">
                         <span class="checkmark">no red flags</span>
                     </label>
-                    <textarea id="otherAssessment" onchange="displayAll()"></textarea>
+                    <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment details"></textarea>
                     <br>
 
                     <b>Plan:</b><br>
@@ -709,12 +712,17 @@
                     <br>
                     - private coverage
                     <label class=container>
-                        <input type="checkbox" class="plan" value="- has private coverage for PT">
+                        <input type="checkbox" class="plan" value="- has private coverage for PT/massage">
                         <span class="checkmark">yes</span>
                     </label>
                     <label class=container>
-                        <input type="checkbox" class="plan" value="- no private coverage for PT">
+                        <input type="checkbox" class="plan" value="- no private coverage for PT/massage">
                         <span class="checkmark">no</span>
+                    </label><br>
+
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- massage therapy">
+                        <span class="checkmark">massage therapy</span>
                     </label>
 
                     <br>
@@ -745,16 +753,7 @@
                             value="- RTC if worsening symptoms, functional limitations, or no resolution with therapy in 4-6 weeks">
                         <span class="checkmark">instructions given</span>
                     </label>
-
-
-
-
-
-
-
-
-
-                    <textarea id="otherPlan" onchange="displayAll()"></textarea>
+                    <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"></textarea>
                 </div>
 
             </div>
@@ -768,7 +767,8 @@
         <div class="tooltip">
             <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
                 <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                Copy note</button>
+                Copy note
+            </button>
         </div>
         <div id="soapNote">
             <div id="pattern">
