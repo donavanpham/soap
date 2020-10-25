@@ -1,274 +1,262 @@
 body {
-    background-color: lightblue;
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    
+	background-color: lightblue;
+	font-size: 12px;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
 }
-
 
 /* Ruled paper */
-#soapNote{
-    width: 600px;
-  height: 700px;
-  position: relative;
-  margin: 20px auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: white;
-  box-shadow: 0px 0px 5px 0px #888;
-  border-radius: 10px 10px 10px 10px;
+#soapNote {
+	width: 600px;
+	height: 700px;
+	position: relative;
+	margin: 20px auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: white;
+	box-shadow: 0px 0px 5px 0px #888;
+	border-radius: 10px 10px 10px 10px;
 }
 #soapNote::before {
-    content: '';
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 40px;
-    background-color: rgba(255,0,0,0.6);
+	content: '';
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 40px;
+	background-color: rgba(255, 0, 0, 0.6);
 }
 #pattern {
-    height: 100%;
-    background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+	height: 100%;
+	background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
 }
 #content {
-    padding-top: 6px;
-    padding-left: 56px;
-    padding-right: 16px;
-    line-height: 25px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+	padding-top: 6px;
+	padding-left: 56px;
+	padding-right: 16px;
+	line-height: 25px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	word-spacing: 5px;
 }
 
 #onsetNumber {
-    width: 10%;
-    border: none;
-    border-radius: 3px;
-    height: 20px;
+	width: 10%;
+	border: none;
+	border-radius: 3px;
+	height: 20px;
 }
-  
 
 h1 {
-    float: left;
-    padding-right: 20px;
+	float: left;
+	padding-right: 20px;
 }
 
-
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
 .main {
-    width: 800px;
-    float: left;
-    line-height: 2.6em;
-    margin: 0 auto;
-    padding: 10px;
-    
+	width: 800px;
+	float: left;
+	line-height: 2.6em;
+	margin: 0 auto;
+	padding: 10px;
 }
-.main-inner{
-    padding: 0 40px 0 0;
-    margin: auto;
+.main-inner {
+	padding: 0 40px 0 0;
+	margin: auto;
 }
 
 .note {
-    width: 400px;
-    float: left;
+	width: 400px;
+	float: left;
 }
 label {
-    cursor: pointer;
-    padding: 0px;
-   
+	cursor: pointer;
+	padding: 0px;
 }
 :checked + span {
-    font-weight: bold;
-    background: rgb(118, 255, 219);
+	font-weight: bold;
+	background: rgb(118, 255, 219);
 }
-.checkmark{
-    background: rgb(233, 233, 233);
-    padding: 5px;
-    border-radius: 5px 5px 5px 5px;
+.checkmark {
+	background: rgb(233, 233, 233);
+	padding: 5px;
+	border-radius: 5px 5px 5px 5px;
 }
 
 input[type=text] {
-    width: 40%;
-    float: right;
-    padding: 5px 5px;
-    border-radius: 8px;
-    border: none;
-    box-sizing: border-box;
+	width: 40%;
+	float: right;
+	padding: 5px 5px;
+	border-radius: 8px;
+	border: none;
+	box-sizing: border-box;
 }
 
 textarea {
-    width: 100%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
 }
 
-#copyNote{
-    background-color: rgb(161, 230, 192);
-    border: 2px;
-    border-color: #4CAF50;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 8px;
-    transition-duration: 0.4s;
-    width: 100%;
-    cursor: pointer;
+#copyNote {
+	background-color: rgb(161, 230, 192);
+	border: 2px;
+	border-color: #4caf50;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+	width: 100%;
+	cursor: pointer;
 }
 #copyNote:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
+	background-color: #4caf50; /* Green */
+	color: white;
 }
 #copyNote:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 .note .tooltip {
-    position: relative;
-    display: inline-block;
-}
-  
-.note .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 30%;
-    left: 50%;
-    margin-left: 75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-  
-.note .tooltip .tooltiptext::before {
-    content: "";
-    position: absolute;
-    top: 33%;
-    right: 100%;
-    
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color:  transparent #555 transparent transparent;
-    
-}
-  
-.note .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+	position: relative;
+	display: inline-block;
 }
 
+.note .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 30%;
+	left: 50%;
+	margin-left: 75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.note .tooltip .tooltiptext::before {
+	content: "";
+	position: absolute;
+	top: 33%;
+	right: 100%;
+
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent #555 transparent transparent;
+}
+
+.note .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
 
 /* Styling Checkbox Starts */
 .positive {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
 }
 .positive > input {
-    height: 15px;
-    width: 15px;
-    margin: 0px -10px 0px 0px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    border: 1px solid black;
-    border-radius:4px 0px 0px 4px ;
-    outline: none;
-    transition-duration: 0.5s;
-    background-color: white;
-    cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0px -10px 0px 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	border: 1px solid black;
+	border-radius: 4px 0px 0px 4px;
+	outline: none;
+	transition-duration: 0.5s;
+	background-color: white;
+	cursor: pointer;
 }
 
 .positive > input:checked {
-    border: 1px solid black;
-    background-color: rgb(255, 129, 129);
+	border: 1px solid black;
+	background-color: rgb(255, 129, 129);
 }
-
 
 .negative {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    margin: 0px;
-    
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	margin: 0px;
 }
 .negative > input {
-    height: 15px;
-    width: 15px;
-    margin: 0px 5px 0px 0px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    border: 1px solid black;
-    border-radius: 0px 4px 4px 0px;
-    outline: none;
-    transition-duration: 0.5s;
-    background-color: white;
-    cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0px 5px 0px 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	border: 1px solid black;
+	border-radius: 0px 4px 4px 0px;
+	outline: none;
+	transition-duration: 0.5s;
+	background-color: white;
+	cursor: pointer;
 }
 
 .negative > input:checked {
-    border: 1px solid black;
-    background-color: rgb(55, 220, 157);
+	border: 1px solid black;
+	background-color: rgb(55, 220, 157);
 }
-
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    background-color: #f1f1f1;
-    border-radius: 8px;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	border-radius: 8px;
 }
-  
-  /* Style the buttons that are used to open the tab content */
+
+/* Style the buttons that are used to open the tab content */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
 }
-  
-  /* Change background color of buttons on hover */
+
+/* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+	background-color: #ddd;
 }
-  
-  /* Create an active/current tablink class */
+
+/* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+	background-color: #ccc;
 }
-  
-  /* Style the tab content */
+
+/* Style the tab content */
 .tabcontent {
-    display: none;
-    border-top: none;
+	display: none;
+	border-top: none;
 }
