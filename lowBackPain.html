@@ -16,8 +16,9 @@
             <div class="main-inner">
 
                 <div class="tab">
-                    <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">HPI</button>
-                    <button class="tablinks" onclick="openSection(event, 'objective')">Exam</button>
+                    <button class="tablinks" onclick="openSection(event, 'subjective')"
+                        id="defaultOpen">Subjective</button>
+                    <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
                     <button class="tablinks" onclick="openSection(event, 'assessment-plan')">Assessment/Plan</button>
                 </div>
 
@@ -195,6 +196,7 @@
                         <span class="checkmark">no</span>
                     </label>
                     <br>
+
                     <textarea id="otherHPI" onchange="displayAll()" placeholder="details/comments"></textarea><br>
 
 
@@ -438,17 +440,321 @@
 
                 <div id="objective" class="tabcontent">
 
-                    On Exam:<br>
-                    <input type="checkbox" class="exam" value="- negative McMurray">mcmurray<br>
-                    <textarea id="otherExam" onchange="displayAll()" rows="4" cols="50"></textarea>
+
+                    suggested minimum in <b>bold</b> boxes<br>
+                    <b>inspection</b>
+                    <label class=container>
+                        <input type="checkbox" class="exam"
+                            value="- normal inspection - no skin lesions, bruising or signs of skin infection">
+                        <span class="checkmark">normal</span>
+                    </label>
+                    <br>
+
+                    <b>palpation</b>
+                    <label class=container>
+                        <input type="checkbox" class="exam"
+                            value="- normal palpation - no spinal deformity, or bony tenderness">
+                        <span class="checkmark">normal</span>
+                    </label>
+                    <br>
+
+                    <b>gait:</b>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal heel walking">
+                        <span class="checkmark">heel walking (L4-5)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal heel walking on L"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal heel walking on R"></label>
+
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal toe walking">
+                        <span class="checkmark">toe walking (S1)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- abnormal toe walking on L"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal toe walking on R"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- antalgic gait">
+                        <span class="checkmark">antalgic</span>
+                    </label>
+                    <br>
+
+                    <b>standing:</b>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- full flexion and extension ROM">
+                        <span class="checkmark">full ROM</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- pain with extension">
+                        <span class="checkmark">pain with extension</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- limited extension ROM due to pain">
+                        <span class="checkmark">limited extension ROM</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- pain with flexion">
+                        <span class="checkmark">pain with flexion</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- limited flexion ROM due to pain">
+                        <span class="checkmark">limited flexion ROM</span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- negative trendelenburg test">
+                        <span class="checkmark">trendelenburg test (L5)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- (+)L trendelenburg test"></label>
+                    <label class="right"><input type="checkbox" class="exam" value="- (+)R trendelenburg test"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal repeated toe raises">
+                        <span class="checkmark">repeated toe raises (S1)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal repeated toe raises L side"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="-  abnormal repeated toe raises R side"></label>
+                    <br>
+
+                    <b>sitting:</b>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal patellar reflex bilaterally">
+                        <span class="checkmark"><b>patellar reflex (L3-4)</b></span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L patellar reflex"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal R patellar reflex"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal quadriceps power bilaterally">
+                        <span class="checkmark">quadriceps power (L3-4)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L quadriceps power"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal R quadriceps power"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal ankle dorsiflexion power bilaterally">
+                        <span class="checkmark">ankle dorsiflex power (L4-5)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L ankle dorsiflexion power"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal R ankle dorsiflexion power"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal great toe power bilaterally">
+                        <span class="checkmark"><b>great toe extension power (L5)</b></span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L great toe power"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal R great toe power"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal great toe flexion power bilaterally">
+                        <span class="checkmark"><b>great toe flexion power (S1)</b></span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L great toe flexion power"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal R great toe flexion power"></label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal plantar response bilaterally">
+                        <span class="checkmark"><b>plantar response, upper motor test</b></span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L plantar response"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal R plantar response"></label>
+
+                    <br>
+
+                    <b>kneeling:</b>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal ankle reflex bilaterally">
+                        <span class="checkmark">ankle reflex (S1)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- abnormal L ankle reflex"></label>
+                    <label class="right"><input type="checkbox" class="exam" value="- abnormal R ankle reflex"></label>
+
+                    <br>
+                    <b>lying:</b>
+                    supine
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal passive SLR bilaterally">
+                        <span class="checkmark"><b>passive SLR</b></span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- (+) L passive SLR"></label>
+                    <label class="right"><input type="checkbox" class="exam" value="- (+) R passive SLR"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal passive hip ROM bilaterally">
+                        <span class="checkmark">passive hip ROM</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal L passive hip ROM"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abrnomal R passive hip ROM"></label>
+                    <br>
+                    prone
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- (-)femoral nerve stretch bilaterally">
+                        <span class="checkmark">femoral nerve stretch (L3-4)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- (+) femoral nerve stretch"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- (+) femoral nerve stretch"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal glute power bilaterally">
+                        <span class="checkmark">glute maximus power (S1)</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- abnormal L glute power"></label>
+                    <label class="right"><input type="checkbox" class="exam" value="- abnormal R glute power"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal saddle sensation">
+                        <span class="checkmark"><b>saddle sensation (S2-4)</b></span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam" value="- abnormal saddle sensation"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal saddle sensation"></label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal passive back extension">
+                        <span class="checkmark">passive back extension</span>
+                    </label>
+                    <label class="left"><input type="checkbox" class="exam"
+                            value="- abnormal passive back extension (pain)"></label>
+                    <label class="right"><input type="checkbox" class="exam"
+                            value="- abnormal passive back extension (pain)"></label>
+
+
+
+
+
+
+
+
+
+                    <textarea id="otherExam" onchange="displayAll()"
+                        placeholder="details and/or other findings"></textarea>
                 </div>
 
                 <div id="assessment-plan" class="tabcontent">
+                    <br>
 
 
-                    Plan <br>
-                    <input type="checkbox" class="plan" value="- RICE"> RICE <br>
-                    <textarea id="otherPlan" onchange="displayAll()" rows="4" cols="50"></textarea>
+                    <b>Assessment:</b> <br>
+
+                    <label class=container>
+                        <input type="checkbox" class="assessment"
+                            value="History and exam consistent with mechanical back pain">
+                        <span class="checkmark">mechanical back pain</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="assessment"
+                            value="History and exam not consistent with mechanical back pain">
+                        <span class="checkmark">non mechanical back pain</span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="assessment" value="- acute episode">
+                        <span class="checkmark">acute</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="assessment" value="- chronic back pain">
+                        <span class="checkmark">chronic</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="assessment" value="- acute on chronic episode">
+                        <span class="checkmark">acute on chronic</span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="assessment" value="- no red flags">
+                        <span class="checkmark">no red flags</span>
+                    </label>
+                    <textarea id="otherAssessment" onchange="displayAll()"></textarea>
+                    <br>
+
+                    <b>Plan:</b><br>
+                    medication
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- tylenol PRN">
+                        <span class="checkmark">tylenol</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- topical NSAIDs (voltaren/Pennsaid)">
+                        <span class="checkmark">topical NSAIDs</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- PO NSAIDs (contraindications reviewed)">
+                        <span class="checkmark">PO NSAIDs</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- opioids PRN">
+                        <span class="checkmark">opioids</span>
+                    </label>
+                    <br>
+                    physiotherapy
+
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- agreeable to self refer to PT">
+                        <span class="checkmark">self referral</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- referral to MFP physio">
+                        <span class="checkmark">MFP physio</span>
+                    </label>
+                    <br>
+                    - private coverage
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- has private coverage for PT">
+                        <span class="checkmark">yes</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- no private coverage for PT">
+                        <span class="checkmark">no</span>
+                    </label>
+
+                    <br>
+                    off work
+                    <label class=container>
+                        <input type="checkbox" class="plan"
+                            value="- significant functional limitations at work, to remain off for 1-2 weeks">
+                        <span class="checkmark">yes (1-2 weeks)</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- does not require time off work">
+                        <span class="checkmark">no</span>
+                    </label>
+                    <br>
+                    follow-up
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- follow-up planned in 2-4 weeks">
+                        <span class="checkmark">2-4 weeks</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="plan" value="- follow-up PRN">
+                        <span class="checkmark">PRN only</span>
+                    </label>
+                    <br>
+                    RTC
+                    <label class=container>
+                        <input type="checkbox" class="plan"
+                            value="- RTC if worsening symptoms, functional limitations, or no resolution with therapy in 4-6 weeks">
+                        <span class="checkmark">instructions given</span>
+                    </label>
+
+
+
+
+
+
+
+
+
+                    <textarea id="otherPlan" onchange="displayAll()"></textarea>
                 </div>
 
             </div>
@@ -483,7 +789,8 @@
                     O/<br>
                     <span id="exam" style='white-space:pre-wrap'></span>
                     <br>
-                    A/
+                    A/<br>
+                    <span id="assessment" style='white-space:pre-wrap'></span>
                     <br>
                     P/<br>
                     <span id="plan" style='white-space:pre-wrap'></span>

@@ -40,6 +40,7 @@ const sections = {
 
 	exam        : 'otherExam',
 	ROS         : 'otherROS',
+	assessment  : 'otherAssessment',
 	plan        : 'otherPlan'
 };
 const entries = Object.entries(sections);
