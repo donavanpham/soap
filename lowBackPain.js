@@ -1,6 +1,6 @@
 //checkbox clicking
 function attachCheckboxHandlers() {
-	var el = document.getElementById('allCheckbox');
+	var el = document.getElementById('main');
 	var tops = el.getElementsByTagName('input');
 
 	for (var i = 0, len = tops.length; i < len; i++) {
@@ -86,7 +86,7 @@ function openSection(evt, sectionName) {
 		tablinks[i].className = tablinks[i].className.replace(' active', '');
 	}
 	// Show the current tab, and add an "active" class to the link that opened the tab
-	document.getElementById(sectionName).style.display = 'block';
+	document.getElementById(sectionName).style.display = 'grid';
 	evt.currentTarget.className += ' active';
 }
 document.getElementById('defaultOpen').click();

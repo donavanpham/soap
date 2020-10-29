@@ -1,14 +1,14 @@
 body {
 	background-color: lightblue;
 	font-size: 12px;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Lucida Console", Monaco, monospace;
 	color: black;
 }
 
 /* Ruled paper */
 #soapNote {
 	width: 600px;
-	height: 1500px;
+	height: 1300px;
 	position: relative;
 	margin: 20px auto;
 	padding-top: 40px;
@@ -30,6 +30,7 @@ body {
 	height: 100%;
 	background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
 }
+
 #content {
 	padding-top: 6px;
 	padding-left: 56px;
@@ -60,21 +61,18 @@ h1 {
 	width: 0;
 }
 
-.main {
+#main {
 	width: 800px;
-	float: left;
-	line-height: 2.6em;
+	line-height: 2.1em;
 	margin: 0 auto;
 	padding: 10px;
-}
-.main-inner {
-	padding: 0 40px 0 0;
-	margin: auto;
+	float: left;
 }
 
 .note {
 	width: 400px;
 	float: left;
+	margin-left: 40px;
 }
 label {
 	cursor: pointer;
@@ -87,16 +85,17 @@ label {
 .checkmark {
 	background: rgb(233, 233, 233);
 	padding: 5px;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 3px;
 }
 
 input[type=text] {
 	width: 40%;
 	float: right;
 	padding: 5px 5px;
-	border-radius: 8px;
+	border-radius: 3px;
 	border: none;
 	box-sizing: border-box;
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 textarea {
@@ -105,9 +104,10 @@ textarea {
 	padding: 12px 20px;
 	box-sizing: border-box;
 	border: 2px solid #ccc;
-	border-radius: 4px;
+	border-radius: 3px;
 	background-color: #f8f8f8;
 	resize: none;
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 #copyNote {
@@ -118,7 +118,6 @@ textarea {
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
 	border-radius: 8px;
 	transition-duration: 0.4s;
@@ -285,7 +284,8 @@ textarea {
 .tab {
 	overflow: hidden;
 	background-color: #f1f1f1;
-	border-radius: 8px;
+	border-radius: 4px;
+	height: 40px;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -297,6 +297,7 @@ textarea {
 	cursor: pointer;
 	padding: 14px 16px;
 	transition: 0.3s;
+	font-family: "Lucida Console", Monaco, monospace;
 }
 
 /* Change background color of buttons on hover */
@@ -310,7 +311,36 @@ textarea {
 }
 
 /* Style the tab content */
-.tabcontent {
+/*.tabcontent {
 	display: none;
 	border-top: none;
+}*/
+
+.tabcontent {
+	padding-top: 20px;
+}
+.tabcontent {
+	grid-template-columns: auto 1fr;
+	grid-gap: 1em;
+}
+/*.tabcontent div {
+	background: #eee;
+}
+.tabcontent div:nth-child(odd) {
+	background: #ddd;
+}*/
+.nested {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto 3fr 2fr;
+	grid-gap: 1em;
+}
+
+.sitting-standing {
+	display: grid;
+	grid-template-columns: auto auto 1fr;
 }
