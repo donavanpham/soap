@@ -1,7 +1,7 @@
 body {
 	background-color: lightblue;
 	font-size: 12px;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: "Verdana", sans-serif;
 	color: black;
 }
 
@@ -95,7 +95,7 @@ input[type=text] {
 	border-radius: 3px;
 	border: none;
 	box-sizing: border-box;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: "Verdana", Monaco, monospace;
 }
 
 textarea {
@@ -107,7 +107,7 @@ textarea {
 	border-radius: 3px;
 	background-color: #f8f8f8;
 	resize: none;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: "Verdana", Monaco, monospace;
 }
 
 #copyNote {
@@ -297,7 +297,7 @@ textarea {
 	cursor: pointer;
 	padding: 14px 16px;
 	transition: 0.3s;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: "Verdana", Monaco, monospace;
 }
 
 /* Change background color of buttons on hover */
