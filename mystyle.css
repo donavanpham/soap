@@ -63,9 +63,9 @@ h1 {
 
 #main {
 	width: 800px;
-	line-height: 2.1em;
+	line-height: 2.5em;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 15px;
 	float: left;
 }
 
@@ -203,7 +203,7 @@ textarea {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	margin: 0px;
+	margin: 4px;
 }
 .negative > input {
 	height: 15px;
@@ -257,7 +257,7 @@ textarea {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	margin: 0px;
+	margin: 4px;
 }
 .right > input {
 	height: 15px;
@@ -342,5 +342,5 @@ textarea {
 
 .sitting-standing {
 	display: grid;
-	grid-template-columns: auto auto 1fr;
+	grid-template-columns: 5fr 1fr 5fr;
 }

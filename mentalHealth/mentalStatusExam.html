@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MSE - Mental Status Exam</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../mystyle.css">
+</head>
+
+<body style="background-color: rgb(244, 191, 255);">
+
+    <div>
+        <h1>
+            Mental Status Exam
+        </h1>
+    </div>
+
+    <div id="main">
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">MSE</button>
+        </div>
+
+        <div id="subjective" class="tabcontent">
+            <div>
+                <b>general</b>
+            </div>
+            <div>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- alert and oriented">
+                    <span class="checkmark">alert and oriented</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- obtunded">
+                    <span class="checkmark">obtunded</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- disoriented">
+                    <span class="checkmark">disoriented</span>
+                </label>
+
+            </div>
+            <div>
+                <b>appearance</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- well kempt">
+                    <span class="checkmark">well kempt</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- poorly kempt">
+                    <span class="checkmark">poorly kempt</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- appropriately dressed">
+                    <span class="checkmark">appropriately dressed</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- inappropriately dressed">
+                    <span class="checkmark">inappropriately dressed</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- appropriately groomed">
+                    <span class="checkmark">appropriately groomed</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- inappropriately groomed">
+                    <span class="checkmark">inappropriately groomed</span>
+                </label>
+            </div>
+
+            <div>
+                <b>behavior</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- generally calm">
+                    <span class="checkmark">calm</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- agitated behavior">
+                    <span class="checkmark">agitated</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- interactive">
+                    <span class="checkmark">interactive</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- withdrawn">
+                    <span class="checkmark">withdrawn</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- good eye contact">
+                    <span class="checkmark">good eye contact</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- fair eye contact">
+                    <span class="checkmark">fair eye contact</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- avoidant eye contact">
+                    <span class="checkmark">avoidant eye contact</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>mood</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- euthymic mood">
+                    <span class="checkmark">euthymic</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- depressed mood">
+                    <span class="checkmark">depressed</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- upbeat mood">
+                    <span class="checkmark">upbeat</span>
+                </label>
+
+            </div>
+
+
+            <div>
+                <b>affect</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- normal affect intensity">
+                    <span class="checkmark">normal intensity</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- expansive affect">
+                    <span class="checkmark">expansive</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- blunted affect">
+                    <span class="checkmark">blunted</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mood is congruent with affect">
+                    <span class="checkmark">congruent</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mood and affect are not congruent">
+                    <span class="checkmark">non-congruent</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>thought form/content</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- normal thought form and content">
+                    <span class="checkmark">normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- future oriented">
+                    <span class="checkmark">future oriented</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- logical, linear and goal-oriented">
+                    <span class="checkmark">logical, linear and goal-oriented</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- past-oriented and somber">
+                    <span class="checkmark"> past-oriented and somber</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- remorseful">
+                    <span class="checkmark">remorseful</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>attention</b>
+            </div>
+            <div>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- normal attention/focus">
+                    <span class="checkmark">normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- abnormal attention/focus">
+                    <span class="checkmark">abnormal</span>
+                </label>
+
+
+            </div>
+
+            <div>
+                <b>insight</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- good insight">
+                    <span class="checkmark">good</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- fair insight">
+                    <span class="checkmark">fair</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- poor insight">
+                    <span class="checkmark">poor</span>
+                </label>
+
+            </div>
+
+            <div>
+                <b>cognition/memory</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- normal cognition/memory">
+                    <span class="checkmark">normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- grossly intact">
+                    <span class="checkmark">grossly intact</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- below average cognition/memory">
+                    <span class="checkmark">below average</span>
+                </label>
+            </div>
+
+            <div>
+                <b>judgement</b>
+            </div>
+            <div>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- normal judgement">
+                    <span class="checkmark">normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- fair judgement">
+                    <span class="checkmark">fair</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- poor judgement">
+                    <span class="checkmark">poor</span>
+                </label>
+            </div>
+            <div>
+                <b>suicide/assault</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no current suicidal ideation or intent">
+                    <span class="checkmark">none current</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- suicidal ideations present without intent or plan">
+                    <span class="checkmark">present without intent or plan</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no intent to harm others">
+                    <span class="checkmark">no HI</span>
+                </label>
+            </div>
+            <div>
+                <b>risk assessment</b>
+            </div>
+            <div>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI"
+                        value="- currently assessed to be low risk for self-harm or harm to others">
+                    <span class="checkmark">low</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI"
+                        value="- currently assessed to be moderate risk for self-harm or harm to others">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI"
+                        value="- currently assessed to be HIGH risk for self-harm or harm to others">
+                    <span class="checkmark">high</span>
+                </label>
+                <textarea id="otherHPI" onchange="displayAll()" placeholder="details/comments"></textarea>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <div class="tooltip">
+            <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note
+            </button>
+        </div>
+        <div id="soapNote">
+            <div id="pattern">
+                <div id="content">
+                    Mental Status Exam:<br>
+                    <span id="HPI" style='white-space:pre-wrap'></span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="mentalStatusExam.js"></script>
+</body>
+
+</html>
