@@ -83,7 +83,7 @@ label {
 	background: rgb(118, 255, 219);
 }
 .checkmark {
-	background: rgb(233, 233, 233);
+	background: #f1f1f1;
 	padding: 5px;
 	border-radius: 3px;
 }
@@ -231,6 +231,7 @@ textarea {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
+	line-height: 1em;
 }
 .left > input {
 	height: 15px;
@@ -258,6 +259,7 @@ textarea {
 	cursor: pointer;
 	position: relative;
 	margin: 4px;
+	line-height: 1em;
 }
 .right > input {
 	height: 15px;
@@ -317,7 +319,8 @@ textarea {
 }*/
 
 .tabcontent {
-	padding-top: 20px;
+	padding: 20px;
+	background-color: #ccc;
 }
 .tabcontent {
 	grid-template-columns: auto 1fr;
