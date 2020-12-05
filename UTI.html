@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UTI/vaginal symptoms</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body style="background-color: rgb(252, 225, 178);">
+
+    <div>
+        <h1>
+            UTI/vaginal symptoms
+        </h1>
+
+    </div>
+
+    <div id="main">
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
+            <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
+            <button class="tablinks" onclick="openSection(event, 'assessment-plan')">Assessment/Plan</button>
+        </div>
+
+        <div id="subjective" class="tabcontent">
+            <div>
+                <b>onset</b>
+            </div>
+            <div>
+                <input type="number" class="HPI" id="onsetNumber">
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="hours since onset">
+                    <span class="checkmark">hours</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="days since onset">
+                    <span class="checkmark">days</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="weeks since onset">
+                    <span class="checkmark">weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="months since onset">
+                    <span class="checkmark">months</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="years since onset">
+                    <span class="checkmark">years</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- sudden onset">
+                    <span class="checkmark">sudden</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradual onset">
+                    <span class="checkmark">gradual</span>
+                </label>
+            </div>
+            <div>
+                <b>new?</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- new issue">
+                    <span class="checkmark">new issue</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- known issue">
+                    <span class="checkmark">previously known issue</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>urinary symptoms</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no urinary symptoms">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- dysuria">
+                    <span class="checkmark">dysuria</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- urinary frequency">
+                    <span class="checkmark">frequency</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- pain with urination">
+                    <span class="checkmark">pain with urination</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- hematuria">
+                    <span class="checkmark">hematuria</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- foul smelling uring">
+                    <span class="checkmark">foul smell</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- cloudy urine">
+                    <span class="checkmark">cloudy urine</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>vaginal symptoms</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no vaginal symptoms">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- clear/white vaginal discharge">
+                    <span class="checkmark">clear/white discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- yellow vaginal discharge">
+                    <span class="checkmark">yellow discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- brown vaginal discharge">
+                    <span class="checkmark">brown discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- vaginal pruritus">
+                    <span class="checkmark">itching</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- vaginal skin lesions">
+                    <span class="checkmark">skin lesions</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- dyspareunia">
+                    <span class="checkmark">dyspareunia</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>intensity</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild intensity">
+                    <span class="checkmark">mild</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild-moderate intensity">
+                    <span class="checkmark">mild-moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate intensity">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate/severe intensity">
+                    <span class="checkmark">moderate-severe</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- severe intensity">
+                    <span class="checkmark">severe</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>status</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improving since onset">
+                    <span class="checkmark">improving</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no change since onset">
+                    <span class="checkmark">unchanged</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- resolved since onset">
+                    <span class="checkmark">resolved</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradually worsening since onset">
+                    <span class="checkmark">gradually worsening</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- significantly worsening since onset">
+                    <span class="checkmark">significant worsening</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>HPI</b>
+            </div>
+            <div>
+                <textarea id="otherHPI" onchange="displayAll()" placeholder="details/comments"></textarea><br>
+                <hr>
+            </div>
+
+            <div>
+                <b>history</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- has had previous UTI">
+                    <span class="checkmark">hx previous UTI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- no previous UTI">
+                    <span class="checkmark">no previous</span>
+                </label>
+                <br>
+
+                <label class=container>
+                    <input type="checkbox" class="location" value="- symptoms similar to previous">
+                    <span class="checkmark">similar symptoms to previous</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- symptoms different from previous UTI">
+                    <span class="checkmark">different symptoms</span>
+                </label>
+
+                <br>
+                <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
+                <br>
+            </div>
+
+
+
+
+            <div>
+                <b>pertinent negatives/ROS</b>
+            </div>
+            <div>
+                <br>
+                <div class="nested">
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)fever/chills"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no fever/chills">fever/chills</label>
+                    </div>
+                    <div>
+
+                        <label class="positive"> <input type="checkbox" class="ROS"
+                                value="- (+)nausea/vomiting"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no nausea/vomiting">nausea/vomiting</label>
+                    </div>
+                    <div>
+
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)flank pain"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no flank pain ">flank
+                            pain</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS"
+                                value="- (+)suprapubic pain"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no suprapubic pain">suprapubic pain</label>
+                    </div>
+
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)abdominal pain"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no abdominal pain ">abdominal pain</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS"
+                                value="- (+)change in vaginal odor/discharge"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no change in vaginal odor/discharge">vaginal odor/discharge</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)dyspareunia"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no dyspareunia">dyspareunia</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)STI concerns"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no STI concerns">STI
+                            concerns</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS"
+                                value="- (+)hx of renal stones"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no hx of renal stones">hx
+                            renal stones</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)hematuria"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no hematuria">hematuria</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)cloudy urine"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no cloudy urine">cloudy
+                            urine</label>
+                    </div>
+
+
+                </div>
+                <textarea id="otherROS" onchange="displayAll()" placeholder="details/comments"></textarea><br>
+            </div>
+
+        </div>
+
+        <div id="objective" class="tabcontent">
+
+            <div>
+                <b>vitals</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- normal vitals in clinic - no fever, no tachycardia">
+                    <span class="checkmark">normal</span>
+                </label>
+            </div>
+            <div>
+
+                <b>genital exam</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- genital exam not necessary, not performed">
+                    <span class="checkmark">not necessary</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- genital exam - normal inspection, no skin lesions">
+                    <span class="checkmark">normal</span>
+                </label>
+            </div>
+
+
+            <div>
+
+                <b>exam findings</b>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- abdomen soft, non tender, non distended">
+                    <span class="checkmark"><b>normal abdomen</b></span>
+                </label>
+                <br>
+                <div class="nested">
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) CVA tenderness"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- no CVA tenderness bilaterally">CVA
+                            tender</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) suprapubic tenderness"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- no suprapubic tenderess">suprapubic tender</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- clinic dipstick UA:">
+                    <span class="checkmark"><b>urinalysis</b></span>
+                </label>
+
+            </div>
+            <div>
+                <label class="positive"> <input type="checkbox" class="exam" value="   (+) hematuria"></label>
+                <label class="negative"><input type="checkbox" class="exam" value="   (-) hematuria">hematuria</label>
+                <label class="positive"> <input type="checkbox" class="exam" value="   (+) leukocytes"></label>
+                <label class="negative"><input type="checkbox" class="exam" value="   (-) leukocytes">leuks</label>
+                <label class="positive"> <input type="checkbox" class="exam" value="   (+) nitrites"></label>
+                <label class="negative"><input type="checkbox" class="exam" value="   (-) nitrites">nitrites</label>
+
+            </div>
+
+            <div>
+                <b>other</b>
+            </div>
+            <div>
+                <textarea id="otherExam" onchange="displayAll()" placeholder="details and/or other findings"></textarea>
+            </div>
+        </div>
+
+
+        <div id="assessment-plan" class="tabcontent">
+
+            <div>
+
+                <b>Assessment:</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with uncomplicated UTI">
+                    <span class="checkmark">uncomplicated UTI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with complicated UTI">
+                    <span class="checkmark">complicated UTI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with pyelonephritis">
+                    <span class="checkmark">pyelonephritis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with yeast infection">
+                    <span class="checkmark">yeast infection</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with bacterial vaginosis">
+                    <span class="checkmark">bacterial vaginosis</span>
+                </label>
+            </div>
+
+            <div>
+                details</div>
+            <div>
+                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment/ddx details"></textarea>
+                <hr>
+            </div>
+            <div>
+                <b>Plan:</b>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                investigations
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- specimen sent for UA and culture">
+                    <span class="checkmark">UA/UCx</span>
+                </label>
+            </div>
+
+            <div>
+                antibiotics
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- empiric antibiotics prescribed">
+                    <span class="checkmark">empiric</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- antibiotics prescription pending culture results">
+                    <span class="checkmark">none - pending UCx</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- antibiotics prescribed based on previous UCx">
+                    <span class="checkmark">based on previous Cx</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- topical antifungals prescribed">
+                    <span class="checkmark">topical antifungals</span>
+                </label>
+            </div>
+
+            <div>
+                follow-up
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up planned in 2-4 weeks">
+                    <span class="checkmark">2-4 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up PRN">
+                    <span class="checkmark">PRN only</span>
+                </label>
+            </div>
+            <div>
+                RTC
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan"
+                        value="- RTC if worsening symptoms, fever/chills, or no resolution after abx course">
+                    <span class="checkmark">instructions given</span>
+                </label>
+            </div>
+            <div>
+                other</div>
+            <div>
+                <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <div class="tooltip">
+            <br>
+            <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note
+            </button>
+        </div>
+        <div id="soapNote">
+            <div id="pattern">
+                <div id="content">
+                    URINARY/VAGINAL SYMPTOMS<br><br>
+                    S/
+                    <br>
+                    <div id="onsetResult" style="display:inline"></div>
+                    <span id="HPI" style='white-space:pre-wrap'></span>
+                    <span id="location" style='white-space:pre-wrap'></span>
+                    <span id="ROS" style='white-space:pre-wrap'></span>
+                    <br>
+                    O/
+                    <br>
+                    <span id="exam" style='white-space:pre-wrap'></span>
+                    <br>
+                    A/
+                    <br>
+                    <span id="assessment" style='white-space:pre-wrap'></span>
+                    <br>
+                    P/
+                    <br>
+                    <span id="plan" style='white-space:pre-wrap'></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="UTI.js"></script>
+</body>
+
+</html>
