@@ -2,17 +2,17 @@
 <html>
 
 <head>
-    <title>neck pain</title>
+    <title>shoulder pain</title>
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body style="background-color: rgb(178, 180, 252);">
+<body style="background-color: rgb(252, 235, 178);">
 
     <div>
         <h1>
-            neck pain
+            shoulder pain
         </h1>
 
     </div>
@@ -59,6 +59,21 @@
                     <span class="checkmark">gradual</span>
                 </label>
             </div>
+
+            <div>
+                <b>side</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- L shoulder">
+                    <span class="checkmark">left</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- R shoulder">
+                    <span class="checkmark">right</span>
+                </label>
+                <br>
+            </div>
             <div>
                 <b>new?</b>
             </div>
@@ -73,7 +88,6 @@
                 </label>
                 <br>
             </div>
-
             <div>
                 <b>intensity</b>
             </div>
@@ -220,29 +234,44 @@
             </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="location" value="- pain at midline">
-                    <span class="checkmark">midline</span>
+                    <input type="checkbox" class="location" value="- pain at general shoulder/deltoid area">
+                    <span class="checkmark">general shoulder/deltoid</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="location" value="- left sided">
-                    <span class="checkmark">left sided</span>
+                    <input type="checkbox" class="location" value="- pain at trap muscle">
+                    <span class="checkmark">trap</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- pain at scapula">
+                    <span class="checkmark">scapula</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- pain at clavicle">
+                    <span class="checkmark">clavicle</span>
                 </label>
 
                 <label class=container>
-                    <input type="checkbox" class="location" value="- right sided">
-                    <span class="checkmark">right sided</span>
+                    <input type="checkbox" class="location" value="- pain at AC joint">
+                    <span class="checkmark">AC joint</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- pain at posterior deltoid">
+                    <span class="checkmark">posterior deltoid</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="location" value="- pain at lateral deltoid">
+                    <span class="checkmark">lateral deltoid</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="location" value="- pain felt at c-spine">
-                    <span class="checkmark">c-spine</span>
+                    <input type="checkbox" class="location" value="- pain at anterior deltoid">
+                    <span class="checkmark">anterior deltoid</span>
                 </label>
-
                 <label class=container>
-                    <input type="checkbox" class="location" value="- pain felt in neck muscles/soft tissue">
-                    <span class="checkmark">muscular</span>
+                    <input type="checkbox" class="location" value="- pain at biceps insertion">
+                    <span class="checkmark">biceps</span>
                 </label>
-
-
                 <br>
                 <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
                 <br>
@@ -257,24 +286,20 @@
                     <span class="checkmark">none</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="radiation" value="- radiates down entire spine">
-                    <span class="checkmark">entire spine</span>
+                    <input type="checkbox" class="radiation" value="- radiates to neck">
+                    <span class="checkmark">neck</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="radiation" value="- radiates to left shoulder">
-                    <span class="checkmark">left shoulder</span>
+                    <input type="checkbox" class="radiation" value="- radiates to arm">
+                    <span class="checkmark">arm</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="radiation" value="- radiates to right shoulder">
-                    <span class="checkmark">right shoulder</span>
+                    <input type="checkbox" class="radiation" value="- radiates to biceps">
+                    <span class="checkmark">biceps</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="radiation" value="- radiates down left hand">
-                    <span class="checkmark">left hand</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="radiation" value="- radiates down right hand">
-                    <span class="checkmark">right hand</span>
+                    <input type="checkbox" class="radiation" value="- radiates down hand">
+                    <span class="checkmark">hand</span>
                 </label>
                 <br>
                 <input type="text" class="location" id="otherRadiation" style="float: right;" placeholder="other">
@@ -358,12 +383,12 @@
                     <span class="checkmark">all movements</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="aggravation" value="- worse with head rotation towards left">
-                    <span class="checkmark">rotating left</span>
+                    <input type="checkbox" class="aggravation" value="- worse with abduction">
+                    <span class="checkmark">abduction</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="aggravation" value="- worse with head rotation towards right">
-                    <span class="checkmark">rotating right</span>
+                    <input type="checkbox" class="aggravation" value="- worse with reaching up">
+                    <span class="checkmark">reaching up</span>
                 </label>
                 <br>
                 <input type="text" class="aggravation" id="otherAggravation" style="float: right;" placeholder="other">
@@ -429,7 +454,7 @@
             <div>
                 <label class=container>
                     <input type="checkbox" class="ROS"
-                        value="- red flags reviewed, the following being negative: trauma, unexplained weight loss, fever, IVDU, steroid use, history of cancer">
+                        value="- red flags reviewed, the following being negative: trauma, systemic symptoms, radicular symptoms, hx of dislocation, hx of cancer">
                     <span class="checkmark">all reviewed, negative</span>
                 </label>
                 <br>
@@ -446,9 +471,9 @@
                     </div>
                     <div>
                         <label class="positive"> <input type="checkbox" class="ROS"
-                                value="- (+)neurologic symptoms"></label>
+                                value="- (+)radicular symptoms"></label>
                         <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no neurologic symptoms">neurologic symptoms</label>
+                                value="- no radicular symptoms">radicular symptoms</label>
                     </div>
                     <div>
 
@@ -456,13 +481,10 @@
                         <label class="negative"><input type="checkbox" class="ROS" value="- no fever">fever</label>
                     </div>
                     <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)IVDU"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no IVDU ">IVDU</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)steroid use"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no steroid use ">steroid
-                            use</label>
+                        <label class="positive"> <input type="checkbox" class="ROS"
+                                value="- (+) suspected/known dislocation"></label>
+                        <label class="negative"><input type="checkbox" class="ROS"
+                                value="- no suspected/known dislocation ">suspected/known dislocation</label>
                     </div>
                     <div>
                         <label class="positive"> <input type="checkbox" class="ROS"
@@ -487,7 +509,7 @@
             <div>
                 <label class=container>
                     <input type="checkbox" class="exam"
-                        value="- normal inspection - no visible masses, skin lesions, bruising or signs of skin infection">
+                        value="- normal inspection bilaterally - no swelling, visible asymmetry, step deformity or signs of dislocation">
                     <span class="checkmark">normal</span>
                 </label>
             </div>
@@ -498,8 +520,53 @@
             <div>
                 <label class=container>
                     <input type="checkbox" class="exam"
-                        value="- normal palpation - no spinal deformity, or bony tenderness">
-                    <span class="checkmark">normal</span>
+                        value="- normal palpation - no tenderness of shoulder joints/soft tissue">
+                    <span class="checkmark"><b>normal, no pain</b></span>
+                </label>
+                <br>
+                tender:
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender at general shoulder/deltoid area">
+                    <span class="checkmark">general shoulder/deltoid</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender at trap muscle">
+                    <span class="checkmark">trap</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender at scapula">
+                    <span class="checkmark">scapula</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender on clavicle">
+                    <span class="checkmark">clavicle</span>
+                </label>
+                <br>
+
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender posterior deltoid">
+                    <span class="checkmark">posterior deltoid</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender lateral deltoid">
+                    <span class="checkmark">lateral deltoid</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender anterior deltoid">
+                    <span class="checkmark">anterior deltoid</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender AC joint">
+                    <span class="checkmark">AC joint</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender biceps tendon">
+                    <span class="checkmark">biceps tendon</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender subacromial bursa">
+                    <span class="checkmark">subacromial bursa</span>
                 </label>
             </div>
 
@@ -512,20 +579,11 @@
                     <div>
                         <label class=container>
                             <input type="checkbox" class="exam"
-                                value="- full flexion, extension, lateral and rotation ROM">
+                                value="- full flexion, extension, adduction, abduction ROM">
                             <span class="checkmark">full ROM</span>
                         </label>
                     </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- pain with extension">
-                            <span class="checkmark">pain with extension</span>
-                        </label>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- limited extension ROM due to pain">
-                            <span class="checkmark">limited extension</span>
-                        </label>
-                    </div>
+
                     <div>
                         <label class=container>
                             <input type="checkbox" class="exam" value="- pain with flexion">
@@ -533,19 +591,57 @@
                         </label>
                         <label class=container>
                             <input type="checkbox" class="exam" value="- limited flexion ROM due to pain">
-                            <span class="checkmark">limited flexion</span>
+                            <span class="checkmark">limited ROM</span>
                         </label>
                     </div>
-
-
+                    <div>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- pain with abduction">
+                            <span class="checkmark">pain with abduction</span>
+                        </label>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- limited abduction ROM due to pain">
+                            <span class="checkmark">limited ROM</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- pain with external rotation">
+                            <span class="checkmark">pain with external rotation</span>
+                        </label>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- limited external rotation ROM due to pain">
+                            <span class="checkmark">limited ROM</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- pain with internal rotation">
+                            <span class="checkmark">pain with internal rotation</span>
+                        </label>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- limited internal rotation ROM due to pain">
+                            <span class="checkmark">limited ROM</span>
+                        </label>
+                    </div>
                 </div>
-                <div>
 
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- neck:">
+                        <span class="checkmark"><b>neck</b></span>
+                    </label>
                 </div>
                 <div>
                     <div>
                         <label class=container>
-                            <input type="checkbox" class="exam" value="- no pain with lateral bend bilaterally">
+                            <input type="checkbox" class="exam" value="-- normal full neck ROM, no pain">
+                            <span class="checkmark">normal</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="-- no pain with lateral bend bilaterally">
                             <span class="checkmark">lateral bend - pain</span>
                         </label>
                         <label class="left"><input type="checkbox" class="exam"
@@ -555,24 +651,26 @@
                     </div>
                     <div>
                         <label class=container>
-                            <input type="checkbox" class="exam" value="- normal lateral ROM">
+                            <input type="checkbox" class="exam" value="-- normal lateral ROM">
                             <span class="checkmark">lateral bend - ROM</span>
                         </label>
-                        <label class="left"><input type="checkbox" class="exam" value="- limited L lateral ROM"></label>
+                        <label class="left"><input type="checkbox" class="exam"
+                                value="-- limited L lateral ROM"></label>
                         <label class="right"><input type="checkbox" class="exam"
                                 value="- limited R lateral ROM"></label>
                     </div>
                     <div>
                         <label class=container>
-                            <input type="checkbox" class="exam" value="- no pain with rotation bilaterally">
+                            <input type="checkbox" class="exam" value="-- no pain with rotation bilaterally">
                             <span class="checkmark">rotation - pain</span>
                         </label>
-                        <label class="left"><input type="checkbox" class="exam" value="- pain with L rotation"></label>
-                        <label class="right"><input type="checkbox" class="exam" value="- pain with R rotation"></label>
+                        <label class="left"><input type="checkbox" class="exam" value="-- pain with L rotation"></label>
+                        <label class="right"><input type="checkbox" class="exam"
+                                value="-- pain with R rotation"></label>
                     </div>
                     <div>
                         <label class=container>
-                            <input type="checkbox" class="exam" value="- normal rotation ROM bilaterally">
+                            <input type="checkbox" class="exam" value="-- normal rotation ROM bilaterally">
                             <span class="checkmark">rotation - ROM</span>
                         </label>
                         <label class="left"><input type="checkbox" class="exam"
@@ -582,11 +680,11 @@
                     </div>
                     <div>
                         <label class=container>
-                            <input type="checkbox" class="exam" value="- negative spurling test">
+                            <input type="checkbox" class="exam" value="-- negative spurling test">
                             <span class="checkmark">spurling test (-)</span>
                         </label>
                         <label class=container>
-                            <input type="checkbox" class="exam" value="- (+) spurling test">
+                            <input type="checkbox" class="exam" value="-- (+) spurling test">
                             <span class="checkmark">spurling test (+)</span>
                         </label>
 
@@ -598,6 +696,145 @@
             </div>
 
             <div>
+                <b>muscle testing</b>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <div class="nested">
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam" value="- deltoid weakness"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- normal deltoid strength">deltoid</label>
+                    </div>
+                    <div>
+
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- supraspinatus weakness "></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- normal supraspinatus strength">supraspinatus</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- infraspinatus weakness"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- normal infraspinatus strength">infraspinatus</label>
+                    </div>
+                    <div>
+
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) Hornblower test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) Hornblower test">Hornblower</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) lift-off test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) lift-off test">lift-off</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- serratus weakness"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- normal serratus strength ">serratus</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- rhomboid weakness"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- normal rhomboid strength">rhomboid</label>
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+                <b>special tests</b>
+            </div>
+            <div>
+                <hr>
+            </div>
+            <div>
+
+            </div>
+            <div>
+                <div class="nested">
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) Neer impingement sign"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) Neer impingement sign">Neer</label>
+                    </div>
+                    <div>
+
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) Hawkins impingement sign "></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) Hawkins impingement sign">Hawkins</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) cross-body test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) cross-body test">cross-body</label>
+                    </div>
+                    <div>
+
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) apprehension test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) apprehension test">apprehension</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam" value="- (+) sulcus sign"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) sulcus sign">sulcus</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam" value="- (+) jerk test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) jerk test ">jerk</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) relocation test of Jobe"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) relocation test of Jobe">relocation (Jobe)</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam" value="- (+) O'Brien test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) O'Brien test">O'Brien</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) empty can test"></label>
+                        <label class="negative"><input type="checkbox" class="exam" value="- (-) empty can test">empty
+                            can</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) abdominal compression test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) abdominal compression test">abdominal compression</label>
+                    </div>
+                    <div>
+                        <label class="positive"> <input type="checkbox" class="exam"
+                                value="- (+) Andrews anterior instability test"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="- (-) Andrews anterior instability test">Andrews</label>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div>
 
                 <b>radicular testing</b>
             </div>
@@ -605,10 +842,7 @@
                 <hr>
             </div>
             <div>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="Right:">
-                    <span class="checkmark">right</span>
-                </label>
+
             </div>
             <div>
                 <label class=container>
@@ -624,7 +858,7 @@
                     </div>
                     <div>
 
-                        <label class="positive"> <input type="checkbox" class="exam" value="- biceps weakness "></label>
+                        <label class="positive"> <input type="checkbox" class="exam" value="- biceps weakness"></label>
                         <label class="negative"><input type="checkbox" class="exam"
                                 value="- normal biceps strength">biceps (C5-6)</label>
                     </div>
@@ -758,159 +992,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="Left:">
-                    <span class="checkmark">left</span>
-                </label>
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- normal C5-T1 motor testing">
-                    <span class="checkmark"><b>normal motor</b></span>
-                </label>
-                <br>
-                <div class="nested">
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="exam" value="- deltoid weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal deltoid strength">deltoid (C5)</label>
-                    </div>
-                    <div>
-
-                        <label class="positive"> <input type="checkbox" class="exam" value="- biceps weakness "></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal biceps strength">biceps (C5-6)</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="exam"
-                                value="- wrist extensors weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal wrist extensors strength">wrist extensors (C6)</label>
-                    </div>
-                    <div>
-
-                        <label class="positive"> <input type="checkbox" class="exam" value="- triceps weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal triceps strength">triceps (C7)</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="exam"
-                                value="- wrist flexors weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal wrist flexors ">wrist flexors (C7)</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="exam"
-                                value="- finger extensors weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal finger extensors ">finger extensors (C7)</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="exam"
-                                value="- finger flexors weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal finger flexors">finger flexors (C8)</label>
-                    </div>
-                    <div>
-                        <label class="positive"><input type="checkbox" class="exam"
-                                value="- interossei weakness"></label>
-                        <label class="negative"><input type="checkbox" class="exam"
-                                value="- normal interossei">interossei (T1)</label>
-                    </div>
 
 
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- normal C5-T1 sensation">
-                        <span class="checkmark"><b>normal sensation</b></span>
-                    </label>
-                    or
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- abnormal sensation at:">
-                        <span class="checkmark">abnormal sensation at:</span>
-                    </label>
-
-                    <br>
-                    <div class="nested" style="padding: 15px;">
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- lateral arm/deltoid (C5)">
-                                <span class="checkmark">lateral arm/deltoid (C5)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- lateral forearm/hand (C6)">
-                                <span class="checkmark">lateral forearm/hand (C6)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- middle finger (C7)">
-                                <span class="checkmark">middle finger (C7)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- medial forearm/hand (C8)">
-                                <span class="checkmark">medial forearm/hand (C8)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- medial upper arm (T1)">
-                                <span class="checkmark">medial upper arm (T1)</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- normal C5-T1 reflexes">
-                        <span class="checkmark"><b>normal reflexes</b></span>
-                    </label>
-                    or
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- abnormal reflex(es):">
-                        <span class="checkmark">abnormal reflexes:</span>
-                    </label>
-                    <br>
-                    <div class="nested" style="padding: 15px;">
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- biceps reflex (C5)">
-                                <span class="checkmark">biceps (C5)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- brachioradialis reflex (C6)">
-                                <span class="checkmark">brachioradialis (C6)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- triceps reflex (C7)">
-                                <span class="checkmark">triceps (C7)</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- Hoffman reflex">
-                                <span class="checkmark">Hoffman</span>
-                            </label>
-                        </div>
-                        <div>
-                            <label class=container>
-                                <input type="checkbox" class="exam" value="- inverted radial reflex">
-                                <span class="checkmark">inverted radial</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div>
                 other
@@ -930,13 +1013,31 @@
             <div>
                 <label class=container>
                     <input type="checkbox" class="assessment"
-                        value="History and exam consistent with mechanical neck pain">
-                    <span class="checkmark">mechanical neck pain</span>
+                        value="History and exam consistent with non-MSK shoulder pain">
+                    <span class="checkmark">non-MSK</span>
                 </label>
                 <label class=container>
                     <input type="checkbox" class="assessment"
-                        value="History and exam not consistent with mechanical neck pain">
-                    <span class="checkmark">non mechanical neck pain</span>
+                        value="History and exam consistent with rotator cuff injury">
+                    <span class="checkmark">rotator cuff injury</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="History and exam consistent with AC joint pathology">
+                    <span class="checkmark">AC joint</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="History and exam consistent with osteoarthritis">
+                    <span class="checkmark">osteoarthritis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="History and exam consistent with labral tear">
+                    <span class="checkmark">labral tear</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="History and exam consistent with dislocation/subluxation">
+                    <span class="checkmark">dislocation/subluxation</span>
                 </label>
             </div>
             <div>
@@ -987,14 +1088,22 @@
                     <span class="checkmark">no indication</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="assessment" value="- X-ray ordered">
+                    <input type="checkbox" class="assessment" value="- indication for X-ray">
                     <span class="checkmark">X-Ray</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="- indication for MRI">
+                    <span class="checkmark">MRI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="- indication for US">
+                    <span class="checkmark">US</span>
                 </label>
             </div>
             <div>
                 details</div>
             <div>
-                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment details"></textarea>
+                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment/ddx details"></textarea>
                 <hr>
             </div>
             <div>
@@ -1121,7 +1230,7 @@
         <div id="soapNote">
             <div id="pattern">
                 <div id="content">
-                    NECK PAIN<br><br>
+                    SHOULDER PAIN<br><br>
                     S/
                     <br>
                     <div id="onsetResult" style="display:inline"></div>
