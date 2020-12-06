@@ -19,12 +19,12 @@ body {
 }
 #soapNote::before {
 	content: '';
-	width: 2px;
+	width: 1px;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 40px;
-	background-color: rgba(255, 0, 0, 0.6);
+	background-color: rgb(118, 179, 199);
 }
 #pattern {
 	height: 100%;
