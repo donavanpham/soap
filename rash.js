@@ -30,16 +30,20 @@ function display(section, other) {
 
 // sections
 const sections = {
-	HPI         : "otherHPI",
-	location    : "otherLocation",
-	quality     : "otherQuality",
-	aggravation : "otherAggravation",
-	relief      : "otherRelief",
+	HPI           : "otherHPI",
+	location      : "otherLocation",
+	quality       : "otherQuality",
+	aggravation   : "otherAggravation",
+	relief        : "otherRelief",
+	morphology    : "otherMorphology",
+	morphology2   : "otherMorphology2",
+	configuration : "otherConfiguration",
+	distribution  : "otherDistribution",
 
-	exam        : "otherExam",
-	ROS         : "otherROS",
-	assessment  : "otherAssessment",
-	plan        : "otherPlan"
+	exam          : "otherExam",
+	ROS           : "otherROS",
+	assessment    : "otherAssessment",
+	plan          : "otherPlan"
 };
 const entries = Object.entries(sections);
 
