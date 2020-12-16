@@ -17,7 +17,7 @@ function display(section, other) {
 	var str = "";
 	var other = document.getElementById(other).value;
 	if (other !== "") {
-		other += "<br>";
+		other += " ";
 	}
 	for (i = 0; i < items.length; i++) {
 		if (items[i].checked === true) {
@@ -30,25 +30,25 @@ function display(section, other) {
 
 // sections
 const sections = {
-	interest    : "otherInterest",
-	current     : "otherCurrent",
-	partner     : "otherPartner",
-	condom      : "otherCondom",
-	active      : "otherActive",
-	past        : "otherPast",
+	interest     : "otherInterest",
+	current      : "otherCurrent",
+	partner      : "otherPartner",
+	condom       : "otherCondom",
+	active       : "otherActive",
+	past         : "otherPast",
+	previous     : "otherPrevious",
+	STI          : "otherSTI",
+	STIScreen    : "otherSTIScreen",
+	LMP          : "otherLMP",
+	estrogen     : "otherEstrogen",
+	progesterone : "otherProgesterone",
+	IUD          : "otherIUD",
+	choice       : "otherChoice",
+	HPI          : "otherHPI",
 
-	HPI         : "otherHPI",
-	location    : "otherLocation",
-	radiation   : "otherRadiation",
-	quality     : "otherQuality",
-	timing      : "otherTiming",
-	aggravation : "otherAggravation",
-	relief      : "otherRelief",
+	exam         : "otherExam",
 
-	exam        : "otherExam",
-	ROS         : "otherROS",
-	assessment  : "otherAssessment",
-	plan        : "otherPlan"
+	plan         : "otherPlan"
 };
 const entries = Object.entries(sections);
 

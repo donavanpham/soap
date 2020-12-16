@@ -55,6 +55,14 @@
             </div>
             <div>
                 <label class=container>
+                    <input type="checkbox" class="current" value="none">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="current" value="condom">
+                    <span class="checkmark">condom</span>
+                </label>
+                <label class=container>
                     <input type="checkbox" class="current" value="OCP">
                     <span class="checkmark">OCP</span>
                 </label>
@@ -223,12 +231,12 @@
             </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="location" value="- entire head">
-                    <span class="checkmark"></span>
+                    <input type="checkbox" class="STI" value="none">
+                    <span class="checkmark">never</span>
+                </label>
 
-                    <br>
-                    <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
-                    <br>
+                <input type="text" class="STI" id="otherSTI" style="float: right;" placeholder="STI hx">
+                <br>
             </div>
 
             <div>
@@ -237,360 +245,161 @@
             <div>
 
                 <label class=container>
-                    <input type="checkbox" class="radiation" value="- radiates to shoulders">
-                    <span class="checkmark"></span>
+                    <input type="checkbox" class="STIScreen" value="within 1 year">
+                    <span class="checkmark">within 1 year</span>
                 </label>
-                <br>
-                <input type="text" class="location" id="otherRadiation" style="float: right;" placeholder="other">
+                <input type="text" class="STIScreen" id="otherSTIScreen" style="float: right;" placeholder="STI screen">
                 <br>
             </div>
             <div>
                 <b>LMP</b>
             </div>
             <div>
-
                 <label class=container>
-                    <input type="checkbox" class="quality" value="- worst headache ever">
-                    <span class="checkmark"></span>
+                    <input type="checkbox" class="LMP" value="last week">
+                    <span class="checkmark">last week</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="LMP" value="2 weeks ago">
+                    <span class="checkmark">2 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="LMP" value="3 weeks ago">
+                    <span class="checkmark">3 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="LMP" value="4 weeks ago">
+                    <span class="checkmark">4 weeks</span>
+                </label>
+
+                <input type="text" class="LMP" id="otherLMP" style="float: right;" placeholder="LMP">
+                <br>
+            </div>
+
+
+            <div>
+
+                <b>estrogen CI</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="estrogen"
+                        value="no VTE/DVT/PE, no coagulopathy, no migraines w/ aura, no smoking >35yo, no HTN, no ischemic heart disease, no valvular disease, no breast CA/ovarian CA/endometrial CA, no DM w/ microvascular complications, no <6 weeks post-partum and breastfeeding">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="estrogen **contraindicated** due to:  ">
+                    <span class="checkmark">yes</span>
                 </label>
                 <br>
-                <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="other">
-                <br>
-            </div>
-            <div>
-                <b>menses</b>
-            </div>
-            <div>
 
                 <label class=container>
-                    <input type="checkbox" class="timing" value="- ">
-                    <span class="checkmark"></span>
+                    <input type="checkbox" class="estrogen" value="hx of DVT/PE">
+                    <span class="checkmark">hx DVT/PE</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="hx of coagulopathy">
+                    <span class="checkmark">coagulopathy</span>
+                </label>
+
+
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="migraines with aura">
+                    <span class="checkmark">migraines with aura</span>
+                </label>
+
+
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="smoker >35yo">
+                    <span class="checkmark">smoker >35yo</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="HTN">
+                    <span class="checkmark">HTN</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="ischemic heart disease">
+                    <span class="checkmark">IHD</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="hx of breast/ovarian Ca">
+                    <span class="checkmark">breast/ovarian Ca</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="DM with microvascular complications">
+                    <span class="checkmark">DM with microvascular complications</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="estrogen" value="smoker >35yo">
+                    <span class="checkmark">&lt;6 weeks post-partum breastfeeding</span>
                 </label>
                 <br>
-                <input type="text" class="timing" id="otherTiming" style="float: right;" placeholder="other">
-                <br>
+                <input type="text" class="estrogen" id="otherEstrogen" style="float: right;" placeholder="comments">
+
             </div>
             <div>
-                <b>aggravated by</b>
-            </div>
 
+                <b>progesterone CI</b>
+            </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="aggravation" value="- aggravated by certain weather">
-                    <span class="checkmark">weather</span>
+                    <input type="checkbox" class="progesterone"
+                        value="no cirrhosis or liver disease, no breast CA within 5 years, no unexplained vaginal bleeding">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="progesterone" value="progesterone **contraindicated** due to:  ">
+                    <span class="checkmark">yes</span>
                 </label>
                 <br>
-                <input type="text" class="aggravation" id="otherAggravation" style="float: right;" placeholder="other">
+                <label class=container>
+                    <input type="checkbox" class="progesterone" value="cirrhosis">
+                    <span class="checkmark">cirrhosis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="progesterone" value="breast Ca within 5 years">
+                    <span class="checkmark">breast Ca within 5 years</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="progesterone" value="unexplained vaginal bleeding">
+                    <span class="checkmark">unexplained vaginal bleeding</span>
+                </label>
                 <br>
+                <input type="text" class="progesterone" id="otherProgesterone" style="float: right;"
+                    placeholder="comments">
+
             </div>
             <div>
-                <b>relieved by</b><br>
+                <b>IUD CI</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="IUD"
+                        value="no pregnancy, recent PID, STI within 3m, distorted uterine cavity or progesterone contraindications above">
+                    <span class="checkmark">none</span>
+                </label>
+                <input type="text" class="IUD" id="otherIUD" style="float: right;" placeholder="comments">
             </div>
             <div>
 
-                <br>
-                <input type="text" class="relief" id="otherRelief" style="float: right;" placeholder="other">
-                <br>
             </div>
 
-            <div>
-
-                <b>other/negatives</b>
-            </div>
-            <div>
-                <div class="nested">
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- aura present"></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no associated aura">aura</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)photophobia "></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no photophobia ">photophobia</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)phonophobia "></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no phonophobia">phonophobia</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)fever"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no fever">fever</label>
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS"
-                                value="- (+) neurologic symptoms"></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no neurologic symptoms ">neurologic
-                            symptoms</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)nausea"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no nausea ">nausea</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)vomiting"></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no vomiting ">vomiting</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"><input type="checkbox" class="ROS" value="- (+)vertigo"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no vertigo">vertigo</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"><input type="checkbox" class="ROS"
-                                value="- (+)blurry/double vision"></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no change in vision">blurry/double
-                            vision</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)scotomata "></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no scotomata ">scotomata</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)vision loss"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no vision loss">vision
-                            loss</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)URTI symptoms"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no URTI symptoms ">URTI
-                            symptoms</label>
-
-                    </div>
-                    <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- hx of LOC"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no LOC">LOC</label>
-
-                    </div>
-
-                </div>
-
-                <textarea id="otherROS" onchange="displayAll()" placeholder="details/comments"></textarea><br>
-
-            </div>
-
+            <textarea id="otherROS" onchange="displayAll()" placeholder="details/comments"></textarea><br>
 
         </div>
+
+
+
 
         <div id="objective" class="tabcontent">
 
             <div>
-                <b>inspection</b>
+                <b>exam</b>
             </div>
             <div>
-                <label class=container>
-                    <input type="checkbox" class="exam"
-                        value="- normal inspection - no visible masses, skin lesions, bruising or signs of skin infection">
-                    <span class="checkmark">normal</span>
-                </label>
-            </div>
-            <div>
-
-                <b>palpation</b>
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="exam"
-                        value="- normal palpation - no spinal deformity, or bony tenderness">
-                    <span class="checkmark">normal</span>
-                </label>
-            </div>
-            <div>
-                <b>neck</b>
-            </div>
-            <div class="sitting-standing">
-                <div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam"
-                                value="- normal neck flexion, extension, lateral and rotation ROM">
-                            <span class="checkmark">full ROM</span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- pain with neck extension">
-                            <span class="checkmark">pain with extension</span>
-                        </label>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- limited neck extension ROM due to pain">
-                            <span class="checkmark">limited extension</span>
-                        </label>
-                    </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- neck pain with flexion">
-                            <span class="checkmark">pain with flexion</span>
-                        </label>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- limited neck flexion ROM due to pain">
-                            <span class="checkmark">limited flexion</span>
-                        </label>
-                    </div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- no neck pain with lateral bend bilaterally">
-                            <span class="checkmark">lateral bend - pain</span>
-                        </label>
-                        <label class="left"><input type="checkbox" class="exam"
-                                value="- pain with L lateral bend"></label>
-                        <label class="right"><input type="checkbox" class="exam"
-                                value="- pain with R lateral bend"></label>
-                    </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- normal neck lateral ROM">
-                            <span class="checkmark">lateral bend - ROM</span>
-                        </label>
-                        <label class="left"><input type="checkbox" class="exam"
-                                value="- limited L neck lateral ROM"></label>
-                        <label class="right"><input type="checkbox" class="exam"
-                                value="- limited R lateral ROM"></label>
-                    </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- no neck pain with rotation bilaterally">
-                            <span class="checkmark">rotation - pain</span>
-                        </label>
-                        <label class="left"><input type="checkbox" class="exam"
-                                value="- neck pain with L rotation"></label>
-                        <label class="right"><input type="checkbox" class="exam"
-                                value="- neck pain with R rotation"></label>
-                    </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- normal neck rotation ROM bilaterally">
-                            <span class="checkmark">rotation - ROM</span>
-                        </label>
-                        <label class="left"><input type="checkbox" class="exam"
-                                value="- limited L rotation ROM"></label>
-                        <label class="right"><input type="checkbox" class="exam"
-                                value="- limited R rotation ROM"></label>
-                    </div>
-                    <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- (-) spurling test">
-                            <span class="checkmark">spurling test (-)</span>
-                        </label>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- (+) spurling test">
-                            <span class="checkmark">spurling test (+)</span>
-                        </label>
-
-                    </div>
-
-                </div>
-            </div>
-            <div>
-                <b>CN exam</b>
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- normal CN II-XII exam">
-                    <span class="checkmark">normal</span>
-                </label>
-            </div>
-            <div>
-                <b>snellen</b>
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- visual acuity grossly normal, not tested">
-                    <span class="checkmark">not tested</span>
-                </label>
-                <br>
-                L
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/20">
-                    <span class="checkmark">20/20</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/25">
-                    <span class="checkmark">20/25</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/30">
-                    <span class="checkmark">20/30</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/40">
-                    <span class="checkmark">20/40</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/50">
-                    <span class="checkmark">20/50</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/70">
-                    <span class="checkmark">20/70</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/100">
-                    <span class="checkmark">20/100</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- L eye: 20/200">
-                    <span class="checkmark">20/200</span>
-                </label>
-                <br>
-                R
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/20">
-                    <span class="checkmark">20/20</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/25">
-                    <span class="checkmark">20/25</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/30">
-                    <span class="checkmark">20/30</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/40">
-                    <span class="checkmark">20/40</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/50">
-                    <span class="checkmark">20/50</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/70">
-                    <span class="checkmark">20/70</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/100">
-                    <span class="checkmark">20/100</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="exam" value="- R eye: 20/200">
-                    <span class="checkmark">20/200</span>
-                </label>
-
-            </div>
-            <div>
-                <b>other</b>
-            </div>
-            <div>
-                <textarea id="otherExam" onchange="displayAll()" placeholder="details/other findings"></textarea>
+                <textarea id="otherExam" onchange="displayAll()" placeholder="blood pressure, etc"></textarea>
             </div>
 
 
@@ -598,174 +407,49 @@
 
         <div id="assessment-plan" class="tabcontent">
             <div>
+                <b>choice</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="choice" value="OCP">
+                    <span class="checkmark">OCP</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="choice" value="depo-provera">
+                    <span class="checkmark">depo</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="choice" value="patch">
+                    <span class="checkmark">patch</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="choice" value="IUD">
+                    <span class="checkmark">IUD</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="choice" value="intravaginal ring">
+                    <span class="checkmark">ring</span>
+                </label>
+                <input type="text" class="choice" id="otherChoice" style="float: right;" placeholder="other">
 
-                <b>Assessment:</b>
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="History consistent with migraine headache">
-                    <span class="checkmark">migraine</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="History consistent with concussion">
-                    <span class="checkmark">concussion</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="History consistent with tension headache">
-                    <span class="checkmark">tension</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="History consistent with cluster headache">
-                    <span class="checkmark">cluster</span>
-                </label>
-            </div>
-            <div>
-                red flags
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="assessment"
-                        value="- no red flags such as sudden onset, fever, reduced LOC, focal neuro signs, or cognitive changes">
-                    <span class="checkmark">no red flags</span>
-                </label>
-            </div>
-            <div>
-                imaging
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="- no current indication for imaging">
-                    <span class="checkmark">no indication</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="- imaging indicated">
-                    <span class="checkmark">indicated</span>
-                </label>
-            </div>
-            <div>
-                details
-            </div>
-            <div>
-                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment/ddx details"></textarea>
-                <hr>
-            </div>
-            <div>
-                <b>Plan:</b>
             </div>
             <div>
 
             </div>
             <div>
-                medication
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- tylenol/NSAIDs PRN">
-                    <span class="checkmark">tylenol/NSAIDs</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- triptans PRN">
-                    <span class="checkmark">triptans</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- opioids PRN">
-                    <span class="checkmark">opioids</span>
-                </label>
-                <br>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- indication for prophylactic medications">
-                    <span class="checkmark">prophylactic</span>
-                </label>
-            </div>
-            <div>
-                behavioural
-            </div>
-            <div>
                 <label class=container>
                     <input type="checkbox" class="plan"
-                        value="- recommended headache diary to record frequency, intensity, triggers and response to medications">
-                    <span class="checkmark">headache diary</span>
+                        value="Patient was counselled on timing and how to deal with missed doses">
+                    <span class="checkmark">missed doses</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="plan"
-                        value="- reduce caffeine, ensure regular exercise, and healthy sleep and nutrition">
-                    <span class="checkmark">lifestyle</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan"
-                        value="- discussed stress management and possible relation with headaches">
-                    <span class="checkmark">stress</span>
+                    <input type="checkbox" class="plan" value="Risks and side effects of method were discussed">
+                    <span class="checkmark">risks/side effects</span>
                 </label>
             </div>
             <div>
-                imaging
+                comments
             </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- CT head ordered">
-                    <span class="checkmark">CT</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- MRI head ordered">
-                    <span class="checkmark">MRI</span>
-                </label>
-            </div>
-            <div>
-                referral
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- neurology referral">
-                    <span class="checkmark">neurology</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- self referral to optometry">
-                    <span class="checkmark">optometry</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- ophthalmology referral">
-                    <span class="checkmark">ophthalmology</span>
-                </label>
-            </div>
-            <div>
-                off work
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="plan"
-                        value="- significant functional limitations at work, to remain off for 1-2 weeks">
-                    <span class="checkmark">yes (1-2 weeks)</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- does not require time off work">
-                    <span class="checkmark">no</span>
-                </label>
-            </div>
-            <div>
-                follow-up
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- follow-up planned in 2-4 weeks">
-                    <span class="checkmark">2-4 weeks</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="plan" value="- follow-up PRN">
-                    <span class="checkmark">PRN only</span>
-                </label>
-            </div>
-            <div>
-                RTC
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="plan"
-                        value="- RTC/ER if worsening symptoms, functional limitations, neuro signs, fever, or no resolution with therapy">
-                    <span class="checkmark">instructions given</span>
-                </label>
-            </div>
-            <div>
-                other</div>
             <div>
                 <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"></textarea>
             </div>
@@ -787,7 +471,7 @@
             <div id="pattern">
                 <div id="content">
                     CONTRACEPTION:<br><br>
-                    S/ <br>
+
                     Patient presented for visit regarding contraceptive counselling.<br>
                     Expressed interest in: <span id="interest" style='display:inline'></span><br>
                     Currently used contraception: <span id="current" style='display: inline;'></span><br>
@@ -797,28 +481,19 @@
                     In past year, has been sexually active with <span id="past" style='display: inline;'></span>
                     partners<br>
                     Previously used methods: <span id="previous" style='display: inline;'></span><br>
+                    <span id="HPI" style='display: inline;'></span><br>
+                    Hx of STIs: <span id="STI" style='display: inline;'></span><br>
+                    Last STI screening: <span id="STIScreen" style='display: inline;'></span><br>
+                    LMP: <span id="LMP" style='display: inline;'></span><br>
+                    Reviewed estrogen contraindications: <span id="estrogen" style='display: inline;'></span><br>
+                    Reviewed progesterone contraindications: <span id="progesterone"
+                        style='display: inline;'></span><br>
+                    Reviewed IUD contraindications: <span id="IUD" style='display: inline;'></span><br>
 
+                    <span id="exam" style='white-space:pre-wrap'></span><br>
+                    A/P<br>
+                    Patient decided to proceed with: <span id="choice" style='display: inline;'></span><br>
 
-
-
-
-                    <span id="HPI" style='white-space:pre-wrap'></span>
-                    <span id="location" style='white-space:pre-wrap'></span>
-                    <span id="radiation" style='white-space:pre-wrap'></span>
-                    <span id="quality" style='white-space:pre-wrap'></span>
-                    <span id="timing" style='white-space:pre-wrap'></span>
-                    <span id="aggravation" style='white-space:pre-wrap'></span>
-                    <span id="relief" style='white-space:pre-wrap'></span>
-                    <span id="ROS" style='white-space:pre-wrap'></span>
-                    <br>
-                    O/<br>
-                    <span id="exam" style='white-space:pre-wrap'></span>
-                    <br>
-                    A/
-                    <br>
-                    <span id="assessment" style='white-space:pre-wrap'></span>
-                    <br>
-                    P/<br>
                     <span id="plan" style='white-space:pre-wrap'></span>
                 </div>
             </div>
