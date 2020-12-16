@@ -1,16 +1,24 @@
 body {
-	background-color: rgb(177, 177, 177);
+	background-color: rgb(225, 225, 225);
 	font-size: 18px;
 	font-family: "Verdana", sans-serif;
 	color: black;
 	padding-left: 50px;
 }
-
+.grid-container {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1px;
+}
+#common-complaints {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
 .system {
 	border: 2 px;
 	background-color: rgb(203, 203, 203);
-	padding: 1px 10px 30px 25px;
-	width: 400px;
+	padding: 1px 25px 30px 25px;
+	width: auto;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 	margin: 10px;
@@ -18,7 +26,7 @@ body {
 
 a:link,
 a:visited {
-	background-color: #f2f2f2;
+	background-color: #ffffff;
 	color: black;
 	padding: 5px 10px;
 	text-align: center;
