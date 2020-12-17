@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>rash</title>
+    <title>skin lesion</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="mystyle.css">
 </head>
@@ -11,7 +11,7 @@
 
     <div>
         <h1>
-            rash
+            skin lesion
         </h1>
     </div>
 
@@ -54,11 +54,11 @@
             </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="HPI" value="- new rash">
+                    <input type="checkbox" class="HPI" value="- new skin lesion">
                     <span class="checkmark">new</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="HPI" value="- known/chronic rash">
+                    <input type="checkbox" class="HPI" value="- known/chronic skin lesion">
                     <span class="checkmark">known/chronic</span>
                 </label>
                 <br>
@@ -82,12 +82,12 @@
                     <span class="checkmark">resolved</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="HPI" value="- spreading slowly since onset">
-                    <span class="checkmark">spreading slowly</span>
+                    <input type="checkbox" class="HPI" value="- growing slowly since onset">
+                    <span class="checkmark">growing/spreading slowly</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="HPI" value="- significantly spreading since onset">
-                    <span class="checkmark">spreading rapidly</span>
+                    <input type="checkbox" class="HPI" value="- significantly growing since onset">
+                    <span class="checkmark">growing/spreading rapidly</span>
                 </label>
                 <br>
             </div>
@@ -96,47 +96,7 @@
                 <b>context</b>
             </div>
             <div>
-                exposure
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- no associated environmental exposures">
-                    <span class="checkmark">none</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- associated with heat exposure">
-                    <span class="checkmark">heat</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- associated to cold exposure">
-                    <span class="checkmark">cold</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- associated to sun exposure">
-                    <span class="checkmark">sun</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- associated with exercise">
-                    <span class="checkmark">exercise</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- associated with sweat">
-                    <span class="checkmark">sweat</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- associated with recent season change">
-                    <span class="checkmark">season</span>
-                </label>
 
-                <br>
-                new medication
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- no recent new medications">
-                    <span class="checkmark">none</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="HPI" value="- recent new medication/course">
-                    <span class="checkmark">yes</span>
-                </label>
-                <br>
 
                 <textarea id="otherHPI" onchange="displayAll()" placeholder="HPI details"></textarea><br>
             </div>
@@ -396,7 +356,7 @@
 
 
                 <br>
-                <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
+                <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="location">
                 <br>
             </div>
 
@@ -409,7 +369,7 @@
                     <span class="checkmark">asymptomatic</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="quality" value="- painful rash">
+                    <input type="checkbox" class="quality" value="- painful skin lesion">
                     <span class="checkmark">painful</span>
                 </label>
                 <label class=container>
@@ -425,12 +385,16 @@
                     <span class="checkmark">severe pruritus</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="quality" value="- drainage from rash">
+                    <input type="checkbox" class="quality" value="- some drainage from lesion">
                     <span class="checkmark">drainage</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- some bleeding from lesion">
+                    <span class="checkmark">bleeding</span>
                 </label>
 
                 <br>
-                <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="other">
+                <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="symptoms">
                 <br>
             </div>
 
@@ -469,7 +433,7 @@
                 <br>
             </div>
             <div>
-                <b>relieved by</b><br>
+                <b>improved with</b><br>
             </div>
             <div>
                 <label class=container>
@@ -520,14 +484,16 @@
 
                     </div>
                     <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)vomiting"></label>
+                        <label class="positive"> <input type="checkbox" class="ROS"
+                                value="- (+)regional lymphadenopathy"></label>
                         <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no vomiting ">vomiting</label>
+                                value="- no regional lymphadenopathy">regional nodes</label>
 
                     </div>
                     <div>
-                        <label class="positive"><input type="checkbox" class="ROS" value="- (+)vertigo"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no vertigo">vertigo</label>
+                        <label class="positive"><input type="checkbox" class="ROS" value="- (+)hx of skin Ca"></label>
+                        <label class="negative"><input type="checkbox" class="ROS" value="- no hx of skin Ca">hx skin
+                            Ca</label>
 
                     </div>
 
@@ -569,13 +535,14 @@
                     <span class="checkmark">papule</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="morphology" value="- nodule">
-                    <span class="checkmark">nodule</span>
-                </label>
-                <label class=container>
                     <input type="checkbox" class="morphology" value="- plaque">
                     <span class="checkmark">plaque</span>
                 </label>
+                <label class=container>
+                    <input type="checkbox" class="morphology" value="- nodule">
+                    <span class="checkmark">nodule</span>
+                </label>
+
 
                 <label class=container>
                     <input type="checkbox" class="morphology" value="- vesicle">
@@ -613,14 +580,23 @@
                 </label>
                 <br>
 
-                <input type="text" class="morphology" id="otherMorphology" style="float: right;" placeholder="other">
+                <input type="text" class="morphology" id="otherMorphology" style="float: right;"
+                    placeholder="other/size">
             </div>
-            <div>
 
+            <div>
                 <b>2°morphology</b>
             </div>
             <div>
-
+                <label class=container>
+                    <input type="checkbox" class="morphology2" value="- melanocytic">
+                    <span class="checkmark">melanocytic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="morphology2" value="- non-melanocytic">
+                    <span class="checkmark">non-melanocytic</span>
+                </label>
+                <br>
                 scale:
                 <label class=container>
                     <input type="checkbox" class="morphology2" value="- white/brown scale">
@@ -742,75 +718,85 @@
                 <input type="text" class="morphology2" id="otherMorphology2" style="float: right;" placeholder="other">
 
             </div>
-            <div>
-                <b>configuration</b>
-            </div>
-            <div>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- single area affected">
-                    <span class="checkmark">single area</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- scattered">
-                    <span class="checkmark">scattered</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- grouped/clustered">
-                    <span class="checkmark">grouped/clusters</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- linear">
-                    <span class="checkmark">linear</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- annular">
-                    <span class="checkmark">annular</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- dermatomal">
-                    <span class="checkmark">dermatomal</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="configuration" value="- reticulated">
-                    <span class="checkmark">reticulated</span>
-                </label>
-                <br>
-                <input type="text" class="configuration" id="otherConfiguration" style="float: right;"
-                    placeholder="other">
-            </div>
 
             <div>
-                <b>distribution</b>
+                <b>dermoscopy</b>
             </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="distribution" value="- no particular">
-                    <span class="checkmark">no particular</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="distribution" value="- extremities">
-                    <span class="checkmark">extremities</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="distribution" value="- sun exposed surfaces">
-                    <span class="checkmark">sun exposed</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="distribution" value="- clothed surfaces">
-                    <span class="checkmark">clothes</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="distribution" value="- flexor surfaces">
-                    <span class="checkmark">flexors</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="distribution" value="- extensor surfaces">
-                    <span class="checkmark">extensors</span>
+                    <input type="checkbox" class="exam" value="dermoscopy:">
+                    <span class="checkmark">yes</span>
                 </label>
                 <br>
-                <input type="text" class="distribution" id="otherDistribution" style="float: right;"
-                    placeholder="other">
+                <b>major criteria (2 points each)</b><br>
+                <div class="nested">
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="  (+) atypical pigment network"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) atypical pigment network">atypical pigment
+                            network
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="  (+) blue-white veil"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) blue-white veil">blue-white veil
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="- (+) atypical vascular pattern"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) atypical vascular pattern">atypical vascular pattern
+                        </label>
+                    </div>
+                </div>
+                <b>minor criteria (1 point each)</b><br>
+                <div class="nested">
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="  (+) irregular streaks"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) irregular streaks">irregular streaks
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="  (+) irregular dots/globules"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) irregular dots/globules">irregular dots/globules
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="  (+) irregular blotches"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) irregular blotches">irregular blotches
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive"><input type="checkbox" class="exam"
+                                value="  (+) regression structures"></label>
+                        <label class="negative"><input type="checkbox" class="exam"
+                                value="  (-) regression structures">regression structures
+                        </label>
+                    </div>
+                </div>
+                7-point checklist score: <label class=container>
+                    <input type="checkbox" class="exam" value=" -> 7-point total score &lt;3, likely benign nevus">
+                    <span class="checkmark">&lt;3</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value=" -> 7-point total score &ge;3, concerning for melanoma">
+                    <span class="checkmark">&ge;3</span>
+                </label>
+
+
             </div>
+
+
 
             <div>
                 <b>other</b>
@@ -834,14 +820,43 @@
                 most likely dx:
             </div>
             <div>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="History and exam consistent with benign nevus, unlikely malignancy">
+                    <span class="checkmark">benign nevus</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="History and exam concerning for melanoma">
+                    <span class="checkmark">melanoma</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="History and exam concerning for BCC">
+                    <span class="checkmark">BCC</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="History and exam concerning for SCC">
+                    <span class="checkmark">SCC</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="History and exam consistent with seborrheic keratosis">
+                    <span class="checkmark">seborrheic keratosis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="History and exam consistent with actinic keratosis">
+                    <span class="checkmark">actinic keratosis</span>
+                </label>
+                <br>
+
                 papular, papulosquamous, papulo-vesicular <br>
                 <label class=container>
                     <input type="checkbox" class="assessment" value="Most likely dx: molluscum">
                     <span class="checkmark">molluscum</span>
                 </label>
                 <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: common warts">
-                    <span class="checkmark">common warts</span>
+                    <input type="checkbox" class="assessment" value="Most likely dx: common wart">
+                    <span class="checkmark">common wart</span>
                 </label>
                 <label class=container>
                     <input type="checkbox" class="assessment" value="Most likely dx: seborrheic dermatitis">
@@ -868,93 +883,7 @@
                     <span class="checkmark">scabies</span>
                 </label>
                 <br>
-                epidermal lesions, eczematous lesions<br>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: cutaneous lupus">
-                    <span class="checkmark">lupus</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment"
-                        value="Most likely dx: toxicodendron dermatitis (poison oak/ivy/sumac)">
-                    <span class="checkmark">toxicodendron dermatitis</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: atopic dermatitis">
-                    <span class="checkmark">atopic dermatitis</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: senile purpura">
-                    <span class="checkmark">senile purpura</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: striae distensae">
-                    <span class="checkmark">striae distensae</span>
-                </label>
-                <br>
-                vesiculo-bullous, papulo-pustular<br>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: impetigo">
-                    <span class="checkmark">impetigo</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: herpes simplex recidivans ">
-                    <span class="checkmark">herpes simplex recidivans</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: herpes zoster (shingles) ">
-                    <span class="checkmark">herpes zoster</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: acne vulgaris ">
-                    <span class="checkmark">acne vulgaris</span>
-                </label>
-                <br><br>
 
-                infectious
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: candidiasis">
-                    <span class="checkmark">candidiasis</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: cellulitis">
-                    <span class="checkmark">cellulitis</span>
-                </label>
-                <br>
-                tinea
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: tinea versicolor">
-                    <span class="checkmark">versicolor</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: tinea pedis">
-                    <span class="checkmark">pedis</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: tinea manuum">
-                    <span class="checkmark">manuum</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: tinea corporis">
-                    <span class="checkmark">corporis</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: tinea barbae">
-                    <span class="checkmark">barbae</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: tinea cruris">
-                    <span class="checkmark">cruris</span>
-                </label>
-                <br>
-                other
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: sunburn">
-                    <span class="checkmark">sunburn</span>
-                </label>
-                <label class=container>
-                    <input type="checkbox" class="assessment" value="Most likely dx: drug reaction">
-                    <span class="checkmark">drug reaction</span>
-                </label>
 
 
 
@@ -974,12 +903,16 @@
 
             </div>
             <div>
-                avoidance
+                biopsy
             </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="plan" value="- avoidance of environmental triggers">
-                    <span class="checkmark">avoidance of triggers</span>
+                    <input type="checkbox" class="plan" value="- biopsy not currently indicated">
+                    <span class="checkmark">no</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- skin biopsy indicated">
+                    <span class="checkmark">yes</span>
                 </label>
             </div>
             <div>
@@ -1028,6 +961,10 @@
             </div>
             <div>
                 <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up after pathology results">
+                    <span class="checkmark">after pathology results</span>
+                </label>
+                <label class=container>
                     <input type="checkbox" class="plan" value="- follow-up planned in 2-4 weeks">
                     <span class="checkmark">2-4 weeks</span>
                 </label>
@@ -1042,7 +979,7 @@
             <div>
                 <label class=container>
                     <input type="checkbox" class="plan"
-                        value="- RTC/ER if worsening symptoms, systemic symptoms,fever, or no resolution with therapy">
+                        value="- RTC if worsening symptoms, increase in size, change in appearance, or new lesions">
                     <span class="checkmark">instructions given</span>
                 </label>
             </div>
@@ -1068,13 +1005,13 @@
         <div id="soapNote">
             <div id="pattern">
                 <div id="content">
-                    RASH:<br><br>
+                    SKIN LESION:<br><br>
                     S/ <br>
 
                     <div id="onsetResult" style="display:inline"></div>
                     <span id="HPI" style='white-space:pre-wrap'></span>
                     <br>
-                    - area(s) involved:<br>
+                    - location:<br>
                     <span id="location" style='white-space:pre-wrap'></span>
                     <span id="radiation" style='white-space:pre-wrap'></span>
                     <span id="quality" style='white-space:pre-wrap'></span>
@@ -1087,10 +1024,7 @@
                     <span id="morphology" style='white-space:pre-wrap'></span>
                     secondary morphology:<br>
                     <span id="morphology2" style='white-space:pre-wrap'></span>
-                    configuration:<br>
-                    <span id="configuration" style='white-space: pre-wrap;'></span>
-                    distribution:<br>
-                    <span id="distribution" style='white-space: pre-wrap;'></span>
+
                     <span id="exam" style='white-space:pre-wrap'></span>
                     <br>
                     A/
@@ -1104,7 +1038,7 @@
         </div>
     </div>
 
-    <script src="rash.js"></script>
+    <script src="skinLesion.js"></script>
 </body>
 
 </html>
