@@ -8,7 +8,8 @@ body {
 /* Ruled paper */
 #soapNote {
 	width: 780px;
-	height: 1150px;
+	height: auto;
+	min-height: 850px;
 	position: relative;
 	margin: 20px auto;
 	padding-top: 40px;
@@ -28,6 +29,7 @@ body {
 }
 #pattern {
 	height: 100%;
+	min-height: 850px;
 	background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
 }
 
