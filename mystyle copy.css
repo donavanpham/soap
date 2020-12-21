@@ -1,6 +1,7 @@
 body {
+	background-color: lightblue;
 	font-size: 12px;
-	font-family: "Verdana", Monaco, monospace;
+	font-family: "Verdana", sans-serif;
 	color: black;
 }
 
@@ -80,14 +81,12 @@ label {
 	cursor: pointer;
 	padding: 0px;
 }
+:checked + span {
+	background: rgb(118, 255, 219);
+}
 :hover + span {
 	background: #b6b6b6;
 }
-:checked + .checkmark {
-	transition: 250ms;
-	background: rgb(118, 255, 219);
-}
-
 .checkmark {
 	background: #f1f1f1;
 	padding: 5px;
@@ -111,7 +110,7 @@ textarea {
 	padding: 12px 20px;
 	box-sizing: border-box;
 	border: 2px solid #ccc;
-	border-radius: 10px;
+	border-radius: 3px;
 	background-color: #f8f8f8;
 	resize: none;
 	font-family: "Verdana", Monaco, monospace;
@@ -200,7 +199,6 @@ textarea {
 	border-radius: 7px 0px 0px 7px;
 	border: 1px solid rgb(130, 130, 130);
 	width: auto;
-	transition: 400ms;
 }
 
 :checked + .positive-checkbox {
@@ -225,7 +223,6 @@ textarea {
 	border: 1px solid rgb(130, 130, 130);
 	border-left: none;
 	width: fit-content;
-	transition: 400ms;
 }
 
 :checked + .negative-checkbox {
@@ -329,7 +326,6 @@ textarea {
 	padding: 20px;
 	background-color: #ccc;
 	box-shadow: 0px 5px 5px 0px #888;
-	border-radius: 0px 0px 8px 8px;
 }
 .tabcontent {
 	grid-template-columns: auto 1fr;

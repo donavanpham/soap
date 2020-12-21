@@ -48,6 +48,15 @@
                     <input type="checkbox" class="HPI" value="years since onset">
                     <span class="checkmark">years</span>
                 </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- sudden onset">
+                    <span class="checkmark">sudden</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradual onset">
+                    <span class="checkmark">gradual</span>
+                </label>
             </div>
             <div>
                 <b>new?</b>
@@ -510,36 +519,72 @@
                 <div class="nested">
 
                     <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)fever"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no fever">fever</label>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)fever">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no fever">
+                            <span class="negative-checkbox">fever
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
                     </div>
 
                     <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)nausea"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no nausea ">nausea</label>
-
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)nausea/vomiting">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no nausea/vomiting">
+                            <span class="negative-checkbox">nausea/vomiting
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
                     </div>
                     <div>
-                        <label class="positive"> <input type="checkbox" class="ROS" value="- (+)vomiting"></label>
-                        <label class="negative"><input type="checkbox" class="ROS"
-                                value="- no vomiting ">vomiting</label>
-
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)SOB">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no SOB">
+                            <span class="negative-checkbox">SOB
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
                     </div>
                     <div>
-                        <label class="positive"><input type="checkbox" class="ROS" value="- (+)vertigo"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no vertigo">vertigo</label>
-
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)resp symptoms">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no resp symptoms">
+                            <span class="negative-checkbox">resp symptoms
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
                     </div>
-
-
                     <div>
-                        <label class="positive"> <input type="checkbox" class="ROS"
-                                value="- (+)flu-like symptoms"></label>
-                        <label class="negative"><input type="checkbox" class="ROS" value="- no flu-like symptoms ">flu
-                            symptoms</label>
-
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)flu-like symptoms">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no flu-like symptoms">
+                            <span class="negative-checkbox">flu symptoms
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
                     </div>
-
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)GI symptoms">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no GI symptoms">
+                            <span class="negative-checkbox">GI symptoms
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
 
                 </div>
 
@@ -784,8 +829,8 @@
             </div>
             <div>
                 <label class=container>
-                    <input type="checkbox" class="distribution" value="- no particular">
-                    <span class="checkmark">no particular</span>
+                    <input type="checkbox" class="distribution" value="- non specific">
+                    <span class="checkmark">non specific</span>
                 </label>
                 <label class=container>
                     <input type="checkbox" class="distribution" value="- extremities">
