@@ -87,6 +87,7 @@ function openSection(evt, sectionName) {
 
 document.getElementById("defaultOpen").click();
 
+//show/hide Centor score
 function centor() {
 	var checkBox = document.getElementById("centor");
 	var text = document.getElementById("centor-on");

@@ -10,14 +10,12 @@
 
 <body style="background-color: rgb(252, 225, 178);">
 
-    <div>
+
+    <div id="main">
         <h1>
             URTI/cough
         </h1>
 
-    </div>
-
-    <div id="main">
         <div class="tab">
             <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
             <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
@@ -469,27 +467,48 @@
                 </label>
             </div>
             <div id="centor-on" style="display: none;">
-                <label class="positive"> <input type="checkbox" class="assessment"
-                        value="  - cough present (0)"></label>
-                <label class="negative"><input type="checkbox" class="assessment" value="  - absence of cough (1)">cough
+                <label class="positive">
+                    <input type="checkbox" class="assessment" value="  - cough present (0)">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="assessment" value="  - absence of cough (1)">
+                    <span class="negative-checkbox">cough
+                        &nbsp;<b>&ndash;</b></span>
                 </label>
                 <br>
-                <label class="positive"> <input type="checkbox" class="assessment"
-                        value="  (+) swollen tender anterior cervical nodes (1)"></label>
-                <label class="negative"><input type="checkbox" class="assessment"
-                        value="  (-) tender cervical nodes (0)">swollen, tender cervical nodes
+                <label class="positive">
+                    <input type="checkbox" class="assessment" value="  (+) swollen tender anterior cervical nodes (1)">
+                    <span class="positive-checkbox"><b>+</b></span>
                 </label>
+                <label class="negative">
+                    <input type="checkbox" class="assessment" value="  (-) tender cervical nodes (0)">
+                    <span class="negative-checkbox">swollen, tender cervical nodes
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+
                 <br>
-                <label class="positive"> <input type="checkbox" class="assessment"
-                        value="  (+) fever &gt;38C (1)"></label>
-                <label class="negative"><input type="checkbox" class="assessment" value="  (-) fever (0)">fever
+                <label class="positive">
+                    <input type="checkbox" class="assessment" value="  (+) fever &gt;38C (1)">
+                    <span class="positive-checkbox"><b>+</b></span>
                 </label>
+                <label class="negative">
+                    <input type="checkbox" class="assessment" value="  (-) fever (0)">
+                    <span class="negative-checkbox">fever
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+
                 <br>
-                <label class="positive"> <input type="checkbox" class="assessment"
-                        value="  (+) tonsillar exudates/swelling (1)"></label>
-                <label class="negative"><input type="checkbox" class="assessment"
-                        value="  (-) tonsillar exudates/swelling (0)">tonsillar exudates
+                <label class="positive">
+                    <input type="checkbox" class="assessment" value="  (+) tonsillar exudates/swelling (1)">
+                    <span class="positive-checkbox"><b>+</b></span>
                 </label>
+                <label class="negative">
+                    <input type="checkbox" class="assessment" value="  (-) tonsillar exudates/swelling (0)">
+                    <span class="negative-checkbox">tonsillar exudates
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+
                 <br>
 
                 age:
@@ -671,7 +690,7 @@
 
     <div class="note">
         <div class="tooltip">
-            <br>
+
             <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
                 <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
                 Copy note

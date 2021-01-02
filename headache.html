@@ -7,15 +7,12 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body>
+<body style="background-color: rgb(178, 205, 252);">
 
-    <div>
+    <div id="main">
         <h1>
             headache
         </h1>
-    </div>
-
-    <div id="main">
         <div class="tab">
             <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
             <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
@@ -1025,7 +1022,6 @@
 
     <div class="note">
         <div class="tooltip">
-            <br>
             <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
                 <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
                 Copy note
