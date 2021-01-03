@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eye complaint</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body style="background-color: rgb(252, 211, 139);">
+
+    <div id="main">
+        <h1>
+            eye complaint
+        </h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
+            <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
+            <button class="tablinks" onclick="openSection(event, 'assessment-plan')">Assessment/Plan</button>
+        </div>
+
+        <div id="subjective" class="tabcontent">
+            <div>
+                <b>onset</b>
+            </div>
+            <div>
+                <input type="number" class="HPI" id="onsetNumber">
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="hours since onset">
+                    <span class="checkmark">hours</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="days since onset">
+                    <span class="checkmark">days</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="weeks since onset">
+                    <span class="checkmark">weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="months since onset">
+                    <span class="checkmark">months</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="years since onset">
+                    <span class="checkmark">years</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- sudden onset">
+                    <span class="checkmark">sudden</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradual onset">
+                    <span class="checkmark">gradual</span>
+                </label>
+            </div>
+            <div>
+                <b>new?</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- new issue">
+                    <span class="checkmark">new issue</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- known issue">
+                    <span class="checkmark">previously known issue</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>side</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- left eye">
+                    <span class="checkmark">left</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- right eye">
+                    <span class="checkmark">right</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- both eyes">
+                    <span class="checkmark">bilateral</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- left more than right">
+                    <span class="checkmark">L&gt;R</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- right more than left">
+                    <span class="checkmark">R&gt;L</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>symptoms</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- redness">
+                    <span class="checkmark">redness</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- painful eye">
+                    <span class="checkmark">pain</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- eyelid swelling">
+                    <span class="checkmark">eyelid swelling</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- dry eyes">
+                    <span class="checkmark">dryness</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>discharge</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no discharge">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- watery discharge">
+                    <span class="checkmark">watery discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- purulent discharge">
+                    <span class="checkmark">purulent discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- crusting around eye">
+                    <span class="checkmark">crusting</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>pain</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no pain">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild pain">
+                    <span class="checkmark">mild</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild-moderate pain">
+                    <span class="checkmark">mild-moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate pain">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate/severe pain">
+                    <span class="checkmark">moderate-severe</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- severe pain">
+                    <span class="checkmark">severe</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>pruritus</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no pruritus">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild pruritus">
+                    <span class="checkmark">mild</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate pruritus">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- severe pruritus">
+                    <span class="checkmark">severe</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>status</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improving since onset">
+                    <span class="checkmark">improving</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no change since onset">
+                    <span class="checkmark">unchanged</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- resolved since onset">
+                    <span class="checkmark">resolved</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradually worsening since onset">
+                    <span class="checkmark">gradually worsening</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- significantly worsening since onset">
+                    <span class="checkmark">significant worsening</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>trauma</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- onset following eye trauma">
+                    <span class="checkmark">yes</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no eye trauma">
+                    <span class="checkmark">no</span>
+                </label>
+            </div>
+            <div>
+                <b>FB sensation</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- foreign body sensation">
+                    <span class="checkmark">yes</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no foreign body sensation">
+                    <span class="checkmark">no</span>
+                </label>
+            </div>
+
+            <div>
+                <b>HPI</b>
+            </div>
+            <div>
+                <textarea id="otherHPI" onchange="displayAll()" placeholder="details/comments"></textarea><br>
+                <hr>
+            </div>
+
+
+            <div>
+                <b>negatives/ROS</b>
+            </div>
+            <div>
+                <br>
+                <div class="nested">
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)fever/chills">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no fever/chills">
+                            <span class="negative-checkbox">fever/chills
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)headache">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no headache">
+                            <span class="negative-checkbox">headache
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)change in vision">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no change in vision">
+                            <span class="negative-checkbox">vision changes
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)periorbital swelling">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no periorbital swelling">
+                            <span class="negative-checkbox">periorbital swelling
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+) pain with eye movements">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no pain with eye movements">
+                            <span class="negative-checkbox">pain with eye movement
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+) photophobia">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no photophobia">
+                            <span class="negative-checkbox">photophobia
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+
+                </div>
+                <textarea id="otherROS" onchange="displayAll()" placeholder="details/comments"></textarea><br>
+            </div>
+
+        </div>
+
+        <div id="objective" class="tabcontent">
+            <div>
+                <b>inspection</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye conjunctivitis">
+                    <span class="checkmark">R conjunctivitis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye conjunctivitis">
+                    <span class="checkmark">L conjunctivitis</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye normal, no redness">
+                    <span class="checkmark">R normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye normal, no redness">
+                    <span class="checkmark">L normal</span>
+                </label>
+                <br>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)periorbital swelling">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- no periorbital swelling">
+                    <span class="negative-checkbox">swelling
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+            <div>
+                <b>discharge</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- no discharge">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- watery discharge">
+                    <span class="checkmark">watery discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- purulent discharge">
+                    <span class="checkmark">purulent discharge</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- crusting around eye">
+                    <span class="checkmark">crusting</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>CN exam</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- normal CN II-XII exam">
+                    <span class="checkmark">normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- PEARL bilaterally">
+                    <span class="checkmark">normal pupils</span>
+                </label>
+            </div>
+            <div>
+                <b>snellen</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- visual acuity grossly normal, not tested">
+                    <span class="checkmark">not tested</span>
+                </label>
+                <br>
+                L
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/20">
+                    <span class="checkmark">20/20</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/25">
+                    <span class="checkmark">20/25</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/30">
+                    <span class="checkmark">20/30</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/40">
+                    <span class="checkmark">20/40</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/50">
+                    <span class="checkmark">20/50</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/70">
+                    <span class="checkmark">20/70</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/100">
+                    <span class="checkmark">20/100</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- L eye: 20/200">
+                    <span class="checkmark">20/200</span>
+                </label>
+                <br>
+                R
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/20">
+                    <span class="checkmark">20/20</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/25">
+                    <span class="checkmark">20/25</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/30">
+                    <span class="checkmark">20/30</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/40">
+                    <span class="checkmark">20/40</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/50">
+                    <span class="checkmark">20/50</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/70">
+                    <span class="checkmark">20/70</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/100">
+                    <span class="checkmark">20/100</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- R eye: 20/200">
+                    <span class="checkmark">20/200</span>
+                </label>
+
+            </div>
+
+            <div>
+                <b>other</b>
+            </div>
+            <div>
+                <textarea id="otherExam" onchange="displayAll()" placeholder="details and/or other findings"></textarea>
+            </div>
+        </div>
+
+
+        <div id="assessment-plan" class="tabcontent">
+
+            <div>
+
+                <b>Assessment:</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with bacterial conjunctivitis">
+                    <span class="checkmark">bacterial conjunctivitis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with allergic conjunctivitis">
+                    <span class="checkmark">allergic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with viral conjunctivitis">
+                    <span class="checkmark">viral</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="Findings consistent with subconjunctival hemorrhage">
+                    <span class="checkmark">subconjunctival hemorrhage</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with dry eyes">
+                    <span class="checkmark">dry eyes</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with corneal ulcer">
+                    <span class="checkmark">corneal ulcer</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with anterior uveitis">
+                    <span class="checkmark">anterior uveitis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with angle closure glaucoma">
+                    <span class="checkmark">angle closure glaucoma</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with scleritis">
+                    <span class="checkmark">scleritis</span>
+                </label>
+            </div>
+
+            <div>
+                details</div>
+            <div>
+                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment/ddx details"></textarea>
+                <hr>
+            </div>
+            <div>
+                <b>Plan:</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- discussed self-limited nature of diagnosis">
+                    <span class="checkmark">self-limited</span>
+                </label>
+            </div>
+
+            <div>
+                Rx
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- empiric antibiotics">
+                    <span class="checkmark">antibiotics topical</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- antihistamine PRN">
+                    <span class="checkmark">antihistamine PRN</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- artificial tears">
+                    <span class="checkmark">artificial tears</span>
+                </label>
+            </div>
+
+            <div>
+                follow-up
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up planned in 2-4 weeks">
+                    <span class="checkmark">2-4 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up PRN">
+                    <span class="checkmark">PRN only</span>
+                </label>
+            </div>
+            <div>
+                RTC
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan"
+                        value="- RTC if worsening symptoms, fever/chills, change in vision, periorbital swelling or no improvement with therapy">
+                    <span class="checkmark">instructions given</span>
+                </label>
+            </div>
+            <div>
+                other</div>
+            <div>
+                <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <div class="tooltip">
+            <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note
+            </button>
+        </div>
+        <div id="soapNote">
+            <div id="pattern">
+                <div id="content">
+                    EYE COMPLAINT<br><br>
+                    S/
+                    <br>
+                    <div id="onsetResult" style="display:inline"></div>
+                    <span id="HPI" style='white-space:pre-wrap'></span>
+                    <span id="ROS" style='white-space:pre-wrap'></span>
+                    <br>
+                    O/
+                    <br>
+                    <span id="exam" style='white-space:pre-wrap'></span>
+                    <br>
+                    A/
+                    <br>
+                    <span id="assessment" style='white-space:pre-wrap'></span>
+                    <br>
+                    P/
+                    <br>
+                    <span id="plan" style='white-space:pre-wrap'></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="redEye.js"></script>
+</body>
+
+</html>
