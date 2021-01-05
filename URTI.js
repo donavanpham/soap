@@ -59,6 +59,7 @@ function CopyToClipboard(id) {
 
 	var tooltip = document.getElementById("myTooltip");
 	tooltip.innerHTML = "Copied";
+	console.log("copied note");
 }
 
 function outFunc() {
