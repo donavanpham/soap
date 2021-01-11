@@ -30,18 +30,13 @@ function display(section, other) {
 
 // sections
 const sections = {
-	HPI         : "otherHPI",
-	location    : "otherLocation",
-	radiation   : "otherRadiation",
-	quality     : "otherQuality",
-	timing      : "otherTiming",
-	aggravation : "otherAggravation",
-	relief      : "otherRelief",
+	complaint  : "otherComplaint",
+	HPI        : "otherHPI",
 
-	exam        : "otherExam",
-	ROS         : "otherROS",
-	assessment  : "otherAssessment",
-	plan        : "otherPlan"
+	exam       : "otherExam",
+	ROS        : "otherROS",
+	assessment : "otherAssessment",
+	plan       : "otherPlan"
 };
 const entries = Object.entries(sections);
 
@@ -90,3 +85,32 @@ function openSection(evt, sectionName) {
 	evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+//show/hide back
+function back() {
+	var checkBox = document.getElementById("back");
+	var text = document.getElementById("back-on");
+	var empty = document.getElementById("back-off");
+
+	if (checkBox.checked == true) {
+		text.style.display = "block";
+		empty.style.display = "none";
+	} else {
+		text.style.display = "none";
+		empty.style.display = "block";
+	}
+}
+
+function neck() {
+	var checkBox = document.getElementById("neck");
+	var text = document.getElementById("neck-on");
+	var empty = document.getElementById("neck-off");
+
+	if (checkBox.checked == true) {
+		text.style.display = "block";
+		empty.style.display = "none";
+	} else {
+		text.style.display = "none";
+		empty.style.display = "block";
+	}
+}
