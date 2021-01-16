@@ -49,13 +49,26 @@ var displayAll = function() {
 attachCheckboxHandlers();
 
 //copy soap note
-function CopyToClipboard(id) {
+function CopyToClipboard() {
+	var node = document.createElement("textarea");
+	node.innerHTML = document.getElementById("content").innerText;
+	document.body.appendChild(node);
+	node.select();
+
+	try {
+		var success = document.execCommand("copy");
+		success ? console.log("copy successful") : console.log("copy unsuccessful");
+	} catch (e) {
+		console.log("browser not compatible");
+	}
+	document.body.removeChild(node);
+	/*
 	var r = document.createRange();
 	r.selectNode(document.getElementById(id));
 	window.getSelection().removeAllRanges();
 	window.getSelection().addRange(r);
 	document.execCommand("copy");
-	window.getSelection().removeAllRanges();
+	window.getSelection().removeAllRanges();*/
 
 	var tooltip = document.getElementById("myTooltip");
 	tooltip.innerHTML = "Copied";

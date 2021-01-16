@@ -20,11 +20,43 @@ body {
 #content {
 	padding-top: 6px;
 	padding-left: 56px;
-	padding-right: 16px;
-	line-height: 1.1em;
+	padding-right: 56px;
+	line-height: 1.25em;
 	font-size: 14px;
 	letter-spacing: 1px;
 	word-spacing: 5px;
+}
+
+#HPI {
+	white-space: pre-wrap;
+	background-color: rgb(255, 255, 214);
+}
+#onsetResult {
+	background-color: rgb(255, 255, 214);
+}
+#location,
+#radiation,
+#quality,
+#timing,
+#aggravation,
+#relief {
+	background-color: rgb(255, 255, 214);
+}
+#ROS {
+	white-space: pre-wrap;
+	background-color: rgb(255, 255, 214);
+}
+#exam {
+	white-space: pre-wrap;
+	background-color: rgb(218, 230, 255);
+}
+#assessment {
+	white-space: pre-wrap;
+	background-color: rgb(255, 225, 214);
+}
+#plan {
+	white-space: pre-wrap;
+	background-color: rgb(204, 254, 222);
 }
 
 #onsetNumber {
@@ -169,6 +201,13 @@ textarea {
 	opacity: 1;
 }
 
+.freetext {
+	background-color: rgb(238, 238, 238);
+	padding: 5px;
+}
+[contenteditable] {
+	outline: 0px solid transparent;
+}
 /* Styling Checkbox Starts */
 
 .positive input {
@@ -345,4 +384,39 @@ textarea {
 .sitting-standing {
 	display: grid;
 	grid-template-columns: 5fr 1fr 5fr;
+}
+
+/*slider*/
+
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+}
+
+input[type=range] {
+	-webkit-appearance: none; /* Override default CSS styles */
+	appearance: none;
+	height: 15px; /* Specified height */
+
+	outline: none; /* Remove outline */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+	border-radius: 9999px;
+}
+
+.DBPslider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 5px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #525252;
+	cursor: pointer; /* Cursor on hover */
+}
+
+.SBPslider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 5px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #525252;
+	cursor: pointer; /* Cursor on hover */
 }

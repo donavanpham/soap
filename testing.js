@@ -30,32 +30,40 @@ function display(section, other) {
 
 // sections
 const sections = {
-	HPI         : "otherHPI",
-	location    : "otherLocation",
-	radiation   : "otherRadiation",
-	quality     : "otherQuality",
-	timing      : "otherTiming",
-	aggravation : "otherAggravation",
-	relief      : "otherRelief",
+	complaint  : "otherComplaint",
+	HPI        : "otherHPI",
 
-	exam        : "otherExam",
-	ROS         : "otherROS",
-	assessment  : "otherAssessment",
-	plan        : "otherPlan"
+	exam       : "otherExam",
+	ROS        : "otherROS",
+	assessment : "otherAssessment",
+	plan       : "otherPlan"
 };
 const entries = Object.entries(sections);
 
+//vitals
+var vitals = document.getElementById("vitals");
+var vitalsOutput = document.getElementById("vitalsOutput");
+vitalsOutput.style.display = "none";
+
+//master output function
 var displayAll = function() {
 	for (const [ section, other ] of entries) {
 		display(section, other);
 		onsetResult.innerHTML = onsetNumber.value;
+	}
+	//vitals output
+	if (vitals.checked === true) {
+		demo2.innerHTML = "BP: " + SBPslider.value + "/" + DBPslider.value;
+		vitalsOutput.style.display = "block";
+	} else {
+		vitalsOutput.style.display = "none";
 	}
 };
 
 attachCheckboxHandlers();
 
 //copy soap note
-function CopyToClipboard(id) {
+function CopyToClipboard() {
 	var node = document.createElement("textarea");
 	node.innerHTML = document.getElementById("content").innerText;
 	document.body.appendChild(node);
@@ -68,10 +76,28 @@ function CopyToClipboard(id) {
 		console.log("browser not compatible");
 	}
 	document.body.removeChild(node);
+	/*
+	// Create a new textarea element and give it id='temp_element'
+	var textarea = document.createElement("textarea");
+	textarea.id = "temp_element";
+	// Optional step to make less noise on the page, if any!
+	textarea.style.height = 0;
+
+	// Now append it to your page somewhere, I chose <body>
+	document.body.appendChild(textarea);
+	// Give our textarea a value of whatever inside the div of id=containerid
+	textarea.value = document.getElementById("content").innerText;
+	// Now copy whatever inside the textarea to clipboard
+	var selector = document.querySelector("#temp_element");
+	selector.select();
+	document.execCommand("copy");
+
+	// Remove the textarea
+	document.body.removeChild(textarea);*/
 
 	/*
 	var r = document.createRange();
-	r.selectNode(document.getElementById(id));
+	r.selectNode(document.getElementById("soapNote"));
 	window.getSelection().removeAllRanges();
 	window.getSelection().addRange(r);
 	document.execCommand("copy");
@@ -104,3 +130,49 @@ function openSection(evt, sectionName) {
 	evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+//show/hide back
+function back() {
+	var checkBox = document.getElementById("back");
+	var text = document.getElementById("back-on");
+	var empty = document.getElementById("back-off");
+
+	if (checkBox.checked == true) {
+		text.style.display = "block";
+		empty.style.display = "none";
+	} else {
+		text.style.display = "none";
+		empty.style.display = "block";
+	}
+}
+
+function neck() {
+	var checkBox = document.getElementById("neck");
+	var text = document.getElementById("neck-on");
+	var empty = document.getElementById("neck-off");
+
+	if (checkBox.checked == true) {
+		text.style.display = "block";
+		empty.style.display = "none";
+	} else {
+		text.style.display = "none";
+		empty.style.display = "block";
+	}
+}
+
+//BP slider
+var SBPslider = document.getElementById("SBP");
+var SBPoutput = document.getElementById("SBPdisplay");
+SBPoutput.innerHTML = SBPslider.value;
+
+SBPslider.oninput = function() {
+	SBPoutput.innerHTML = this.value;
+};
+
+var DBPslider = document.getElementById("DBP");
+var DBPoutput = document.getElementById("DBPdisplay");
+DBPoutput.innerHTML = DBPslider.value;
+
+DBPslider.oninput = function() {
+	DBPoutput.innerHTML = this.value;
+};
