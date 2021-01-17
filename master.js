@@ -48,7 +48,7 @@ var displayAll = function() {
 	}
 	//vitals output
 	if (vitals.checked === true) {
-		BPOutput.innerHTML = "BP: " + SBPslider.value + "/" + DBPslider.value;
+		BPOutput.innerHTML = "BP:" + SBPslider.value + "/" + DBPslider.value;
 		BPOutput.style.display = "inline-block";
 		HROutput.innerHTML = "HR:" + HRslider.value;
 		HROutput.style.display = "inline-block";
@@ -135,32 +135,3 @@ HRoutput.innerHTML = HRslider.value;
 HRslider.oninput = function() {
 	HRoutput.innerHTML = this.value;
 };
-
-//show/hide back
-function back() {
-	var checkBox = document.getElementById("back");
-	var text = document.getElementById("back-on");
-	var empty = document.getElementById("back-off");
-
-	if (checkBox.checked == true) {
-		text.style.display = "block";
-		empty.style.display = "none";
-	} else {
-		text.style.display = "none";
-		empty.style.display = "block";
-	}
-}
-
-function neck() {
-	var checkBox = document.getElementById("neck");
-	var text = document.getElementById("neck-on");
-	var empty = document.getElementById("neck-off");
-
-	if (checkBox.checked == true) {
-		text.style.display = "block";
-		empty.style.display = "none";
-	} else {
-		text.style.display = "none";
-		empty.style.display = "block";
-	}
-}
