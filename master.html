@@ -1302,19 +1302,35 @@
         </div>
 
         <div id="objective" class="tabcontent">
+
             <div>
                 <label class=container>
-                    <input type="checkbox" class="exam" value="- no ">
-                    <span class="checkmark">general</span>
+                    <input type="checkbox" id="vitals">
+                    <span class="checkmark">vitals</span>
                 </label>
             </div>
             <div>
+                <div class="slidecontainer">
+
+                    <input type="range" min="40" max="120" value="80" class="DBPslider" id="DBP">
+                    <input type="range" min="90" max="200" value="120" class="SBPslider" id="SBP">
+                    BP: <span id="SBPdisplay"></span>/
+                    <span id="DBPdisplay"></span>
+                </div>
+
+                <input type="range" min="40" max="150" value="80" id="HR" class="HRslider" style="width: 300px;"> HR:
+                <span id="HRdisplay"></span>
+
+            </div>
+            <div>
+                general
+            </div>
+            <div>
                 <label class=container>
-                    <input type="checkbox" class=" " value="- well-appearing, no acute distress ">
+                    <input type="checkbox" class="exam" value="- well-appearing, no acute distress ">
                     <span class="checkmark">well-appearing, NAD</span>
                 </label>
             </div>
-
 
 
             <label class=container onclick="back()">
@@ -2183,6 +2199,9 @@
                 <br>
                 O/
                 <br>
+
+                <span id="BPOutput" contenteditable="false"></span>
+                <span id="HROutput" contenteditable="false"></span>
                 <span id="exam" style='white-space:pre-wrap' contenteditable="false"></span>
                 <br>
                 A/

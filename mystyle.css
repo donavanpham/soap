@@ -46,7 +46,9 @@ body {
 	white-space: pre-wrap;
 	background-color: rgb(255, 255, 214);
 }
-#exam {
+#exam,
+#BPOutput,
+#HROutput {
 	white-space: pre-wrap;
 	background-color: rgb(218, 230, 255);
 }
@@ -403,6 +405,13 @@ input[type=range] {
 	border-radius: 9999px;
 }
 
+#DBP {
+	width: 300px;
+}
+#SBP {
+	width: 300px;
+	margin-left: -110px;
+}
 .DBPslider::-webkit-slider-thumb {
 	-webkit-appearance: none; /* Override default look */
 	appearance: none;
@@ -419,4 +428,22 @@ input[type=range] {
 	height: 25px; /* Slider handle height */
 	background: #525252;
 	cursor: pointer; /* Cursor on hover */
+}
+
+.HRslider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 23px;
+	height: 24px;
+	border: 0;
+	background: url('heart.png');
+	cursor: pointer;
+}
+
+.HRslider::-moz-range-thumb {
+	width: 23px;
+	height: 25px;
+	border: 0;
+	background: url('heart.png');
+	cursor: pointer;
 }
