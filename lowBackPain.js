@@ -114,6 +114,7 @@ function openSection(evt, sectionName) {
 	document.getElementById(sectionName).style.display = "grid";
 	evt.currentTarget.className += " active";
 }
+
 document.getElementById("defaultOpen").click();
 
 //BP slider

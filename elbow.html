@@ -541,6 +541,25 @@
         <div id="objective" class="tabcontent">
 
             <div>
+                <label class=container>
+                    <input type="checkbox" id="vitals">
+                    <span class="checkmark">vitals</span>
+                </label>
+            </div>
+            <div>
+                <div class="slidecontainer">
+
+                    <input type="range" min="40" max="120" value="80" class="DBPslider" id="DBP">
+                    <input type="range" min="90" max="200" value="120" class="SBPslider" id="SBP">
+                    BP:<span id="SBPdisplay"></span>/
+                    <span id="DBPdisplay"></span>
+                </div>
+
+                <input type="range" min="40" max="150" value="80" id="HR" class="HRslider"> HR:
+                <span id="HRdisplay"></span>
+
+            </div>
+            <div>
                 <b>side</b>
             </div>
             <div>
@@ -863,6 +882,9 @@
                     <br>
                     O/
                     <br>
+                    <span id="BPOutput" contenteditable="false"></span>
+                    <span id="HROutput" contenteditable="false"></span>
+
                     <span id="exam" style='white-space:pre-wrap' contenteditable="false"></span>
                     <br>
                     A/
