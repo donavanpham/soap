@@ -50,7 +50,18 @@ var displayAll = function() {
 		display(section, other);
 		onsetResult.innerHTML = onsetNumber.value;
 	}
+	//vitals output
+	if (vitals.checked === true) {
+		BPOutput.innerHTML = "BP:" + SBPslider.value + "/" + DBPslider.value;
+		BPOutput.style.display = "inline-block";
+		HROutput.innerHTML = "HR:" + HRslider.value;
+		HROutput.style.display = "inline-block";
+	} else {
+		BPOutput.style.display = "none";
+		HROutput.style.display = "none";
+	}
 };
+displayAll();
 
 attachCheckboxHandlers();
 
@@ -104,3 +115,28 @@ function openSection(evt, sectionName) {
 	evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+//BP slider
+var SBPslider = document.getElementById("SBP");
+var SBPoutput = document.getElementById("SBPdisplay");
+SBPoutput.innerHTML = SBPslider.value;
+
+SBPslider.oninput = function() {
+	SBPoutput.innerHTML = this.value;
+};
+
+var DBPslider = document.getElementById("DBP");
+var DBPoutput = document.getElementById("DBPdisplay");
+DBPoutput.innerHTML = DBPslider.value;
+
+DBPslider.oninput = function() {
+	DBPoutput.innerHTML = this.value;
+};
+
+var HRslider = document.getElementById("HR");
+var HRoutput = document.getElementById("HRdisplay");
+HRoutput.innerHTML = HRslider.value;
+
+HRslider.oninput = function() {
+	HRoutput.innerHTML = this.value;
+};
