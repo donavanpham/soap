@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>abdo pain</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body style="background-color: rgb(157, 230, 174);">
+    <div id="main">
+        <h1>
+            abdo pain
+        </h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
+            <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
+            <button class="tablinks" onclick="openSection(event, 'assessment-plan')">Assessment/Plan</button>
+        </div>
+
+        <div id="subjective" class="tabcontent">
+            <div>
+                <b>onset</b>
+            </div>
+            <div>
+                <input type="number" class="HPI" id="onsetNumber">
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="hours since onset">
+                    <span class="checkmark">hours</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="days since onset">
+                    <span class="checkmark">days</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="weeks since onset">
+                    <span class="checkmark">weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="months since onset">
+                    <span class="checkmark">months</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="years since onset">
+                    <span class="checkmark">years</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- sudden onset">
+                    <span class="checkmark">sudden</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradual onset">
+                    <span class="checkmark">gradual</span>
+                </label>
+            </div>
+            <div>
+                <b>new?</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- new issue">
+                    <span class="checkmark">new issue</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- known issue">
+                    <span class="checkmark">previously known issue</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>intensity</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild intensity">
+                    <span class="checkmark">mild</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild-moderate intensity">
+                    <span class="checkmark">mild-moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate intensity">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate/severe intensity">
+                    <span class="checkmark">moderate-severe</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- severe intensity">
+                    <span class="checkmark">severe</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>frequency</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- single episode">
+                    <span class="checkmark">single episode</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- constant">
+                    <span class="checkmark">constant</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- intermittent">
+                    <span class="checkmark">intermittent</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- daily">
+                    <span class="checkmark">daily</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- few times a week">
+                    <span class="checkmark">few times a week</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- few times a month">
+                    <span class="checkmark">few times a month</span>
+                </label>
+            </div>
+
+
+            <div>
+                <b>duration</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lasts a few minutes">
+                    <span class="checkmark">few minutes</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lasts less than an hour">
+                    <span class="checkmark">less than an hour</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lasts a few hours">
+                    <span class="checkmark">few hours</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lasts for most of the day">
+                    <span class="checkmark">most of the day</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lasts a few days">
+                    <span class="checkmark">few days</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>status</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improving since onset">
+                    <span class="checkmark">improving</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no change since onset">
+                    <span class="checkmark">unchanged</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- resolved since onset">
+                    <span class="checkmark">resolved</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradually worsening since onset">
+                    <span class="checkmark">gradually worsening</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- significantly worsening since onset">
+                    <span class="checkmark">significant worsening</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>HPI</b>
+            </div>
+            <div>
+                <textarea id="otherHPI" onchange="displayAll()" placeholder="HPI"></textarea><br>
+            </div>
+
+            <div>
+                <b>location</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- general abdomen">
+                    <span class="checkmark">general abdomen</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- RUQ">
+                    <span class="checkmark">RUQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- epigastric">
+                    <span class="checkmark">epigastric</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="location" value="- LUQ">
+                    <span class="checkmark">LUQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- periumbilical">
+                    <span class="checkmark">periumbilical</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="location" value="- RLQ">
+                    <span class="checkmark">RLQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- LLQ">
+                    <span class="checkmark">LLQ</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="location" value="- suprapubic">
+                    <span class="checkmark">suprapubic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- R flank">
+                    <span class="checkmark">R flank</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="location" value="- L flank">
+                    <span class="checkmark">L flank</span>
+                </label>
+
+
+                <br>
+                <input type="text" class="location" id="otherLocation" style="float: right;">
+                <br>
+            </div>
+
+            <div>
+                <b>radiation</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- no radiation of pain">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to entire abdomen">
+                    <span class="checkmark">entire abdomen</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to chest">
+                    <span class="checkmark">chest</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to RUQ">
+                    <span class="checkmark">RUQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to epigastric area">
+                    <span class="checkmark">epigastric</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to LUQ">
+                    <span class="checkmark">LUQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to periumbilical area">
+                    <span class="checkmark">periumbilical</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to RLQ">
+                    <span class="checkmark">RLQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to LLQ">
+                    <span class="checkmark">LLQ</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to suprapubic area">
+                    <span class="checkmark">suprapubic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to R flank">
+                    <span class="checkmark">R flank</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to L flank">
+                    <span class="checkmark">L flank</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to R back">
+                    <span class="checkmark">R back</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to L flank">
+                    <span class="checkmark">L back</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to R goin">
+                    <span class="checkmark">R groin</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="radiation" value="- radiates to L groin">
+                    <span class="checkmark">L groin</span>
+                </label>
+                <br>
+                <input type="text" class="radiation" id="otherRadiation" style="float: right;" placeholder="">
+                <br>
+            </div>
+
+            <div>
+                <b>quality</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- debilitating">
+                    <span class="checkmark">debilitating</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- dull pain">
+                    <span class="checkmark">dull</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- pressure like">
+                    <span class="checkmark">pressure</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- superficial pain">
+                    <span class="checkmark">superficial</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- sharp pain">
+                    <span class="checkmark">sharp</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- throbbing pain">
+                    <span class="checkmark">throbbing</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- cramping pain">
+                    <span class="checkmark">cramping</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="quality" value="- stabbing pain">
+                    <span class="checkmark">stabbing</span>
+                </label>
+                <br>
+                <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="">
+                <br>
+            </div>
+            <div>
+                <b>timing</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="timing" value="- mostly during daytime">
+                    <span class="checkmark">daytime</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="timing" value="- upon awakening">
+                    <span class="checkmark">upon awakening</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="timing" value="- mostly at night">
+                    <span class="checkmark">night time</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="timing" value="- pre menstrual pain">
+                    <span class="checkmark">pre menstrual</span>
+                </label>
+                <br>
+                <input type="text" class="timing" id="otherTiming" style="float: right;" placeholder="">
+                <br>
+            </div>
+            <div>
+                <b>aggravated by</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="aggravation" value="- no aggravating factors">
+                    <span class="checkmark">nothing</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="aggravation" value="- worse after meals">
+                    <span class="checkmark">post prandial</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="aggravation" value="- worse with fatty foods">
+                    <span class="checkmark">fatty foods</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="aggravation" value="- worse with certain foods">
+                    <span class="checkmark">certain foods</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="aggravation" value="- worse with walking/standing">
+                    <span class="checkmark">walking/standing</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="aggravation" value="- worse with lying down">
+                    <span class="checkmark">lying down</span>
+                </label>
+                <br>
+                <input type="text" class="aggravation" id="otherAggravation" style="float: right;" placeholder="">
+                <br>
+            </div>
+
+            <div>
+                <b>relieved by</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- no relieving factors">
+                    <span class="checkmark">nothing</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- relieved with flexion">
+                    <span class="checkmark">passing BM</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- relieved after some time">
+                    <span class="checkmark">time</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- relieved by lying down">
+                    <span class="checkmark">lying down</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- relieved by heartburn meds">
+                    <span class="checkmark">heartburn rx</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- relieved by OTC analgesics">
+                    <span class="checkmark">OTC meds</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="relief" value="- relieved with heat">
+                    <span class="checkmark">heat</span>
+                </label>
+
+                <br>
+                <input type="text" class="relief" id="otherRelief" style="float: right;" placeholder="">
+                <br>
+            </div>
+
+            <div>
+                <b>abdo/GI</b>
+            </div>
+            <div>
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- no flatus in past 24h">
+                    <span class="positive-checkbox"><b>&ndash;</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- passed flatus in past 24h">
+                    <span class="negative-checkbox">flatus in past 24h
+                        &nbsp;<b>+</b></span>
+                </label>
+                <br>
+                last BM:
+                <label class=container>
+                    <input type="checkbox" class="ROS" value="- last BM within 1 day">
+                    <span class="checkmark">within 1 day</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="ROS" value="- last BM within last 3 days">
+                    <span class="checkmark">within 3 days</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="ROS" value="- last BM within last week">
+                    <span class="checkmark">within 1 week</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="ROS" value="- last BM over 1 week ago">
+                    <span class="checkmark">over 1 week</span>
+                </label>
+
+
+                <div class="nested">
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)trauma">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no trauma to abdomen">
+                            <span class="negative-checkbox">trauma
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)weight loss">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no weight loss">
+                            <span class="negative-checkbox">weight loss
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)change in BM">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no change in stools">
+                            <span class="negative-checkbox">change in BM
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)fever">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no fever">
+                            <span class="negative-checkbox">fever
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)constipation">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no constipation">
+                            <span class="negative-checkbox">constipation
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)diarrhea">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no diarrhea">
+                            <span class="negative-checkbox">diarrhea
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)heartburn">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no heartburn">
+                            <span class="negative-checkbox">heartburn
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)blood/melena in stool">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no blood/melena in stool">
+                            <span class="negative-checkbox">blood/melena
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)bowel/bladder incontinence">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no bowel/bladder incontinence">
+                            <span class="negative-checkbox">incontinence
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)abdo distention">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no abdo distention">
+                            <span class="negative-checkbox">distention
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)nausea/vomiting">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no nausea/vomiting">
+                            <span class="negative-checkbox">nausea/vomiting
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)abdominal mass">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no masses/hernia">
+                            <span class="negative-checkbox">masses/hernia
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)jaundice">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no jaundice">
+                            <span class="negative-checkbox">jaundice
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="ROS" value="- (+)decreased appetite">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="ROS" value="- no decreased appetite">
+                            <span class="negative-checkbox">decreased appetite
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="ROS"
+                        value="- no sore throat, hoarseness, trismus or dysphagia/odynophagia">
+                    <span class="checkmark">throat</span>
+                </label>
+            </div>
+            <div>
+
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)sore throat">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no sore throat">
+                    <span class="negative-checkbox">sore throat
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)hoarseness">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no hoarseness">
+                    <span class="negative-checkbox">hoarseness
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)trismus">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no trismus">
+                    <span class="negative-checkbox">trismus
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)dysphagia/odynophagia">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no dysphagia/odynophagia">
+                    <span class="negative-checkbox">dysphagia/odynophagia
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="ROS"
+                        value="- no cough, sputum production, hemoptysis, dyspnea, or wheezing">
+                    <span class="checkmark">resp </span>
+                </label>
+            </div>
+            <div>
+
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)cough ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no cough ">
+                    <span class="negative-checkbox">cough
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)sputum production">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no sputum production ">
+                    <span class="negative-checkbox">sputum
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)hemoptysis ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no hemoptysis">
+                    <span class="negative-checkbox">hemoptysis
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)dyspnea">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no dyspnea">
+                    <span class="negative-checkbox">dyspnea
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+) wheezing">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no wheezing ">
+                    <span class="negative-checkbox">wheezing
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="ROS"
+                        value="- no urinary frequency, urgency, dysuria, hematuria, incontinence or cloudy urine">
+                    <span class="checkmark">GU</span>
+                </label>
+            </div>
+            <div>
+
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)urinary frequency">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no urinary frequency">
+                    <span class="negative-checkbox">frequency
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)urinary urgency ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no urinary urgency ">
+                    <span class="negative-checkbox">urgency
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)dysuria ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no dysuria ">
+                    <span class="negative-checkbox">dysuria
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)hematuria ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no hematuria ">
+                    <span class="negative-checkbox"> hematuria
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)urinary incontinence ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no urinary incontinence ">
+                    <span class="negative-checkbox"> incontinence
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                <br>
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+) cloudy urine">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no cloudy urine ">
+                    <span class="negative-checkbox"> cloudy urine
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)weak urine stream ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no weak urine stream ">
+                    <span class="negative-checkbox">weak stream
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)nocturia ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no nocturia">
+                    <span class="negative-checkbox">nocturia
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="ROS"
+                        value="- no genital masses, hernias, urethral discharge, or STI concerns">
+                    <span class="checkmark">M genital</span>
+                </label>
+            </div>
+            <div>
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)urethral discharge">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no urethral discharge">
+                    <span class="negative-checkbox"> discharge
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)inguinal hernia">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no inguinal hernia">
+                    <span class="negative-checkbox">hernia
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)testicular mass">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no testicular mass">
+                    <span class="negative-checkbox"> masses
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)STI concerns">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no STI concerns">
+                    <span class="negative-checkbox">STI concerns
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="ROS"
+                        value="- no dyspareunia, vaginal discharge, pruritus, or STI concerns">
+                    <span class="checkmark">F genital</span>
+                </label>
+            </div>
+            <div>
+
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)dyspareunia">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no dyspareunia">
+                    <span class="negative-checkbox">dyspareunia
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)vaginal dryness ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no vaginal dryness ">
+                    <span class="negative-checkbox">dryness
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)vaginal discharge">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no vaginal discharge">
+                    <span class="negative-checkbox"> discharge
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)genital pruritus ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no genital pruritus ">
+                    <span class="negative-checkbox">pruritus
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="ROS" value="- (+)STI concerns ">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="ROS" value="- no STI concerns ">
+                    <span class="negative-checkbox">STI concerns
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+
+
+
+            <div>
+
+            </div>
+            <div>
+
+                <textarea id="otherROS" onchange="displayAll()" placeholder="details/comments"></textarea><br>
+            </div>
+
+        </div>
+
+        <div id="objective" class="tabcontent">
+            <div>
+                <label class=container>
+                    <input type="checkbox" id="vitals">
+                    <span class="checkmark">vitals</span>
+                </label>
+            </div>
+            <div>
+                <div class="slidecontainer">
+
+                    <input type="range" min="40" max="120" value="80" class="DBPslider" id="DBP">
+                    <input type="range" min="90" max="200" value="120" class="SBPslider" id="SBP">
+                    BP:<span id="SBPdisplay"></span>/
+                    <span id="DBPdisplay"></span>
+                </div>
+
+                <input type="range" min="40" max="150" value="80" id="HR" class="HRslider"> HR:
+                <span id="HRdisplay"></span>
+
+            </div>
+            <div>
+                <b>inspection</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam"
+                        value="- normal inspection - no distention, visible masses, bruising or signs of skin infection">
+                    <span class="checkmark">normal</span>
+                </label>
+                <br>
+                distention:
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- mild abdominal distention">
+                    <span class="checkmark">mild</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- moderate abdominal distention">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- significant abdominal distention">
+                    <span class="checkmark">significant</span>
+                </label>
+            </div>
+            <div>
+
+                <b>palpation</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam"
+                        value="- normal palpation - non tender to palpation, no rebound tenderness, no masses palpated">
+                    <span class="checkmark">normal</span>
+                </label>
+                <br>
+                tender:
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender general abdomen">
+                    <span class="checkmark">general abdomen</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender RUQ">
+                    <span class="checkmark">RUQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender epigastric">
+                    <span class="checkmark">epigastric</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender LUQ">
+                    <span class="checkmark">LUQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender periumbilical">
+                    <span class="checkmark">periumbilical</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender RLQ">
+                    <span class="checkmark">RLQ</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender LLQ">
+                    <span class="checkmark">LLQ</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender suprapubic">
+                    <span class="checkmark">suprapubic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender R flank">
+                    <span class="checkmark">R flank</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- tender L flank">
+                    <span class="checkmark">L flank</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- no rebound tenderness, non peritonitic">
+                    <span class="checkmark">non peritonitic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- no abdominal or inguinal hernias">
+                    <span class="checkmark">no hernias</span>
+                </label>
+                <br>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)CVA tenderness">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- no CVA tenderness">
+                    <span class="negative-checkbox">CVA tender
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+            <div>
+                <b>signs</b>
+            </div>
+            <div>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)murphy sign">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- (-)murphy sign">
+                    <span class="negative-checkbox">murphy
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)mcburney sign">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- (-)mcburney sign">
+                    <span class="negative-checkbox">mcburney
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)rovsing">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- (-)rovsing">
+                    <span class="negative-checkbox">rovsing
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)obturator sign">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- (-)obturator sign">
+                    <span class="negative-checkbox">obturator
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+            <div>
+
+                <b>genitals</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- genital exam declined, not performed">
+                    <span class="checkmark">declined</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam"
+                        value="- genital exam - normal inspection, no masses on palpation">
+                    <span class="checkmark">normal</span>
+                </label>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- clinic dipstick UA:">
+                    <span class="checkmark"><b>U/A</b></span>
+                </label>
+
+            </div>
+            <div>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="  (+) hematuria">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="  (-) hematuria">
+                    <span class="negative-checkbox">hematuria
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="  (+) leuks">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="  (-) leuks">
+                    <span class="negative-checkbox">leuks
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="  (+) nitrites">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="  (-) nitrites">
+                    <span class="negative-checkbox">nitrites
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+
+
+
+            <div>
+                other
+            </div>
+            <div>
+                <textarea id="otherExam" onchange="displayAll()" placeholder="details and/or other findings"></textarea>
+            </div>
+        </div>
+
+
+        <div id="assessment-plan" class="tabcontent">
+
+            <div>
+
+                <b>Assessment:</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with GERD">
+                    <span class="checkmark">GERD</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with biliary colic">
+                    <span class="checkmark">biliary colic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with biliary colic">
+                    <span class="checkmark">appendicitis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with pancreatitis">
+                    <span class="checkmark">pancreatitis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with biliary colic">
+                    <span class="checkmark">constipation</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with uncomplicated UTI">
+                    <span class="checkmark">uncomplicated UTI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with pyelonephritis">
+                    <span class="checkmark">pyelonephritis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with renal colic">
+                    <span class="checkmark">renal colic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with IBS">
+                    <span class="checkmark">IBS</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with mittelschmerz">
+                    <span class="checkmark">mittelschmerz</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="Findings consistent with uncomplicated diverticulitis">
+                    <span class="checkmark">uncomplicated diverticulitis</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment" value="Findings consistent with functional abdo pain">
+                    <span class="checkmark">functional</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="Findings not suggestive of specific etiology of abdo pain">
+                    <span class="checkmark">NYD</span>
+                </label>
+
+            </div>
+
+            <div>
+
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="assessment"
+                        value="- no weight loss, vomiting, bleeding, distention, obstipation, peritonitis or tachycardia">
+                    <span class="checkmark">no red flags</span>
+                </label>
+            </div>
+            <div>
+                details</div>
+            <div>
+                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment details"></textarea>
+            </div>
+            <div>
+                <b>Plan</b>
+            </div>
+            <div></div>
+            <div>
+                investigations
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- AXR">
+                    <span class="checkmark">AXR</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- CXR">
+                    <span class="checkmark">CXR</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- colonoscopy">
+                    <span class="checkmark">colonoscopy</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- EGD">
+                    <span class="checkmark">EGD</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- CT abdo/pelvis">
+                    <span class="checkmark">CT</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- US abdomen">
+                    <span class="checkmark">US</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- recommended keeping a symptoms diary">
+                    <span class="checkmark">symptoms diary</span>
+                </label>
+            </div>
+
+            <div>
+                referral
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- referral to GI">
+                    <span class="checkmark">GI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- referral to gen surg">
+                    <span class="checkmark">gen surg</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- referral to urology">
+                    <span class="checkmark">urology</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- referral to gynecology">
+                    <span class="checkmark">gyne</span>
+                </label>
+            </div>
+
+            <div>
+                rx
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- empiric abx">
+                    <span class="checkmark">abx</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- PPI">
+                    <span class="checkmark">PPI</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- H2 blocker">
+                    <span class="checkmark">H2 blocker</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- peg 3350 daily/prn for constipation">
+                    <span class="checkmark">peg 3350</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- fiber supplement">
+                    <span class="checkmark">fiber supplement</span>
+                </label>
+            </div>
+
+            <div>
+                follow-up
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up planned in 2-4 weeks">
+                    <span class="checkmark">2-4 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up PRN">
+                    <span class="checkmark">PRN only</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="plan" value="- follow-up after investigations">
+                    <span class="checkmark">after investigations</span>
+                </label>
+            </div>
+            <div>
+                RTC
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="plan"
+                        value="- RTC/ER if worsening symptoms, fever, vomiting, inability to tolerate PO, no resolution with therapy or otherwise unwell">
+                    <span class="checkmark">instructions given</span>
+                </label>
+            </div>
+            <div>
+                other</div>
+            <div>
+                <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <div class="tooltip">
+            <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note
+            </button>
+        </div>
+        <div id="soapNote">
+
+            <div id="content" contenteditable="">
+                ABDO PAIN<br><br>
+                S/ <br>
+
+                <div id="onsetResult" style="display:inline" contenteditable="false"></div>
+                <span id="HPI" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="location" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="radiation" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="quality" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="timing" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="aggravation" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="relief" style='white-space:pre-wrap' contenteditable="false"></span>
+                <span id="ROS" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                O/
+                <br>
+                <span id="BPOutput" contenteditable="false"></span>
+                <span id="HROutput" contenteditable="false"></span>
+
+                <span id="exam" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                A/
+                <br>
+                <span id="assessment" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                P/
+                <br>
+                <span id="plan" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="lowBackPain.js"></script>
+</body>
+
+</html>
