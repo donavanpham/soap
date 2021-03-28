@@ -17,11 +17,11 @@ function display(section, other) {
 	var str = "";
 	var other = document.getElementById(other).value;
 	if (other !== "") {
-		other += " ";
+		other += "<br>";
 	}
 	for (i = 0; i < items.length; i++) {
 		if (items[i].checked === true) {
-			str += items[i].value + " ";
+			str += items[i].value + "<br>";
 		}
 	}
 
@@ -30,33 +30,24 @@ function display(section, other) {
 
 // sections
 const sections = {
-	interest     : "otherInterest",
-	current      : "otherCurrent",
-	partner      : "otherPartner",
-	condom       : "otherCondom",
-	active       : "otherActive",
-	past         : "otherPast",
-	previous     : "otherPrevious",
-	STI          : "otherSTI",
-	STIScreen    : "otherSTIScreen",
-	LMP          : "otherLMP",
-	estrogen     : "otherEstrogen",
-	progesterone : "otherProgesterone",
-	IUD          : "otherIUD",
-	choice       : "otherChoice",
-	HPI          : "otherHPI",
+	complaint  : "otherComplaint",
+	HPI        : "otherHPI",
 
-	exam         : "otherExam",
-
-	plan         : "otherPlan"
+	exam       : "otherExam",
+	ROS        : "otherROS",
+	assessment : "otherAssessment",
+	plan       : "otherPlan"
 };
 const entries = Object.entries(sections);
 
+//master output function
 var displayAll = function() {
 	for (const [ section, other ] of entries) {
 		display(section, other);
+		onsetResult.innerHTML = onsetNumber.value;
 	}
 };
+displayAll();
 
 attachCheckboxHandlers();
 
@@ -74,7 +65,6 @@ function CopyToClipboard(id) {
 		console.log("browser not compatible");
 	}
 	document.body.removeChild(node);
-
 	/*
 	var r = document.createRange();
 	r.selectNode(document.getElementById(id));
@@ -110,3 +100,44 @@ function openSection(evt, sectionName) {
 	evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+//exam Section tabs
+function openExamSection(evt, sectionName) {
+	// Declare all variables
+	var i, examcontent, examlinks;
+	// Get all elements with class="examcontent" and hide them
+	examcontent = document.getElementsByClassName("examcontent");
+	for (i = 0; i < examcontent.length; i++) {
+		examcontent[i].style.display = "none";
+	}
+	// Get all elements with class="examlinks" and remove the class "active"
+	examlinks = document.getElementsByClassName("examlinks");
+	for (i = 0; i < examlinks.length; i++) {
+		examlinks[i].className = examlinks[i].className.replace(" active", "");
+	}
+	// Show the current tab, and add an "active" class to the link that opened the tab
+	document.getElementById(sectionName).style.display = "grid";
+	evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpenExam").click();
+
+//toggle neuro normal
+var toggleNeuro = document.getElementById("toggleNeuro");
+toggleNeuro.addEventListener("change", function() {
+	var checked = this.checked;
+	var otherCheckboxes = document.getElementsByName("normalNeuro");
+	[].forEach.call(otherCheckboxes, function(item) {
+		item.checked = checked;
+	});
+	displayAll();
+});
+
+var toggleMSE = document.getElementById("toggleMSE");
+toggleMSE.addEventListener("change", function() {
+	var checked = this.checked;
+	var otherCheckboxes = document.getElementsByName("normalMSE");
+	[].forEach.call(otherCheckboxes, function(item) {
+		item.checked = checked;
+	});
+	displayAll();
+});

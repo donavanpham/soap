@@ -350,6 +350,33 @@ textarea {
 	background-color: #ccc;
 }
 
+.exam-tabs {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	height: 40px;
+	padding: 0px;
+	margin: -20px;
+	margin-top: -5px;
+	margin-bottom: 10px;
+}
+.exam-tabs button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 8px;
+	font-family: "Verdana", Monaco, monospace;
+}
+
+.exam-tabs button:hover {
+	background-color: #ddd;
+}
+
+.exam-tabs button.active {
+	background-color: rgb(161, 230, 192);
+	outline: #3e8e41;
+}
+
 /* Style the tab content */
 /*.tabcontent {
 	display: none;
@@ -366,6 +393,16 @@ textarea {
 	grid-template-columns: auto 1fr;
 	grid-gap: 1em;
 }
+
+#objective {
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+}
+.examcontent {
+	grid-template-columns: auto 1fr;
+	grid-gap: 1em;
+}
+
 /*.tabcontent div {
 	background: #eee;
 }
@@ -456,3 +493,5 @@ input[type=range] {
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
+
+/* normal exam toggles */
