@@ -388,13 +388,11 @@ textarea {
 	background-color: #ccc;
 	box-shadow: 0px 5px 5px 0px #888;
 	border-radius: 0px 0px 8px 8px;
-}
-.tabcontent {
 	grid-template-columns: auto 1fr;
 	grid-gap: 1em;
 }
 
-#objective {
+#objectiveExam {
 	grid-template-columns: 1fr;
 	grid-gap: 1em;
 }
@@ -403,12 +401,6 @@ textarea {
 	grid-gap: 1em;
 }
 
-/*.tabcontent div {
-	background: #eee;
-}
-.tabcontent div:nth-child(odd) {
-	background: #ddd;
-}*/
 .nested {
 	display: grid;
 	grid-template-columns: auto auto auto;
