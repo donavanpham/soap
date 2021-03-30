@@ -141,3 +141,33 @@ toggleMSE.addEventListener("change", function() {
 	});
 	displayAll();
 });
+
+var toggleCardio = document.getElementById("toggleCardio");
+toggleCardio.addEventListener("change", function() {
+	var checked = this.checked;
+	var otherCheckboxes = document.getElementsByName("normalCardio");
+	[].forEach.call(otherCheckboxes, function(item) {
+		item.checked = checked;
+	});
+	displayAll();
+});
+
+var toggleResp = document.getElementById("toggleResp");
+toggleResp.addEventListener("change", function() {
+	var checked = this.checked;
+	var otherCheckboxes = document.getElementsByName("normalResp");
+	[].forEach.call(otherCheckboxes, function(item) {
+		item.checked = checked;
+	});
+	displayAll();
+});
+
+var toggleAbdo = document.getElementById("toggleAbdo");
+toggleAbdo.addEventListener("change", function() {
+	var checked = this.checked;
+	var otherCheckboxes = document.getElementsByName("normalAbdo");
+	[].forEach.call(otherCheckboxes, function(item) {
+		item.checked = checked;
+	});
+	displayAll();
+});

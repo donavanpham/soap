@@ -173,7 +173,7 @@
 
             <div>
                 <b>ROS</b>
-                <br>negative<br>
+                <br>↓ normal ↓<br>
             </div>
             <div>
 
@@ -1305,11 +1305,11 @@
             <div class="exam-tabs">
                 <button class="examlinks" onclick="openExamSection(event, 'basic')" id="defaultOpenExam">Basic</button>
                 <button class="examlinks" onclick="openExamSection(event, 'MSE')">MSE</button>
-                <button class="examlinks" onclick="openExamSection(event, 'HENT')">HENT</button>
-                <button class="examlinks" onclick="openExamSection(event, 'Neck')">Neck</button>
-                <button class="examlinks" onclick="openExamSection(event, 'Eyes')">Eyes</button>
                 <button class="examlinks" onclick="openExamSection(event, 'Cardio')">Cardio</button>
-                <button class="examlinks" onclick="openExamSection(event, 'Pulm')">Resp</button>
+                <button class="examlinks" onclick="openExamSection(event, 'Resp')">Resp</button>
+                <button class="examlinks" onclick="openExamSection(event, 'HENT')">HENT</button>
+                <button class="examlinks" onclick="openExamSection(event, 'Eyes')">Eyes</button>
+                <button class="examlinks" onclick="openExamSection(event, 'Neck')">Neck</button>
                 <button class="examlinks" onclick="openExamSection(event, 'Abdo')">Abdo</button>
                 <button class="examlinks" onclick="openExamSection(event, 'Neuro')">Neuro</button>
 
@@ -1723,6 +1723,13 @@
 
                 </div>
                 <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="MSE:" name="normalMSE">
+                        <span class="checkmark"><b>MSE:</b></span>
+                    </label>
+                </div>
+                <div></div>
+                <div>
                     <b>general</b>
                 </div>
                 <div>
@@ -1999,6 +2006,493 @@
 
 
             </div>
+
+            <div id="Cardio" class="examcontent">
+                <div>
+
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="" id="toggleCardio">
+                        <span class="checkmark"
+                            style="font-size: large;padding-right: 40px;padding-left: 40px;margin-left: -70px;"><b>normal</b></span>
+                    </label>
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="CV exam:" name="normalCardio">
+                        <span class="checkmark">Cardio</span>
+                    </label>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    rate
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal rate" name="normalCardio">
+                        <span class="checkmark"><b>normal</b></span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- tachycardia">
+                        <span class="checkmark">tachycardia</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- bradycardia">
+                        <span class="checkmark">bradycardia</span>
+                    </label>
+
+                </div>
+                <div>
+                    rhythm
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- regular rhythm" name="normalCardio">
+                        <span class="checkmark"><b>regular</b></span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- irregular rhythm">
+                        <span class="checkmark">irregular</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- regularly irregular rhythm">
+                        <span class="checkmark">regularly irregular</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- irregularly irregular rhythm">
+                        <span class="checkmark">irregularly irregular</span>
+                    </label>
+
+                </div>
+                <div>
+                    sounds
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal heart sounds, no murmur, no friction rub"
+                            name="normalCardio">
+                        <span class="checkmark"><b>normal</b></span>
+                    </label>
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) murmur:">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no murmur">
+                        <span class="negative-checkbox">murmur
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value=" -- (+) systolic murmur">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value=" -- no systolic murmur">
+                        <span class="negative-checkbox">systolic
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value=" -- (+) diastolic murmur">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value=" -- no diastolic murmur">
+                        <span class="negative-checkbox">diastolic
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) friction rub">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no friction rub">
+                        <span class="negative-checkbox">friction rub
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) gallop">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no gallop">
+                        <span class="negative-checkbox">gallop
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) S3">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no S3">
+                        <span class="negative-checkbox">S3
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) S4">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no S4">
+                        <span class="negative-checkbox">S4
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                </div>
+                <div>
+                    LE edema
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- no LE edema" name="normalCardio">
+                        <span class="checkmark"><b>none</b></span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- bilateral LE 1+ pitting edema">
+                        <span class="checkmark">bil 1+</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- bilateral LE 2+ pitting edema">
+                        <span class=" checkmark">bil 2+</span>
+                    </label>
+
+                </div>
+                <div>
+                    pulses
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal 2+ peripheral pulses" name="normalCardio">
+                        <span class="checkmark"><b>normal</b></span>
+                    </label>
+                </div>
+
+
+            </div>
+
+            <div id="Resp" class=" examcontent">
+                <div>
+
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="" id="toggleResp">
+                        <span class="checkmark"
+                            style="font-size: large;padding-right: 40px;padding-left: 40px;margin-left: -55px;"><b>normal</b></span>
+                    </label>
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="Resp:" name="normalResp">
+                        <span class="checkmark"><b>Resp</b></span>
+                    </label>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    effort
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam"
+                            value="- normal inspiratory effort, no tachypnea, no accessory muscle usage"
+                            name="normalResp">
+                        <span class="checkmark"><b>normal</b></span>
+                    </label>
+                    <br>
+
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) accessory muscle usage">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no accessory muscle usage">
+                        <span class="negative-checkbox">accessory muscle usage
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) prolonged expiration">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no prolonged expiration">
+                        <span class="negative-checkbox">prolonged expiration
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                </div>
+                <div>
+                    sounds
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- GAEB" name="normalResp">
+                        <span class="checkmark"><b>GAEB</b></span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal breath sounds" name="normalResp">
+                        <span class="checkmark"><b>normal breath sounds</b></span>
+                    </label>
+
+
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) stridor">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no stridor">
+                        <span class="negative-checkbox">stridor
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) decreased breath sounds">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no decreased breath sounds">
+                        <span class="negative-checkbox">decreased breath sounds
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;&nbsp;&nbsp; L:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L base">
+                        <span class="checkmark">base</span>
+                    </label>
+                    &nbsp; R:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R base">
+                        <span class="checkmark">base</span>
+                    </label>
+
+
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) wheezes">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative" style="margin-right: 117px;">
+                        <input type="checkbox" class="exam" value="- no wheezes">
+                        <span class="negative-checkbox">wheezes
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    L:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L base">
+                        <span class="checkmark">base</span>
+                    </label>
+                    &nbsp;
+                    R:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R base">
+                        <span class="checkmark">base</span>
+                    </label>
+
+
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) rhonchi">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative" style="margin-right: 124px;">
+                        <input type="checkbox" class="exam" value="- no rhonchi">
+                        <span class="negative-checkbox">rhonchi
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    L:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L base">
+                        <span class="checkmark">base</span>
+                    </label>
+                    &nbsp;
+                    R:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R base">
+                        <span class="checkmark">base</span>
+                    </label>
+
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) rales">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative" style="margin-right: 140px;">
+                        <input type="checkbox" class="exam" value="- no rales">
+                        <span class="negative-checkbox">rales
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    L:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L base">
+                        <span class="checkmark">base</span>
+                    </label>
+                    &nbsp;
+                    R:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R base">
+                        <span class="checkmark">base</span>
+                    </label>
+
+
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) crackles">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative" style="margin-right: 120px;">
+                        <input type="checkbox" class="exam" value="- no crackles">
+                        <span class="negative-checkbox">crackles
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    L:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L base">
+                        <span class="checkmark">base</span>
+                    </label>
+                    &nbsp;
+                    R:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R base">
+                        <span class="checkmark">base</span>
+                    </label>
+
+
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) egophony">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative" style="margin-right: 110px;">
+                        <input type="checkbox" class="exam" value="- negative egophony">
+                        <span class="negative-checkbox">egophony
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    L:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > L base">
+                        <span class="checkmark">base</span>
+                    </label>
+                    &nbsp;
+                    R:
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R upper">
+                        <span class="checkmark">upper</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R mid">
+                        <span class="checkmark">mid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" > R base">
+                        <span class="checkmark">base</span>
+                    </label>
+                </div>
+
+
+            </div>
+
 
             <div id="HENT" class="examcontent">
                 <div>
@@ -2659,6 +3153,293 @@
                     <label class=container>
                         <input type="checkbox" class="exam" value="- Tonsil size grade 4+">
                         <span class="checkmark">4+</span>
+                    </label>
+
+                </div>
+            </div>
+
+            <div id="Eyes" class="examcontent">
+
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="Eyes:">
+                        <span class="checkmark">Eyes:</span>
+                    </label>
+                </div>
+                <div>
+                </div>
+                <div>
+                    general
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- PERRL">
+                        <span class="checkmark">PERRL</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal eyelids">
+                        <span class="checkmark">lids normal</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- no foreign body seen">
+                        <span class="checkmark">no foreign body</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- vision grossly intact">
+                        <span class="checkmark">vision grossly intact</span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal EOM">
+                        <span class="checkmark">normal EOM</span>
+                    </label>
+
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- gaze aligned appropriately">
+                        <span class="checkmark">gaze aligned</span>
+                    </label>
+                    <br>
+
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) scleral icterus">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no scleral icterus">
+                        <span class="negative-checkbox">scleral icterus
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="R eye:">
+                        <span class="checkmark">R eye</span>
+                    </label>
+                </div>
+                <div>
+
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) discharge">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no discharge">
+                        <span class="negative-checkbox">discharge
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- watery">
+                        <span class="checkmark">watery</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- purulent">
+                        <span class="checkmark">purulent</span>
+                    </label>
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) hordoleum">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no hordoleum">
+                        <span class="negative-checkbox">hordoleum
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) stye">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no stye">
+                        <span class="negative-checkbox">stye
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- upper lid">
+                        <span class="checkmark">upper lid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- lower lid">
+                        <span class="checkmark">lower lid</span>
+                    </label>
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) abnormal conjunctiva">
+                        <span class="positive-checkbox"><b>A</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- normal conjunctivae">
+                        <span class="negative-checkbox">conjunctiva
+                            &nbsp;<b>N</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) injected">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- not injected">
+                        <span class="negative-checkbox">injected
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) chemosis">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no chemosis">
+                        <span class="negative-checkbox">chemosis
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) exudate">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no exudate">
+                        <span class="negative-checkbox">exudate
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) conjunctival hemorrhage">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no conjunctival hemorrhage">
+                        <span class="negative-checkbox">conjunctival hemorrhage
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal fluorescein stain">
+                        <span class="checkmark">normal fluorescein</span>
+                    </label>
+
+
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="L eye:">
+                        <span class="checkmark">L eye</span>
+                    </label>
+                </div>
+                <div>
+
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) discharge">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no discharge">
+                        <span class="negative-checkbox">discharge
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- watery">
+                        <span class="checkmark">watery</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- purulent">
+                        <span class="checkmark">purulent</span>
+                    </label>
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) hordoleum">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no hordoleum">
+                        <span class="negative-checkbox">hordoleum
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) stye">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no stye">
+                        <span class="negative-checkbox">stye
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    &nbsp;
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- upper lid">
+                        <span class="checkmark">upper lid</span>
+                    </label>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value=" -- lower lid">
+                        <span class="checkmark">lower lid</span>
+                    </label>
+                    <br>
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) abnormal conjunctiva">
+                        <span class="positive-checkbox"><b>A</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- normal conjunctivae">
+                        <span class="negative-checkbox">conjunctiva
+                            &nbsp;<b>N</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) injected">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- not injected">
+                        <span class="negative-checkbox">injected
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) chemosis">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no chemosis">
+                        <span class="negative-checkbox">chemosis
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) exudate">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no exudate">
+                        <span class="negative-checkbox">exudate
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+
+                    &nbsp;
+                    <label class="positive">
+                        <input type="checkbox" class="exam" value="- (+) conjunctival hemorrhage">
+                        <span class="positive-checkbox"><b>+</b></span>
+                    </label>
+                    <label class="negative">
+                        <input type="checkbox" class="exam" value="- no conjunctival hemorrhage">
+                        <span class="negative-checkbox">conjunctival hemorrhage
+                            &nbsp;<b>&ndash;</b></span>
+                    </label>
+                    <br>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="- normal fluorescein stain">
+                        <span class="checkmark">normal fluorescein</span>
                     </label>
 
                 </div>
@@ -3328,480 +4109,20 @@
             </div>
 
 
-            <div id="Eyes" class="examcontent">
-            </div>
-
-            <div id="Cardio" class="examcontent">
-
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="CV exam:">
-                        <span class="checkmark">Cardio</span>
-                    </label>
-                </div>
-                <div>
-
-                </div>
-                <div>
-                    rate
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- normal rate">
-                        <span class="checkmark"><b>normal</b></span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- tachycardia">
-                        <span class="checkmark">tachycardia</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- bradycardia">
-                        <span class="checkmark">bradycardia</span>
-                    </label>
-
-                </div>
-                <div>
-                    rhythm
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- regular rhythm">
-                        <span class="checkmark"><b>regular</b></span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- irregular rhythm">
-                        <span class="checkmark">irregular</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- regularly irregular rhythm">
-                        <span class="checkmark">regularly irregular</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- irregularly irregular rhythm">
-                        <span class="checkmark">irregularly irregular</span>
-                    </label>
-
-                </div>
-                <div>
-                    sounds
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- normal heart sounds, no murmur, no friction rub">
-                        <span class="checkmark"><b>normal</b></span>
-                    </label>
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) murmur:">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no murmur">
-                        <span class="negative-checkbox">murmur
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value=" -- (+) systolic murmur">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value=" -- no systolic murmur">
-                        <span class="negative-checkbox">systolic
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value=" -- (+) diastolic murmur">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value=" -- no diastolic murmur">
-                        <span class="negative-checkbox">diastolic
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) friction rub">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no friction rub">
-                        <span class="negative-checkbox">friction rub
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) gallop">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no gallop">
-                        <span class="negative-checkbox">gallop
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) S3">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no S3">
-                        <span class="negative-checkbox">S3
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) S4">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no S4">
-                        <span class="negative-checkbox">S4
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-
-                </div>
-                <div>
-                    LE edema
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- no LE edema">
-                        <span class="checkmark"><b>none</b></span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- bilateral LE 1+ pitting edema">
-                        <span class="checkmark">bil 1+</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- bilateral LE 2+ pitting edema">
-                        <span class=" checkmark">bil 2+</span>
-                    </label>
-
-                </div>
-                <div>
-                    pulses
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- normal 2+ peripheral pulses">
-                        <span class="checkmark"><b>normal</b></span>
-                    </label>
-                </div>
-
-
-            </div>
-
-            <div id="Pulm" class="examcontent">
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="Resp:">
-                        <span class="checkmark"><b>Resp</b></span>
-                    </label>
-                </div>
-                <div>
-
-                </div>
-                <div>
-                    effort
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam"
-                            value="- normal inspiratory effort, no tachypnea, no accessory muscle usage">
-                        <span class="checkmark"><b>normal</b></span>
-                    </label>
-                    <br>
-
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) accessory muscle usage">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no accessory muscle usage">
-                        <span class="negative-checkbox">accessory muscle usage
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) prolonged expiration">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no prolonged expiration">
-                        <span class="negative-checkbox">prolonged expiration
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                </div>
-                <div>
-                    sounds
-                </div>
-                <div>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- GAEB">
-                        <span class="checkmark"><b>GAEB</b></span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value="- normal breath sounds">
-                        <span class="checkmark"><b>normal breath sounds</b></span>
-                    </label>
-
-
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) stridor">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no stridor">
-                        <span class="negative-checkbox">stridor
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) decreased breath sounds">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative">
-                        <input type="checkbox" class="exam" value="- no decreased breath sounds">
-                        <span class="negative-checkbox">decreased breath sounds
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    &nbsp;&nbsp;&nbsp; L:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L base">
-                        <span class="checkmark">base</span>
-                    </label>
-                    &nbsp; R:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R base">
-                        <span class="checkmark">base</span>
-                    </label>
-
-
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) wheezes">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative" style="margin-right: 117px;">
-                        <input type="checkbox" class="exam" value="- no wheezes">
-                        <span class="negative-checkbox">wheezes
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-
-                    L:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L base">
-                        <span class="checkmark">base</span>
-                    </label>
-                    &nbsp;
-                    R:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R base">
-                        <span class="checkmark">base</span>
-                    </label>
-
-
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) rhonchi">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative" style="margin-right: 124px;">
-                        <input type="checkbox" class="exam" value="- no rhonchi">
-                        <span class="negative-checkbox">rhonchi
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-
-                    L:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L base">
-                        <span class="checkmark">base</span>
-                    </label>
-                    &nbsp;
-                    R:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R base">
-                        <span class="checkmark">base</span>
-                    </label>
-
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) rales">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative" style="margin-right: 140px;">
-                        <input type="checkbox" class="exam" value="- no rales">
-                        <span class="negative-checkbox">rales
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-                    L:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L base">
-                        <span class="checkmark">base</span>
-                    </label>
-                    &nbsp;
-                    R:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R base">
-                        <span class="checkmark">base</span>
-                    </label>
-
-
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) crackles">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative" style="margin-right: 120px;">
-                        <input type="checkbox" class="exam" value="- no crackles">
-                        <span class="negative-checkbox">crackles
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-
-                    L:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L base">
-                        <span class="checkmark">base</span>
-                    </label>
-                    &nbsp;
-                    R:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R base">
-                        <span class="checkmark">base</span>
-                    </label>
-
-
-                    <br>
-                    <label class="positive">
-                        <input type="checkbox" class="exam" value="- (+) egophony">
-                        <span class="positive-checkbox"><b>+</b></span>
-                    </label>
-                    <label class="negative" style="margin-right: 110px;">
-                        <input type="checkbox" class="exam" value="- negative egophony">
-                        <span class="negative-checkbox">egophony
-                            &nbsp;<b>&ndash;</b></span>
-                    </label>
-
-                    L:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > L base">
-                        <span class="checkmark">base</span>
-                    </label>
-                    &nbsp;
-                    R:
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R upper">
-                        <span class="checkmark">upper</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R mid">
-                        <span class="checkmark">mid</span>
-                    </label>
-                    <label class=container>
-                        <input type="checkbox" class="exam" value=" > R base">
-                        <span class="checkmark">base</span>
-                    </label>
-                </div>
-
-
-            </div>
-
-
-
             <div id="Abdo" class="examcontent">
                 <div>
+
+                </div>
+                <div>
                     <label class=container>
-                        <input type="checkbox" class="exam" value="Abdo:">
+                        <input type="checkbox" class="exam" value="" id="toggleAbdo">
+                        <span class="checkmark"
+                            style="font-size: large;padding-right: 40px;padding-left: 40px;margin-left: -100px;"><b>normal</b></span>
+                    </label>
+                </div>
+                <div>
+                    <label class=container>
+                        <input type="checkbox" class="exam" value="Abdo:" name="normalAbdo">
                         <span class="checkmark"><b>abdo:</b></span>
                     </label>
                 </div>
@@ -3828,7 +4149,7 @@
                         <span class="positive-checkbox"><b>+</b></span>
                     </label>
                     <label class="negative">
-                        <input type="checkbox" class="exam" value="- no distension">
+                        <input type="checkbox" class="exam" value="- no distension" name="normalAbdo">
                         <span class="negative-checkbox"><b>distension</b>
                             &nbsp;<b>&ndash;</b></span>
                     </label>
@@ -3852,7 +4173,7 @@
                 </div>
                 <div>
                     <label class=container>
-                        <input type="checkbox" class="exam" value="- soft">
+                        <input type="checkbox" class="exam" value="- soft" name="normalAbdo">
                         <span class="checkmark"><b>soft</b></span>
                     </label>
                     <label class=container>
@@ -3929,7 +4250,7 @@
                         <span class="positive-checkbox"><b>+</b></span>
                     </label>
                     <label class="negative">
-                        <input type="checkbox" class="exam" value="- no tenderness">
+                        <input type="checkbox" class="exam" value="- no tenderness" name="normalAbdo">
                         <span class="negative-checkbox"><b>tender</b>
                             &nbsp;<b>&ndash;</b></span>
                     </label>
