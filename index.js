@@ -121,7 +121,7 @@ function openExamSection(evt, sectionName) {
 }
 document.getElementById("defaultOpenExam").click();
 
-//toggle neuro normal
+//toggle normal buttons
 var toggleNeuro = document.getElementById("toggleNeuro");
 toggleNeuro.addEventListener("change", function() {
 	var checked = this.checked;
@@ -166,6 +166,16 @@ var toggleAbdo = document.getElementById("toggleAbdo");
 toggleAbdo.addEventListener("change", function() {
 	var checked = this.checked;
 	var otherCheckboxes = document.getElementsByName("normalAbdo");
+	[].forEach.call(otherCheckboxes, function(item) {
+		item.checked = checked;
+	});
+	displayAll();
+});
+
+var toggleLowBack = document.getElementById("toggleLowBack");
+toggleLowBack.addEventListener("change", function() {
+	var checked = this.checked;
+	var otherCheckboxes = document.getElementsByName("normalLB");
 	[].forEach.call(otherCheckboxes, function(item) {
 		item.checked = checked;
 	});
