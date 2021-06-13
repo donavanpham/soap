@@ -239,9 +239,9 @@
                 </label>
 
 
-                <br>
-                <input type="text" class="location" id="otherLocation" style="float: right;">
-                <br>
+
+                <input hidden type="text" class="location" id="otherLocation" style="float: right;">
+
             </div>
 
             <div>
@@ -315,9 +315,9 @@
                     <input type="checkbox" class="radiation" value="- radiates to L groin">
                     <span class="checkmark">L groin</span>
                 </label>
-                <br>
-                <input type="text" class="radiation" id="otherRadiation" style="float: right;" placeholder="">
-                <br>
+
+                <input hidden type="text" class="radiation" id="otherRadiation" style="float: right;" placeholder="">
+
             </div>
 
             <div>
@@ -356,9 +356,9 @@
                     <input type="checkbox" class="quality" value="- stabbing pain">
                     <span class="checkmark">stabbing</span>
                 </label>
-                <br>
-                <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="">
-                <br>
+
+                <input hidden type="text" class="quality" id="otherQuality" style="float: right;" placeholder="">
+
             </div>
             <div>
                 <b>timing</b>
@@ -380,9 +380,9 @@
                     <input type="checkbox" class="timing" value="- pre menstrual pain">
                     <span class="checkmark">pre menstrual</span>
                 </label>
-                <br>
-                <input type="text" class="timing" id="otherTiming" style="float: right;" placeholder="">
-                <br>
+
+                <input hidden type="text" class="timing" id="otherTiming" style="float: right;" placeholder="">
+
             </div>
             <div>
                 <b>aggravated by</b>
@@ -412,9 +412,10 @@
                     <input type="checkbox" class="aggravation" value="- worse with lying down">
                     <span class="checkmark">lying down</span>
                 </label>
-                <br>
-                <input type="text" class="aggravation" id="otherAggravation" style="float: right;" placeholder="">
-                <br>
+
+                <input hidden type="text" class="aggravation" id="otherAggravation" style="float: right;"
+                    placeholder="">
+
             </div>
 
             <div>
@@ -450,10 +451,8 @@
                     <input type="checkbox" class="relief" value="- relieved with heat">
                     <span class="checkmark">heat</span>
                 </label>
+                <input hidden type="text" class="relief" id="otherRelief" style="float: right;" placeholder="">
 
-                <br>
-                <input type="text" class="relief" id="otherRelief" style="float: right;" placeholder="">
-                <br>
             </div>
 
             <div>
@@ -648,6 +647,11 @@
 
 
                 </div>
+            </div>
+            <div>
+                ↓ normal ↓
+            </div>
+            <div>
             </div>
             <div>
                 <label class=container>
@@ -973,13 +977,13 @@
         </div>
 
         <div id="objective" class="tabcontent">
-            <div>
+            <div hidden>
                 <label class=container>
                     <input type="checkbox" id="vitals">
                     <span class="checkmark">vitals</span>
                 </label>
             </div>
-            <div>
+            <div hidden>
                 <div class="slidecontainer">
 
                     <input type="range" min="40" max="120" value="80" class="DBPslider" id="DBP">
