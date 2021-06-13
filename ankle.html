@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ankle</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body style="background-color: rgb(139, 177, 249);">
+    <div id="main">
+        <h1>
+            ankle/foot
+        </h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
+            <button class="tablinks" onclick="openSection(event, 'objective')">Objective</button>
+            <button class="tablinks" onclick="openSection(event, 'assessment-plan')">Assessment/Plan</button>
+        </div>
+
+        <div id="subjective" class="tabcontent">
+
+            <div>
+                <b>onset</b>
+            </div>
+            <div>
+                <input type="number" class="HPI" id="onsetNumber">
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="hours since onset">
+                    <span class="checkmark">hours</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="days since onset">
+                    <span class="checkmark">days</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="weeks since onset">
+                    <span class="checkmark">weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="months since onset">
+                    <span class="checkmark">months</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="years since onset">
+                    <span class="checkmark">years</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- sudden onset">
+                    <span class="checkmark">sudden</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradual onset">
+                    <span class="checkmark">gradual</span>
+                </label>
+            </div>
+            <div>
+                <b>side</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- L ankle">
+                    <span class="checkmark">left</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- R ankle">
+                    <span class="checkmark">right</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="Bilateral:">
+                    <span class="checkmark">bilateral</span>
+                </label>
+            </div>
+            <div>
+                <b>new?</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- new issue">
+                    <span class="checkmark">new issue</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- known issue">
+                    <span class="checkmark">previously known issue</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>symptoms</b>
+            </div>
+            <div>
+                <label class="positive">
+                    <input type="checkbox" class="HPI" value="- (+)pain">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="HPI" value="- no pain">
+                    <span class="negative-checkbox">pain
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="HPI" value="- (+)stiffness">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="HPI" value="- no stiffness">
+                    <span class="negative-checkbox">stiffness
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="HPI" value="- (+)swelling">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="HPI" value="- no swelling">
+                    <span class="negative-checkbox">swelling
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="HPI" value="- (+)erythema">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="HPI" value="- no erythema">
+                    <span class="negative-checkbox">erythema
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+            </div>
+            <div>
+                <b>intensity</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild intensity">
+                    <span class="checkmark">mild</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- mild-moderate intensity">
+                    <span class="checkmark">mild-moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate intensity">
+                    <span class="checkmark">moderate</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- moderate/severe intensity">
+                    <span class="checkmark">moderate-severe</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- severe intensity">
+                    <span class="checkmark">severe</span>
+                </label>
+                <br>
+            </div>
+
+            <div>
+                <b>frequency</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- single episode">
+                    <span class="checkmark">single episode</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- constant">
+                    <span class="checkmark">constant</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- intermittent">
+                    <span class="checkmark">intermittent</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- daily">
+                    <span class="checkmark">daily</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- few times a week">
+                    <span class="checkmark">few times a week</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- few times a month">
+                    <span class="checkmark">few times a month</span>
+                </label>
+            </div>
+
+            <div>
+                <b>status</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improving since onset">
+                    <span class="checkmark">improving</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no change since onset">
+                    <span class="checkmark">unchanged</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- resolved since onset">
+                    <span class="checkmark">resolved</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- gradually worsening since onset">
+                    <span class="checkmark">gradually worsening</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- significantly worsening since onset">
+                    <span class="checkmark">significant worsening</span>
+                </label>
+                <br>
+            </div>
+            <div>
+                <b>context</b>
+            </div>
+            <div>
+
+                <label class="positive">
+                    <input type="checkbox" class="HPI" value="- (+) trauma">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="HPI" value="- no associated trauma">
+                    <span class="negative-checkbox">trauma
+                        &nbsp;<b>&ndash;</b></span>
+                </label>&nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="HPI" value="- (+) repetitive movement">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="HPI" value="- no associated repetitive movement">
+                    <span class="negative-checkbox">repetitive movement
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+
+            </div>
+            <div>
+                <b>location</b>
+            </div>
+            <div>
+                ankle
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- whole joint">
+                    <span class="checkmark">whole joint</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- medial ankle">
+                    <span class="checkmark">medial</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lateral ankle">
+                    <span class="checkmark">lateral</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- anterior ankle">
+                    <span class="checkmark">anterior</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- posterior ankle">
+                    <span class="checkmark">posterior</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- achilles tendon">
+                    <span class="checkmark">achilles</span>
+                </label>
+                <br>
+                foot
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- calcaneus pain">
+                    <span class="checkmark">calcaneus</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- pain at dorsum of foot">
+                    <span class="checkmark">dorsum</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- medial foot">
+                    <span class="checkmark">medial</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- lateral foot">
+                    <span class="checkmark">lateral</span>
+                </label>
+            </div>
+            <div>
+                <b>worse with</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- worse with weight bearing">
+                    <span class="checkmark">weight bearing</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- worse with walking">
+                    <span class="checkmark">walking</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- worse with all movements">
+                    <span class="checkmark">all movements</span>
+                </label>
+            </div>
+            <div>
+                <b>improves with</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improves with rest">
+                    <span class="checkmark">rest</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improves with tylenol">
+                    <span class="checkmark">tylenol</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improves with NSAIDs">
+                    <span class="checkmark">NSAIDs</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- improves with ice">
+                    <span class="checkmark">ice</span>
+                </label>
+            </div>
+
+
+
+            <div>
+                <b>HPI</b>
+            </div>
+            <div>
+                <textarea id="otherHPI" onchange="displayAll()" placeholder="HPI" style="height: 400px;"></textarea><br>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div id="objective" class="tabcontent">
+
+            <div>
+                <b>side</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="Left:">
+                    <span class="checkmark">left</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="Right:">
+                    <span class="checkmark">right</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="Bilateral:">
+                    <span class="checkmark">bilateral</span>
+                </label>
+            </div>
+            <div>
+                <b>inspection</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam"
+                        value="- normal inspection of ankle, no swelling, erythema, bruising or wound">
+                    <span class="checkmark">normal</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- normal gait">
+                    <span class="checkmark">normal gait</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- antalgic gait">
+                    <span class="checkmark">antalgic gait</span>
+                </label>
+            </div>
+            <div>
+                <b>palpation</b>
+            </div>
+            <div>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)heat on palpation">
+                    <span class="positive-checkbox"><b>A</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- normal temperature on palpation">
+                    <span class="negative-checkbox">temperature
+                        &nbsp;<b>N</b></span>
+                </label>
+                <br>
+
+                tenderness<br>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- medial malleolus tenderness">
+                    <span class="checkmark">medial malleolus</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- lateral malleolus tenderness">
+                    <span class="checkmark">lateral malleolus</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- achilles tendon tenderness">
+                    <span class="checkmark">achilles</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- calcaneus tenderness">
+                    <span class="checkmark">calcaneus</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- peroneal tendon tenderness">
+                    <span class="checkmark">peroneal tendons</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- ATFL tenderness">
+                    <span class="checkmark">ATFL</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- plantar fascia tenderness">
+                    <span class="checkmark">plantar fascia</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- sesamoid tenderness">
+                    <span class="checkmark">sesamoid</span>
+                </label>
+                <br> MTP
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- 1st MTP tenderness">
+                    <span class="checkmark">1</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- 2nd MTP tenderness">
+                    <span class="checkmark">2</span>
+                </label>
+
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- 3rd MTP tenderness">
+                    <span class="checkmark">3</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- 4th MTP tenderness">
+                    <span class="checkmark">4</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- 5th MTP tenderness">
+                    <span class="checkmark">5</span>
+                </label>
+            </div>
+            <div>
+                <b>ROM</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- normal ROM without limitations">
+                    <span class="checkmark">normal</span>
+                </label>
+                <br>
+                pain with
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- pain with inversion">
+                    <span class="checkmark">inversion</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- pain with eversion">
+                    <span class="checkmark">eversion</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- pain with supination">
+                    <span class="checkmark">supination</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- pain with pronation">
+                    <span class="checkmark">pronation</span>
+                </label>
+            </div>
+            <div>
+                <b>muscle testing</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam" value="- normal strength testing, no weakness">
+                    <span class="checkmark">normal</span>
+                </label>
+                <br>
+
+                <div class="nested">
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+) posterior tibialis weakness">
+                            <span class="positive-checkbox"><b>A</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- normal posterior tibialis strength">
+                            <span class="negative-checkbox">posterior tibialis (L5)
+                                &nbsp;<b>N</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)anterior tibialis weakness">
+                            <span class="positive-checkbox"><b>A</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- normal anterior tibialis strength">
+                            <span class="negative-checkbox">anterior tibialis (L4)
+                                &nbsp;<b>N</b></span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)peroneus weakness">
+                            <span class="positive-checkbox"><b>A</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- normal peroneus strength">
+                            <span class="negative-checkbox">peroneus
+                                &nbsp;<b>N</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)extensor hallucis weakness">
+                            <span class="positive-checkbox"><b>A</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- normal extensor hallucis strength">
+                            <span class="negative-checkbox">extensor hallucis (L5)
+                                &nbsp;<b>N</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)flexor hallucis weakness">
+                            <span class="positive-checkbox"><b>A</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- normal flexor hallucis strength">
+                            <span class="negative-checkbox">flexor hallucis (S1)
+                                &nbsp;<b>N</b></span>
+                        </label>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div>
+                <b>special tests</b>
+            </div>
+            <div>
+                <div class="nested">
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)anterior drawer">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)anterior drawer">
+                            <span class="negative-checkbox">anterior drawer
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)varus stress test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)varus stress test">
+                            <span class="negative-checkbox">varus stress
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)MTP instability">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)MTP instability">
+                            <span class="negative-checkbox">MTP instability
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)Morton Neuroma test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)Morton Neuroma test">
+                            <span class="negative-checkbox">Morton Neuroma test
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)Kleiger">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)Kleiger">
+                            <span class="negative-checkbox">Kleiger
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)distal tib/fib squeeze test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)distal tib/fib squeeze test">
+                            <span class="negative-checkbox">distal tib/fib squeeze
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)Thompson test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)Thompson test">
+                            <span class="negative-checkbox">Thompson
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)eversion stress test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)eversion stress test">
+                            <span class="negative-checkbox">Eversion stress
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)inversion stress test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)inversion stress test">
+                            <span class="negative-checkbox">Inversion stress
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)calcaneus squeeze test">
+                            <span class="positive-checkbox"><b>+</b></span>
+                        </label>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)calcaneus squeeze test">
+                            <span class="negative-checkbox">calcaneus squeeze
+                                &nbsp;<b>&ndash;</b></span>
+                        </label>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div>
+                <b>Ottawa</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="exam"
+                        value="- no tenderness at posterior malleoli or base of 5th metatarsal or navicular; able to bear weight">
+                    <span class="checkmark">negative ankle/foot</span>
+                </label>
+                <br>
+                Tenderness:
+                <br>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)tender medial posterior malleolus">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- no posterior medial malleolus tenderness">
+                    <span class="negative-checkbox">Posterior medial malleolus
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)tender posterior lateral malleolus">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- no posterior lateral malleolus tenderness">
+                    <span class="negative-checkbox">Posterior lateral malleolus
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+                <br>
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)tenderness at base 5th metatarsal">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- no tenderness at base 5th metatarsal">
+                    <span class="negative-checkbox">base 5th metatarsal
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+
+                &nbsp;
+                <label class="positive">
+                    <input type="checkbox" class="exam" value="- (+)navicular tenderness">
+                    <span class="positive-checkbox"><b>+</b></span>
+                </label>
+                <label class="negative">
+                    <input type="checkbox" class="exam" value="- no navicular tenderness">
+                    <span class="negative-checkbox">navicular
+                        &nbsp;<b>&ndash;</b></span>
+                </label>
+
+            </div>
+
+
+
+
+
+
+            <div>
+                <b>exam</b>
+            </div>
+
+            <div>
+                <textarea id="otherExam" onchange="displayAll()" placeholder="physical exam"></textarea>
+            </div>
+        </div>
+
+
+        <div id="assessment-plan" class="tabcontent">
+
+            <div>
+
+                <b>Assessment</b>
+            </div>
+            <div>
+                <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment details"></textarea>
+            </div>
+
+
+
+            <div>
+                <b>Plan</b>
+            </div>
+            <div>
+                <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"
+                    style="height: 300px;"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <div class="tooltip">
+            <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note
+            </button>
+        </div>
+        <div id="soapNote">
+
+            <div id="content" contenteditable="">
+                <span id="complaint" style='white-space:pre-wrap'></span><br><br>
+                S/ <br>
+
+                <div id="onsetResult" style="display:inline" contenteditable="false"></div>
+                <span id="HPI" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                <span id="ROS" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                O/
+                <br>
+
+                <span id="BPOutput" contenteditable="false"></span>
+                <span id="HROutput" contenteditable="false"></span>
+                <span id="exam" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                A/
+                <br>
+                <span id="assessment" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+                P/
+                <br>
+                <span id="plan" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="MSK.js"></script>
+</body>
+
+</html>

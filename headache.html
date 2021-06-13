@@ -251,9 +251,9 @@
                     <input type="checkbox" class="location" value="- vertex">
                     <span class="checkmark">vertex</span>
                 </label>
-                <br>
-                <input type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
-                <br>
+
+                <input hidden type="text" class="location" id="otherLocation" style="float: right;" placeholder="other">
+
             </div>
 
             <div>
@@ -280,9 +280,10 @@
                     <input type="checkbox" class="radiation" value="- radiates to shoulders">
                     <span class="checkmark">shoulders</span>
                 </label>
-                <br>
-                <input type="text" class="location" id="otherRadiation" style="float: right;" placeholder="other">
-                <br>
+
+                <input hidden type="text" class="location" id="otherRadiation" style="float: right;"
+                    placeholder="other">
+
             </div>
             <div>
                 <b>quality</b>
@@ -329,9 +330,9 @@
                     <input type="checkbox" class="quality" value="- worst headache ever">
                     <span class="checkmark">worst ever</span>
                 </label>
-                <br>
-                <input type="text" class="quality" id="otherQuality" style="float: right;" placeholder="other">
-                <br>
+
+                <input hidden type="text" class="quality" id="otherQuality" style="float: right;" placeholder="other">
+
             </div>
             <div>
                 <b>timing</b>
@@ -355,9 +356,9 @@
                     <input type="checkbox" class="timing" value="- mostly during evening">
                     <span class="checkmark">evening</span>
                 </label>
-                <br>
-                <input type="text" class="timing" id="otherTiming" style="float: right;" placeholder="other">
-                <br>
+
+                <input hidden type="text" class="timing" id="otherTiming" style="float: right;" placeholder="other">
+
             </div>
             <div>
                 <b>aggravated by</b>
@@ -414,9 +415,10 @@
                     <input type="checkbox" class="aggravation" value="- aggravated by certain weather">
                     <span class="checkmark">weather</span>
                 </label>
-                <br>
-                <input type="text" class="aggravation" id="otherAggravation" style="float: right;" placeholder="other">
-                <br>
+
+                <input hidden type="text" class="aggravation" id="otherAggravation" style="float: right;"
+                    placeholder="other">
+
             </div>
             <div>
                 <b>relieved by</b><br>
@@ -463,9 +465,9 @@
                     <input type="checkbox" class="relief" value="- relieved by prescription meds">
                     <span class="checkmark">prescription meds</span>
                 </label>
-                <br>
-                <input type="text" class="relief" id="otherRelief" style="float: right;" placeholder="other">
-                <br>
+
+                <input hidden type="text" class="relief" id="otherRelief" style="float: right;" placeholder="other">
+
             </div>
 
             <div>
@@ -731,13 +733,14 @@
                                 value="- limited R rotation ROM"></label>
                     </div>
                     <div>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- (-) spurling test">
-                            <span class="checkmark">spurling test (-)</span>
+                        <label class="positive">
+                            <input type="checkbox" class="exam" value="- (+)Spurling test">
+                            <span class="positive-checkbox"><b>+</b></span>
                         </label>
-                        <label class=container>
-                            <input type="checkbox" class="exam" value="- (+) spurling test">
-                            <span class="checkmark">spurling test (+)</span>
+                        <label class="negative">
+                            <input type="checkbox" class="exam" value="- (-)Spurling test">
+                            <span class="negative-checkbox">Spurling
+                                &nbsp;<b>&ndash;</b></span>
                         </label>
 
                     </div>
