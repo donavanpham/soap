@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pap</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body style="background-color: rgb(244, 191, 255);">
+    <div id="main">
+        <h1>
+            Procedures
+        </h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Pap</button>
+        </div>
+
+        <div id="subjective" class="tabcontent">
+            <div>Screening</div>
+            <div>
+                <button
+                    onclick="window.open('//www.cancercareontario.ca/en/system/files_force/derivative/OCSPScreeningGuidelines.pdf','_blank');"
+                    type="button"
+                    style="background-color: rgb(237, 166, 201);border:none; padding:5px; cursor: pointer;border-radius: 5px;">OCSP
+                    recommendations</button>
+            </div>
+            <div>
+                <b>indication</b>
+            </div>
+            <div>
+
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- average risk screening">
+                    <span class="checkmark">average risk screen</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- f/u ASCUS/LSIL">
+                    <span class="checkmark">f/u ASCUS/LSIL</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- abnormal bleeding">
+                    <span class="checkmark">abnormal bleed</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- suspicious lesion">
+                    <span class="checkmark">suspicious lesion</span>
+                </label>
+
+            </div>
+
+            <div>
+                <b>symptoms</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- asymptomatic">
+                    <span class="checkmark">asymptomatic</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- abnormal uterine bleeding">
+                    <span class="checkmark">AUB</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- abnormal discharge">
+                    <span class="checkmark">abnormal discharge</span>
+                </label>
+            </div>
+
+            <div>
+                <b>previous pap</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no previous pap">
+                    <span class="checkmark">no previous pap</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- last pap over 3 years ago">
+                    <span class="checkmark">over 3 years</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- last pap 6 months ago">
+                    <span class="checkmark">6 months</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- last pap 1 year ago">
+                    <span class="checkmark">1 year</span>
+                </label>
+            </div>
+            <div>
+                <b>hx abnormal pap</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no previous abnormal pap">
+                    <span class="checkmark">none</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- previous ASCUS/LSIL">
+                    <span class="checkmark">ASCUS/LSIL</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- previous HSIL/CIN">
+                    <span class="checkmark">HSIL/CIN</span>
+                </label>
+            </div>
+
+            <div>
+                <b>LMP</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- post menopausal">
+                    <span class="checkmark">post menopausal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- peri menopausal">
+                    <span class="checkmark">peri menopausal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- LMP 1 week ago">
+                    <span class="checkmark">1 week</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- LMP 2 weeks ago">
+                    <span class="checkmark">2 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- LMP 3 weeks ago">
+                    <span class="checkmark">3 weeks</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- LMP 4 weeks ago">
+                    <span class="checkmark">4 weeks</span>
+
+            </div>
+            <div>
+                <b>other clinical</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- on OCP">
+                    <span class="checkmark">OCP</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- IUD in situ">
+                    <span class="checkmark">IUD</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- pregnant">
+                    <span class="checkmark">pregnant</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- post partum">
+                    <span class="checkmark">post partum</span>
+                </label>
+            </div>
+
+            <div>
+                <b>chaperone</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- chaperone present">
+                    <span class="checkmark">present</span>
+                </label>
+            </div>
+
+            <div>
+                <b>exam</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI"
+                        value="- normal vulva, vagina, and cervix; no abnormal discharge or bleeding">
+                    <span class="checkmark">normal</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- nabothian cyst noted">
+                    <span class="checkmark">nabothian cyst</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- IUD strings seen">
+                    <span class="checkmark">IUD strings</span>
+                </label>
+                <br>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- well tolerated by patient">
+                    <span class="checkmark">well tolerated</span>
+                </label>
+                <br>
+                <b>specimens</b>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- endocervical pap specimen obtained with brush">
+                    <span class="checkmark">endocervical</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- endocervical GC specimen obtained">
+                    <span class="checkmark">GC</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- vaginal bacterial swab for BV obtained">
+                    <span class="checkmark">BV</span>
+                </label>
+                <br>
+
+
+                <textarea id="otherHPI" onchange="displayAll()" placeholder="details/comments"></textarea>
+            </div>
+
+            <div>
+                <b>follow-up</b>
+            </div>
+            <div>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- if normal, routine screening in 3 years">
+                    <span class="checkmark">routine</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- will need repeat pap in 6 months">
+                    <span class="checkmark">6 months</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- if &GreaterEqual;ASCUS, refer to colposcopy">
+                    <span class="checkmark">colposcopy if &GreaterEqual;ASCUS</span>
+                </label>
+                <label class=container>
+                    <input type="checkbox" class="HPI" value="- no further pap required">
+                    <span class="checkmark">no further pap</span>
+                </label>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="note">
+        <div class="tooltip">
+            <button onclick="CopyToClipboard('soapNote')" id="copyNote" onmouseout="outFunc()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy note
+            </button>
+        </div>
+        <div id="soapNote">
+
+            <div id="content" contenteditable="">
+                Pap test completed in clinic today:
+                <br>
+                <span id="HPI" style='white-space:pre-wrap' contenteditable="false"></span>
+                <br>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="mentalStatusExam.js"></script>
+</body>
+
+</html>
