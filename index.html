@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body style="background-color: rgb(139, 232, 249);">
+<body style="background-color: rgb(133, 193, 205);">
 
     <div id="wrapper">
-
 
         <div id="main">
 
@@ -231,13 +230,24 @@
                     <br>
                 </div>
 
+
                 <div>
-                    <b>HPI</b>
+
                 </div>
                 <div>
 
 
-                    <textarea id="otherHPI" onchange="displayAll()" placeholder="HPI"
+                </div>
+
+
+                <div>
+                    <b>HPI</b><br>
+                    <button id="record-btn" title="Toggle Dictation">💬Start</button>
+                </div>
+                <div>
+
+
+                    <textarea id="otherHPI" oninput="displayAll()" placeholder="HPI"
                         style="height: 200px;"></textarea><br>
                 </div>
 
@@ -1980,8 +1990,20 @@
                             <input type="checkbox" class="exam" value="- abnormal attention/focus">
                             <span class="checkmark">abnormal</span>
                         </label>
-
-
+                    </div>
+                    <div>
+                        <b>speech</b>
+                    </div>
+                    <div>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- normal speech rate, rhythm, tone"
+                                name="normalMSE">
+                            <span class="checkmark"><b>normal</b></span>
+                        </label>
+                        <label class=container>
+                            <input type="checkbox" class="exam" value="- abnormal speech">
+                            <span class="checkmark">abnormal</span>
+                        </label>
                     </div>
 
                     <div>
@@ -5172,7 +5194,7 @@
 
 
                 <div>
-                    <textarea id="otherExam" onchange="displayAll()" placeholder="other findings/details"></textarea>
+                    <textarea id="otherExam" oninput="displayAll()" placeholder="other findings/details"></textarea>
                 </div>
             </div>
 
@@ -5184,7 +5206,7 @@
                     <b>Assessment</b>
                 </div>
                 <div>
-                    <textarea id="otherAssessment" onchange="displayAll()" placeholder="assessment details"></textarea>
+                    <textarea id="otherAssessment" oninput="displayAll()" placeholder="assessment details"></textarea>
                 </div>
 
 
@@ -5193,7 +5215,7 @@
                     <b>Plan</b>
                 </div>
                 <div>
-                    <textarea id="otherPlan" onchange="displayAll()" placeholder="plan details"
+                    <textarea id="otherPlan" oninput="displayAll()" placeholder="plan details"
                         style="height: 300px;"></textarea>
                 </div>
             </div>
@@ -5222,8 +5244,6 @@
                     O/
                     <br>
 
-                    <span id="BPOutput" contenteditable="false"></span>
-                    <span id="HROutput" contenteditable="false"></span>
                     <span id="exam" style='white-space:pre-wrap' contenteditable="false"></span>
                     <br>
                     A/
@@ -5240,6 +5260,7 @@
         </div>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
     <script src="index.js"></script>
 </body>
 
