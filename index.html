@@ -70,8 +70,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn"
-                        onclick="openSection(event, 'objectiveExam'); openExamSection(event, 'MSE')">MSE</button>
+                    <button class="dropbtn" onclick="openMSE();">MSE</button>
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn" style="background-color: rgb(171, 182, 223);">Procedures</button>
@@ -84,8 +83,10 @@
 
             <div class="tab">
                 <button class="tablinks" onclick="openSection(event, 'subjective')" id="defaultOpen">Subjective</button>
-                <button class="tablinks" onclick="openSection(event, 'objectiveExam')">Objective</button>
-                <button class="tablinks" onclick="openSection(event, 'assessment-plan')">Assessment/Plan</button>
+                <button class="tablinks" onclick="openSection(event, 'objectiveExam')"
+                    id="objectiveButton">Objective</button>
+                <button class="tablinks" onclick="openSection(event, 'assessment-plan')"
+                    id="assessmentButton">Assessment/Plan</button>
             </div>
 
             <div id="subjective" class="tabcontent">
@@ -1387,15 +1388,16 @@
                 <div class="exam-tabs">
                     <button class="examlinks" onclick="openExamSection(event, 'basic')"
                         id="defaultOpenExam">Basic</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'MSE')">MSE</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'Cardio')">Cardio</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'Resp')">Resp</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'HENT')">HENT</button>
+                    <button class="examlinks" onclick="openExamSection(event, 'MSE')" id="MSEButton">MSE</button>
+                    <button class="examlinks" onclick="openExamSection(event, 'Cardio')"
+                        id="cardioButton">Cardio</button>
+                    <button class="examlinks" onclick="openExamSection(event, 'Resp')" id="respButton">Resp</button>
+                    <button class="examlinks" onclick="openExamSection(event, 'HENT')" id="hentButton">HENT</button>
                     <button class="examlinks" onclick="openExamSection(event, 'Eyes')">Eyes</button>
                     <button class="examlinks" onclick="openExamSection(event, 'Neck')">Neck</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'Abdo')">Abdo</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'Neuro')">Neuro</button>
-                    <button class="examlinks" onclick="openExamSection(event, 'lowBack')">Low
+                    <button class="examlinks" onclick="openExamSection(event, 'Abdo')" id="abdoButton">Abdo</button>
+                    <button class="examlinks" onclick="openExamSection(event, 'Neuro')" id="neuroButton">Neuro</button>
+                    <button class="examlinks" onclick="openExamSection(event, 'lowBack')" id="lowBackButton">Low
                         Back</button>
 
 
@@ -5261,7 +5263,9 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="mousetrap.min.js"></script>
     <script src="index.js"></script>
+
 </body>
 
 </html>

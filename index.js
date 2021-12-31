@@ -286,3 +286,68 @@ $(document).ready(function() {
 		noteContent = $(this).val();
 	});
 });
+
+//MSE button
+function openMSE() {
+	document.getElementById("objectiveButton").click();
+	document.getElementById("MSEButton").click();
+}
+
+//keyboard shortcuts
+Mousetrap.bind("1", function() {
+	document.getElementById("defaultOpen").click();
+});
+
+Mousetrap.bind("2", function() {
+	document.getElementById("objectiveButton").click();
+});
+Mousetrap.bind("3", function() {
+	document.getElementById("assessmentButton").click();
+});
+
+Mousetrap.bind("c", function() {
+	document.getElementById("cardioButton").click();
+});
+Mousetrap.bind("C", function() {
+	document.getElementById("toggleCardio").click();
+});
+Mousetrap.bind("r", function() {
+	document.getElementById("respButton").click();
+});
+Mousetrap.bind("R", function() {
+	document.getElementById("toggleResp").click();
+});
+Mousetrap.bind("m", function() {
+	document.getElementById("MSEButton").click();
+});
+Mousetrap.bind("M", function() {
+	document.getElementById("toggleMSE").click();
+});
+Mousetrap.bind("n", function() {
+	document.getElementById("neuroButton").click();
+});
+Mousetrap.bind("N", function() {
+	document.getElementById("toggleNeuro").click();
+});
+Mousetrap.bind("l", function() {
+	document.getElementById("lowBackButton").click();
+});
+Mousetrap.bind("L", function() {
+	document.getElementById("toggleLowBack").click();
+});
+Mousetrap.bind("a", function() {
+	document.getElementById("abdoButton").click();
+});
+Mousetrap.bind("A", function() {
+	document.getElementById("toggleAbdo").click();
+});
+Mousetrap.bind("b", function() {
+	document.getElementById("defaultOpenExam").click();
+});
+Mousetrap.bind("h", function() {
+	document.getElementById("hentButton").click();
+});
+
+Mousetrap.bind("esc", function() {
+	document.getElementById("record-btn").click();
+});
